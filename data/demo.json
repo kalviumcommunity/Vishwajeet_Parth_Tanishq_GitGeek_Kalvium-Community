@@ -1,0 +1,18 @@
+{
+  "repo": "demo/open-source-project",
+  "generatedAt": "2026-08-26T00:00:00.000Z",
+  "contributors": [
+    {"login":"maya-dev","firstPr":1,"returned":true,"firstResponseHours":2.1,"reviewHours":14,"mergeDays":1.8,"reviewComments":3,"reviewRounds":1,"changesRequested":1,"issueComments":2,"merged":true},
+    {"login":"arjun-code","firstPr":1,"returned":true,"firstResponseHours":5.5,"reviewHours":25,"mergeDays":2.6,"reviewComments":5,"reviewRounds":2,"changesRequested":2,"issueComments":1,"merged":true},
+    {"login":"sana-dev","firstPr":1,"returned":false,"firstResponseHours":71,"reviewHours":118,"mergeDays":9.2,"reviewComments":14,"reviewRounds":5,"changesRequested":4,"issueComments":0,"merged":false},
+    {"login":"leo-builds","firstPr":1,"returned":true,"firstResponseHours":8,"reviewHours":31,"mergeDays":3.2,"reviewComments":4,"reviewRounds":2,"changesRequested":1,"issueComments":3,"merged":true},
+    {"login":"neha-contrib","firstPr":1,"returned":false,"firstResponseHours":55,"reviewHours":92,"mergeDays":7.5,"reviewComments":11,"reviewRounds":4,"changesRequested":3,"issueComments":1,"merged":false},
+    {"login":"danielr","firstPr":1,"returned":true,"firstResponseHours":3.7,"reviewHours":19,"mergeDays":2.1,"reviewComments":2,"reviewRounds":1,"changesRequested":0,"issueComments":2,"merged":true},
+    {"login":"aisha-oss","firstPr":1,"returned":false,"firstResponseHours":49,"reviewHours":83,"mergeDays":6.3,"reviewComments":9,"reviewRounds":3,"changesRequested":3,"issueComments":0,"merged":false},
+    {"login":"rohanjs","firstPr":1,"returned":true,"firstResponseHours":6.2,"reviewHours":28,"mergeDays":2.9,"reviewComments":4,"reviewRounds":2,"changesRequested":1,"issueComments":2,"merged":true},
+    {"login":"kimberly-dev","firstPr":1,"returned":false,"firstResponseHours":37,"reviewHours":61,"mergeDays":5.1,"reviewComments":8,"reviewRounds":3,"changesRequested":2,"issueComments":0,"merged":true},
+    {"login":"vishal-dev","firstPr":1,"returned":true,"firstResponseHours":4.4,"reviewHours":17,"mergeDays":1.9,"reviewComments":2,"reviewRounds":1,"changesRequested":1,"issueComments":1,"merged":true},
+    {"login":"nora-oss","firstPr":1,"returned":false,"firstResponseHours":92,"reviewHours":146,"mergeDays":12.4,"reviewComments":17,"reviewRounds":6,"changesRequested":5,"issueComments":0,"merged":false},
+    {"login":"sam-dev","firstPr":1,"returned":true,"firstResponseHours":7.3,"reviewHours":34,"mergeDays":3.4,"reviewComments":5,"reviewRounds":2,"changesRequested":1,"issueComments":2,"merged":true}
+  ]
+}

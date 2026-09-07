@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contributor Retention Analytics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><div class="brand-mark">CR</div><div><strong>Contributor Retention</strong><span>Onboarding Analytics</span></div></div>
+    <div class="status"><span class="dot"></span><span id="modeText">Demo Mode</span></div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">OPEN-SOURCE MAINTAINER INTELLIGENCE</p>
+        <h1>Find what makes first-time contributors return.</h1>
+        <p class="sub">Turn PR review timelines, contributor activity, and issue participation into actionable onboarding insights.</p>
+      </div>
+      <div class="repo-box">
+        <label for="repoInput">Analyze a GitHub repository</label>
+        <div class="repo-row"><input id="repoInput" placeholder="owner/repository" /><button id="analyzeBtn">Analyze repo</button></div>
+        <button class="demo-link" id="demoBtn">Use demo data</button>
+      </div>
+    </section>
+
+    <div id="error" class="error hidden"></div>
+    <div id="loading" class="loading hidden"><div class="spinner"></div> Analyzing repository data…</div>
+
+    <section class="kpis">
+      <article class="kpi"><span>First-time contributors</span><strong id="total">—</strong><small>contributors in cohort</small></article>
+      <article class="kpi accent"><span>Return rate</span><strong id="retention">—</strong><small>made another contribution</small></article>
+      <article class="kpi"><span>Avg. first response</span><strong id="firstResponse">—</strong><small>time to maintainer response</small></article>
+      <article class="kpi"><span>Avg. merge time</span><strong id="mergeDays">—</strong><small>first PR lifecycle</small></article>
+    </section>
+
+    <section class="grid two">
+      <article class="panel chart-panel">
+        <div class="panel-head"><div><p class="eyebrow">RETENTION</p><h2>Returned vs. dropped off</h2></div></div>
+        <div class="donut-wrap"><canvas id="retentionChart"></canvas><div class="donut-center"><strong id="donutRate">—</strong><span>returned</span></div></div>
+        <div class="legend"><span><i class="returned-dot"></i> Returned <b id="returnedCount">—</b></span><span><i class="dropped-dot"></i> Did not return <b id="droppedCount">—</b></span></div>
+      </article>
+      <article class="panel chart-panel">
+        <div class="panel-head"><div><p class="eyebrow">ONBOARDING SIGNALS</p><h2>Experience comparison</h2></div></div>
+        <canvas id="comparisonChart"></canvas>
+      </article>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head"><div><p class="eyebrow">DROP-OFF ANALYSIS</p><h2>Potential friction factors</h2></div><span class="pill">Evidence-based cohort comparison</span></div>
+      <div id="factors" class="factors"></div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head"><div><p class="eyebrow">MAINTAINER ACTIONS</p><h2>Recommended interventions</h2></div></div>
+      <div id="recommendations" class="recommendations"></div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head"><div><p class="eyebrow">CONTRIBUTOR COHORT</p><h2>First contribution profiles</h2></div><input id="search" class="search" placeholder="Search contributor…" /></div>
+      <div class="table-wrap"><table><thead><tr><th>Contributor</th><th>Status</th><th>First response</th><th>Review time</th><th>Merge time</th><th>Review rounds</th><th>PR result</th></tr></thead><tbody id="contributors"></tbody></table></div>
+    </section>
+
+    <footer>Contributor Retention Analytics · Sprint 1 MVP · Designed for maintainer decision support</footer>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
