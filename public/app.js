@@ -10,6 +10,7 @@ const DEFAULT_REPO = 'expressjs/express';
 function setLoading(on){ $('loading').classList.toggle('hidden', !on); $('error').classList.add('hidden'); }
 function showError(msg){ $('loading').classList.add('hidden'); $('error').textContent = msg; $('error').classList.remove('hidden'); }
 
+
 function render(d, mode='Demo Mode') {
   data = d;
   $('modeText').textContent = mode;
