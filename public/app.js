@@ -23,7 +23,7 @@ function render(d, mode='Demo Mode') {
   $('droppedCount').textContent = d.dropped;
 
   if(retentionChart) retentionChart.destroy();
-  retentionChart = new Chart($('retentionChart'), {type:'doughnut', data:{labels:['Returned','Did not return'],datasets:[{data:[d.returned,d.dropped],backgroundColor:['#5b5ce2','#e3e6ed'],borderWidth:0}]},options:{cutout:'74%',plugins:{legend:{display:false}}}});
+  retentionChart = new Chart($('retentionChart'), {type:'doughnut', data:{labels:['Returned','Did not return'],datasets:[{data:[d.returned,d.dropped],backgroundColor:['#1ed760','#303733'],borderWidth:0}]},options:{cutout:'74%',plugins:{legend:{display:false}}}});
 
   const r = d.contributors.filter(c=>c.returned), x = d.contributors.filter(c=>!c.returned);
   const metrics = [
@@ -33,7 +33,7 @@ function render(d, mode='Demo Mode') {
     ['Merge time (d)', r.map(c=>c.mergeDays), x.map(c=>c.mergeDays)]
   ];
   if(comparisonChart) comparisonChart.destroy();
-  comparisonChart = new Chart($('comparisonChart'), {type:'bar',data:{labels:metrics.map(m=>m[0]),datasets:[{label:'Returned',data:metrics.map(m=>avg(m[1])),backgroundColor:'#5b5ce2',borderRadius:5},{label:'Did not return',data:metrics.map(m=>avg(m[2])),backgroundColor:'#dfe2e9',borderRadius:5}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'bottom',labels:{font:{size:10}}}},scales:{x:{grid:{display:false},ticks:{font:{size:9}}},y:{beginAtZero:true,grid:{color:'#eef0f4'},ticks:{font:{size:9}}}}}});
+  comparisonChart = new Chart($('comparisonChart'), {type:'bar',data:{labels:metrics.map(m=>m[0]),datasets:[{label:'Returned',data:metrics.map(m=>avg(m[1])),backgroundColor:'#303733',borderRadius:5}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'bottom',labels:{font:{size:10}}}},scales:{x:{grid:{display:false},ticks:{font:{size:9}}},y:{beginAtZero:true,grid:{color:'#eef0f4'},ticks:{font:{size:9}}}}}});
 
   $('factors').innerHTML = d.factors.map(f => {
     const width = Math.min(100, Math.max(8, Math.abs(f.gap)));
