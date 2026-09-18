@@ -7,8 +7,20 @@ const fmtHours = n => n >= 24 ? `${(n/24).toFixed(1)}d` : `${n.toFixed(1)}h`;
 const fmtDays = n => `${n.toFixed(1)}d`;
 const DEFAULT_REPO = 'expressjs/express';
 
-function setLoading(on){ $('loading').classList.toggle('hidden', !on); $('error').classList.add('hidden'); }
+function setLoading(on){
+  $('loading').classList.toggle('hidden', !on);
+  $('error').classList.add('hidden');
+  $('analyzeBtn').disabled = on;
+  $('demoBtn').disabled = on;
+}
 function showError(msg){ $('loading').classList.add('hidden'); $('error').textContent = msg; $('error').classList.remove('hidden'); }
+
+async function getJson(url) {
+  const response = await fetch(url);
+  const payload = await response.json().catch(() => ({}));
+  if (!response.ok) throw new Error(payload.error || 'Request failed. Please try again.');
+  return payload;
+}
 
 function render(d, mode='Demo Mode') {
   data = d;
@@ -53,10 +65,13 @@ function renderTable(){
 
 async function loadDemo(){
   setLoading(true);
-  const r = await fetch('/api/demo');
-  const d = await r.json();
-  render(d,'Demo Mode');
-  $('loading').classList.add('hidden');
+  try {
+    render(await getJson('/api/demo'), 'Demo Mode');
+  } catch(e) {
+    showError(e.message);
+  } finally {
+    setLoading(false);
+  }
 }
 
 async function analyze(){
@@ -64,12 +79,13 @@ async function analyze(){
   if(!repo) return showError('Enter a GitHub repository like owner/repository.');
   setLoading(true);
   try {
-    const r = await fetch(`/api/analyze?repo=${encodeURIComponent(repo)}`);
-    const d = await r.json();
-    if(!r.ok) throw new Error(d.error || 'Analysis failed.');
+    const d = await getJson(`/api/analyze?repo=${encodeURIComponent(repo)}`);
     render(d, `GitHub · ${repo}`);
-    $('loading').classList.add('hidden');
-  } catch(e) { showError(e.message); }
+  } catch(e) {
+    showError(e.message);
+  } finally {
+    setLoading(false);
+  }
 }
 
 $('analyzeBtn').addEventListener('click', analyze);
