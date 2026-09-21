@@ -22,6 +22,8 @@ async function getJson(url) {
   return payload;
 }
 
+function render(d, mode = 'Demo Mode') {
+
 function render(d, mode='Demo Mode') {
   data = d;
   $('modeText').textContent = mode;
