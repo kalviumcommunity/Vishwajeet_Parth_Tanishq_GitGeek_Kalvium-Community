@@ -23,8 +23,6 @@ async function getJson(url) {
 }
 
 function render(d, mode = 'Demo Mode') {
-
-function render(d, mode='Demo Mode') {
   data = d;
   $('modeText').textContent = mode;
   $('total').textContent = d.total;
