@@ -112,3 +112,33 @@ python init_db.py
 python metrics_runner.py
 ```
 
+---
+
+## SQL Filtering, Grouping & Aggregation (WHERE vs. HAVING)
+
+Demonstrates the architectural distinction between filtering row-level attributes before grouping (`WHERE`) versus filtering aggregated group metrics after grouping (`HAVING`).
+
+### Core Problem
+*"Show Enterprise customers with >$10k annual spending - do you filter before or after grouping? Do you use WHERE or HAVING?"*
+- Filter `customer_type = 'Enterprise'` **BEFORE** grouping in `WHERE` (row-level property).
+- Filter `SUM(amount) > 10000` **AFTER** grouping in `HAVING` (aggregated spend across rows).
+
+### Included Queries
+- **Core Architecture**: `queries/enterprise_annual_spending.sql`
+- **Task 1**: `queries/where_filtering.sql` (Data hygiene: status, refunds, date filtering before aggregation)
+- **Task 2**: `queries/group_by_aggregation.sql` (Multi-dimension grouping by segment & month)
+- **Task 3**: `queries/having_filtering.sql` (Group-level threshold filtering after aggregation)
+- **Task 4**: `queries/where_having_combined.sql` (Production pattern combining WHERE & HAVING)
+- **Task 5**: `queries/order_by_ranking.sql` (Top-performer isolation with `RANK()` and `LIMIT`)
+- **Bonus**: `queries/percentage_share.sql` (Analytic percentage share computation using window functions)
+
+### Running Filtering & Aggregation Validation
+```bash
+python run_filtering_analysis.py
+```
+
+### Video Guide & Documentation
+- Comprehensive engineering guide: [`WHERE_VS_HAVING_GUIDE.md`](./WHERE_VS_HAVING_GUIDE.md)
+- Step-by-step video script: [`VIDEO_SCRIPT_FILTERING.md`](./VIDEO_SCRIPT_FILTERING.md)
+
+
