@@ -66,11 +66,49 @@ contributor-retention-analytics/
 │   ├── index.html
 │   ├── app.js
 │   └── styles.css
+├── queries/
+│   ├── monthly_active_users.sql
+│   ├── revenue_by_segment.sql
+│   ├── conversion_funnel.sql
+│   ├── retention_cohort.sql
+│   └── rolling_7day_active_users.sql
 ├── data/
-│   └── demo.json
+│   ├── demo.json
+│   └── business_metrics.duckdb
+├── init_db.py
+├── metrics_runner.py
+├── main.py
+├── requirements.txt
+├── VIDEO_SCRIPT.md
 ├── .env.example
 ├── .gitignore
 ├── package.json
 ├── README.md
 └── server.js
 ```
+
+---
+
+## 2.38 SQL Business Metrics Query Design
+
+This module implements centralized, reusable SQL business metric queries that define consistent single-source-of-truth KPIs.
+
+### Included Business Metrics Queries
+- **Task 1**: `queries/monthly_active_users.sql` (Monthly Active Users with Enterprise & SMB conditional breakdown)
+- **Task 2**: `queries/revenue_by_segment.sql` (Segment revenue, order counts, AOV, and revenue per customer)
+- **Task 3**: `queries/conversion_funnel.sql` (Daily signup, verification, and first-purchase conversion funnel)
+- **Bonus**: `queries/retention_cohort.sql` (Cohort retention matrix using CTEs)
+- **Bonus**: `queries/rolling_7day_active_users.sql` (Trailing 7-day active user window)
+
+### Running Metrics & Automated Validation
+```bash
+# 1. Install dependencies
+pip install -r requirements.txt
+
+# 2. Initialize database and seed sample data
+python init_db.py
+
+# 3. Execute all queries and run validation assertions
+python metrics_runner.py
+```
+
