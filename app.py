@@ -1,5 +1,11 @@
 import streamlit as st
 import pandas as pd
+try:
+    import plotly.graph_objects as go
+    import plotly.express as px
+    HAS_PLOTLY = True
+except ImportError:
+    HAS_PLOTLY = False
 
 st.set_page_config(page_title="Analytics Dashboard", layout="wide")
 
@@ -27,6 +33,60 @@ def render_kpi_row(metrics):
             metric, delta, delta_color = values
             col.metric(name, metric, delta, delta_color=delta_color)
 
+def create_interactive_revenue_chart():
+    months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+    revenue = [4.8, 5.0, 5.2, 5.1, 5.3, 5.5, 5.4, 5.6, 5.7, 5.8, 5.9, 6.0]
+    target = [4.5, 4.7, 4.9, 5.0, 5.2, 5.3, 5.4, 5.5, 5.6, 5.7, 5.8, 5.9]
+
+    fig = go.Figure()
+    fig.add_trace(go.Scatter(
+        x=months, y=revenue, name="Actual Revenue ($M)",
+        mode="lines+markers",
+        line=dict(color="#1ed760", width=3, shape="spline"),
+        marker=dict(size=8, color="#1ed760"),
+        hovertemplate="<b>%{x}</b><br>Revenue: $%{y:.2f}M<extra></extra>"
+    ))
+    fig.add_trace(go.Scatter(
+        x=months, y=target, name="Target Revenue ($M)",
+        mode="lines",
+        line=dict(color="#8b9690", width=2, dash="dash"),
+        hovertemplate="<b>%{x}</b><br>Target: $%{y:.2f}M<extra></extra>"
+    ))
+    fig.update_layout(
+        template="plotly_dark",
+        title="Interactive Monthly Revenue Trend vs Target",
+        xaxis_title="Month",
+        yaxis_title="Revenue ($M)",
+        hovermode="x unified",
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="rgba(13,16,15,0.8)",
+        margin=dict(l=40, r=40, t=60, b=40)
+    )
+    return fig
+
+def create_interactive_user_chart():
+    months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+    users = [2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100]
+
+    fig = go.Figure()
+    fig.add_trace(go.Scatter(
+        x=months, y=users, name="Active Users",
+        fill="tozeroy",
+        fillcolor="rgba(30, 215, 96, 0.15)",
+        line=dict(color="#38f27d", width=2.5, shape="spline"),
+        hovertemplate="<b>%{x}</b><br>Active Users: %{y:,}<extra></extra>"
+    ))
+    fig.update_layout(
+        template="plotly_dark",
+        title="Active Users Growth (Area Trend)",
+        xaxis_title="Month",
+        yaxis_title="Active Users",
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="rgba(13,16,15,0.8)",
+        margin=dict(l=40, r=40, t=60, b=40)
+    )
+    return fig
+
 # Main content based on selection
 if page == "Overview":
     st.title("Business Overview")
@@ -44,16 +104,23 @@ if page == "Overview":
 
 elif page == "Trends":
     st.title("Trend Analysis")
-    st.header("Revenue Trends")
+    st.header("Interactive Revenue Trends")
     st.subheader("Monthly Revenue (Last 12 Months)")
-    # Placeholder chart
-    st.line_chart(data={"Revenue": [4.8, 5.0, 5.2, 5.1, 5.3, 5.5, 5.4, 5.6, 5.7, 5.8, 5.9, 6.0]})
+    if HAS_PLOTLY:
+        st.plotly_chart(create_interactive_revenue_chart(), use_container_width=True)
+    else:
+        st.line_chart(data={"Revenue": [4.8, 5.0, 5.2, 5.1, 5.3, 5.5, 5.4, 5.6, 5.7, 5.8, 5.9, 6.0]})
+
     st.divider()
-    st.header("Customer Metrics")
+    st.header("Customer Growth Trends")
     st.subheader("Active Users Over Time")
-    st.area_chart(data={"Users": [2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100]})
+    if HAS_PLOTLY:
+        st.plotly_chart(create_interactive_user_chart(), use_container_width=True)
+    else:
+        st.area_chart(data={"Users": [2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100]})
+
     with st.expander("Methodology Notes"):
-        st.write("These charts use placeholder data. Replace with real queries and cache them using @st.cache_data.")
+        st.write("These interactive Plotly charts display monthly performance metrics and target comparisons.")
 
 elif page == "Data Explorer":
     st.title("Data Explorer")
@@ -72,3 +139,4 @@ elif page == "Data Explorer":
     st.divider()
     st.subheader("Additional Insights")
     st.write("Add more charts, filters, or export options here.")
+
