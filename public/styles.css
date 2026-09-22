@@ -1414,9 +1414,15 @@ footer::before {
 }
 
 /* =========================================================
-   RESPONSIVE
+   RESPONSIVE & BUSINESS VISUALISATION PRINCIPLES (2.45)
 ========================================================= */
 
+/* Visual Design Principles:
+   - High Contrast & Accessible Hierarchy (Dark theme with vibrant accents)
+   - Consistent Color Semantics: #1ed760 (Success/Returned), #fb7185 (Friction/Drop-off)
+   - Clear Gestalt Grouping with Grid & Flex layouts
+   - Scalable Typography using Fluid Clamp and system fallback fonts
+*/
 @media (max-width: 1100px) {
 
   .hero {
@@ -1578,4 +1584,5 @@ footer::before {
   }
 
 }
+
 
