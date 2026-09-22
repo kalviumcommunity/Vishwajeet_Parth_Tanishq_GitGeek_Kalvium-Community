@@ -15,7 +15,8 @@ st.set_page_config(
 )
 
 st.sidebar.title("Navigation")
-page = st.sidebar.radio("Select View", ["Overview", "Dataset Upload"])
+# Updated navigation options to match the logic below
+page = st.sidebar.radio("Select View", ["Overview", "Data Explorer"])
 
 
 def get_placeholder_metrics():
@@ -30,7 +31,8 @@ def get_placeholder_metrics():
 def render_kpi_row(metrics):
     """Render executive KPI cards with summary metrics, trend deltas, and target indicators."""
     cols = st.columns(len(metrics))
-
+    for col, (label, (value, delta)) in zip(cols, metrics.items()):
+        col.metric(label=label, value=value, delta=delta)
 
 
 def create_interactive_revenue_chart():
