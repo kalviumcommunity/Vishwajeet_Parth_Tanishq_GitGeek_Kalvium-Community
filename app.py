@@ -24,14 +24,17 @@ def get_placeholder_metrics():
     }
 
 def render_kpi_row(metrics):
+    """Render executive KPI cards with summary metrics, trend deltas, and target indicators."""
     cols = st.columns(len(metrics))
     for (col, (name, values)) in zip(cols, metrics.items()):
-        if len(values) == 2:
-            metric, delta = values
-            col.metric(name, metric, delta)
-        else:
-            metric, delta, delta_color = values
-            col.metric(name, metric, delta, delta_color=delta_color)
+        with col:
+            if len(values) == 2:
+                metric, delta = values
+                st.metric(label=f"📊 {name}", value=metric, delta=delta, help=f"Key metric tracking {name.lower()} against prior period.")
+            else:
+                metric, delta, delta_color = values
+                st.metric(label=f"⚡ {name}", value=metric, delta=delta, delta_color=delta_color, help=f"Core performance indicator: {name}.")
+
 
 def create_interactive_revenue_chart():
     months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
