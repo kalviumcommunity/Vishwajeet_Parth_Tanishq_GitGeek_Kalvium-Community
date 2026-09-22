@@ -141,4 +141,61 @@ python run_filtering_analysis.py
 - Comprehensive engineering guide: [`WHERE_VS_HAVING_GUIDE.md`](./WHERE_VS_HAVING_GUIDE.md)
 - Step-by-step video script: [`VIDEO_SCRIPT_FILTERING.md`](./VIDEO_SCRIPT_FILTERING.md)
 
+---
+
+## 2.40 SQL Joins & Multi-Table Analysis
+
+Demonstrates relational joins, referential integrity audits, and multi-table data lineage validation without duplicate fan-out.
+
+### Key Capabilities
+- **Task 1**: `queries/task1_left_join_orders.sql` & `queries/join_row_count_validation.sql` (LEFT JOIN with row count expansion validation)
+- **Task 2**: `queries/task2_unmatched_customers.sql` & `queries/task2_orphaned_orders.sql` (IS NULL audit for inactive users & orphaned records)
+- **Task 3**: `queries/task3_inner_join.sql`, `queries/task3_left_join.sql`, `queries/task3_full_outer_join.sql` (Mathematical join comparison)
+- **Task 4**: `queries/task4_multi_table_join.sql` (4-table lineage join with zero-duplication financial validation)
+- **Task 5**: Strategy documentation in [`JOIN_STRATEGY_DOCUMENTATION.md`](./JOIN_STRATEGY_DOCUMENTATION.md) and [`VIDEO_SCRIPT_JOINS.md`](./VIDEO_SCRIPT_JOINS.md)
+
+### Running Joins Validation
+```bash
+python joins_runner.py
+```
+
+---
+
+## 2.28 Distribution Analysis for Business Trends
+
+Statistical distribution analysis, skewness and kurtosis computation, visualization, and customer segment decomposition to prevent misleading metric reporting.
+
+### Core Business Problem
+*"A revenue dataset has an arithmetic mean of $5,000. But 80% of customers spend under $500 (median $454), while a handful of enterprise accounts spend $50,000. The mean is dangerously misleading; distribution analysis is required to reveal the true bimodal business structure."*
+
+### Key Deliverables & Capabilities
+- **Task 1: Summary Statistics & Central Tendency Comparison**:
+  - Highlights the $5,000 mean vs. $454 median distortion.
+  - Demonstrates why median and IQR best reflect the typical customer in skewed distributions.
+- **Task 2: Skewness & Kurtosis Statistical Interpretation**:
+  - `skewness = stats.skew(df['revenue'])` (2.21 > 1.0 $\rightarrow$ Highly skewed, use median).
+  - `kurtosis = stats.kurtosis(df['revenue'])` (3.51 > 3.0 $\rightarrow$ Heavy tails, expect extreme outliers).
+- **Task 3: Visualizing Distributions (Histogram & KDE)**:
+  - 50-bin discrete histogram with mean and median lines.
+  - Smooth Kernel Density Estimate (KDE) plot showing continuous probability density.
+- **Task 4: Segment Comparison & Bimodal Decomposition**:
+  - Contrasts High-Value (> Q3) vs. Low-Value (< Q1) customer tiers.
+  - Bimodal decomposition separating Small Business (mean $444) from Enterprise (mean $23,222).
+  - Multi-panel visual plot saved to [`public/distribution_analysis.png`](./public/distribution_analysis.png).
+- **Task 5: Automated Verification Assertions**:
+  - Validates statistical thresholds, sample sizes, and chart outputs.
+
+### Running Distribution Analysis
+```bash
+# Run standalone distribution analysis
+python distribution_runner.py
+
+# Run full project analytics suite (all modules)
+python main.py
+```
+
+### Video Guide & Documentation
+- Comprehensive engineering guide: [`DISTRIBUTION_ANALYSIS_GUIDE.md`](./DISTRIBUTION_ANALYSIS_GUIDE.md)
+- Step-by-step video script: [`VIDEO_SCRIPT_DISTRIBUTION.md`](./VIDEO_SCRIPT_DISTRIBUTION.md)
+
 

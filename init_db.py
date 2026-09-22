@@ -182,8 +182,64 @@ def init_database(db_path=DB_PATH):
     (10, NOW() - INTERVAL '45 days', NULL, NULL);
     """)
 
+    # 7. Seed Customer Revenue Distribution (Module 2.28: Distribution Analysis)
+    # Model a realistic business revenue dataset:
+    # 80% SMB customers with revenue < $500 (median ~$450)
+    # 20% Enterprise customers spending up to $50,000 (mean ~$5,000)
+    con.execute("""
+    CREATE OR REPLACE TABLE customer_revenue (
+        customer_id INTEGER PRIMARY KEY,
+        customer_name VARCHAR NOT NULL,
+        customer_type VARCHAR NOT NULL,
+        revenue DOUBLE NOT NULL,
+        orders_count INTEGER NOT NULL,
+        signup_date DATE NOT NULL
+    );
+    """)
+
+    import numpy as np
+    np.random.seed(42)
+    n_smb = 800
+    n_ent = 200
+    total_customers = n_smb + n_ent
+
+    smb_rev = np.random.normal(loc=445.0, scale=30.0, size=n_smb)
+    smb_rev = np.clip(smb_rev, 100.0, 499.0)
+
+    ent_rev = np.random.uniform(low=12000.0, high=50000.0, size=n_ent)
+    target_ent_mean = (5000.0 * total_customers - smb_rev.sum()) / n_ent
+    ent_rev = ent_rev - ent_rev.mean() + target_ent_mean
+
+    rev_rows = []
+    base_date = date(2023, 1, 1)
+
+    for i in range(n_smb):
+        c_id = i + 1
+        name = f"SMB Customer {c_id}"
+        c_type = "Small Business"
+        r_val = round(float(smb_rev[i]), 2)
+        orders = random.randint(1, 4)
+        s_date = base_date + timedelta(days=i % 365)
+        rev_rows.append((c_id, name, c_type, r_val, orders, s_date))
+
+    for j in range(n_ent):
+        c_id = n_smb + j + 1
+        name = f"Enterprise Customer {c_id}"
+        c_type = "Enterprise"
+        r_val = round(float(ent_rev[j]), 2)
+        orders = random.randint(10, 50)
+        s_date = base_date + timedelta(days=(j * 3) % 365)
+        rev_rows.append((c_id, name, c_type, r_val, orders, s_date))
+
+    con.executemany("INSERT INTO customer_revenue VALUES (?, ?, ?, ?, ?, ?)", rev_rows)
+
+    # Export to CSV for standalone convenience
+    csv_path = os.path.join(os.path.dirname(__file__), 'data', 'customer_revenue.csv')
+    con.execute(f"COPY customer_revenue TO '{csv_path}' (HEADER, DELIMITER ',')")
+
     con.close()
-    print(f"Database initialized and populated with Joins & Orders schema at: {db_path}")
+    print(f"Database initialized and populated at: {db_path}")
+    print(f"Customer revenue distribution data exported to: {csv_path}")
 
 if __name__ == '__main__':
     init_database()
