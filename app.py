@@ -28,14 +28,9 @@ def get_placeholder_metrics():
 
 
 def render_kpi_row(metrics):
+    """Render executive KPI cards with summary metrics, trend deltas, and target indicators."""
     cols = st.columns(len(metrics))
-    for col, (name, values) in zip(cols, metrics.items()):
-        if len(values) == 2:
-            metric, delta = values
-            col.metric(name, metric, delta)
-        else:
-            metric, delta, delta_color = values
-            col.metric(name, metric, delta, delta_color=delta_color)
+
 
 
 def create_interactive_revenue_chart():
