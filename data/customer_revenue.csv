@@ -1,0 +1,1001 @@
+customer_id,customer_name,customer_type,revenue,orders_count,signup_date
+1,SMB Customer 1,Small Business,459.9,1,2023-01-01
+2,SMB Customer 2,Small Business,440.85,1,2023-01-02
+3,SMB Customer 3,Small Business,464.43,2,2023-01-03
+4,SMB Customer 4,Small Business,490.69,4,2023-01-04
+5,SMB Customer 5,Small Business,437.98,4,2023-01-05
+6,SMB Customer 6,Small Business,437.98,3,2023-01-06
+7,SMB Customer 7,Small Business,492.38,1,2023-01-07
+8,SMB Customer 8,Small Business,468.02,3,2023-01-08
+9,SMB Customer 9,Small Business,430.92,4,2023-01-09
+10,SMB Customer 10,Small Business,461.28,2,2023-01-10
+11,SMB Customer 11,Small Business,431.1,3,2023-01-11
+12,SMB Customer 12,Small Business,431.03,3,2023-01-12
+13,SMB Customer 13,Small Business,452.26,1,2023-01-13
+14,SMB Customer 14,Small Business,387.6,4,2023-01-14
+15,SMB Customer 15,Small Business,393.25,2,2023-01-15
+16,SMB Customer 16,Small Business,428.13,3,2023-01-16
+17,SMB Customer 17,Small Business,414.62,2,2023-01-17
+18,SMB Customer 18,Small Business,454.43,3,2023-01-18
+19,SMB Customer 19,Small Business,417.76,3,2023-01-19
+20,SMB Customer 20,Small Business,402.63,2,2023-01-20
+21,SMB Customer 21,Small Business,488.97,3,2023-01-21
+22,SMB Customer 22,Small Business,438.23,3,2023-01-22
+23,SMB Customer 23,Small Business,447.03,1,2023-01-23
+24,SMB Customer 24,Small Business,402.26,2,2023-01-24
+25,SMB Customer 25,Small Business,428.67,3,2023-01-25
+26,SMB Customer 26,Small Business,448.33,4,2023-01-26
+27,SMB Customer 27,Small Business,410.47,4,2023-01-27
+28,SMB Customer 28,Small Business,456.27,2,2023-01-28
+29,SMB Customer 29,Small Business,426.98,1,2023-01-29
+30,SMB Customer 30,Small Business,436.25,1,2023-01-30
+31,SMB Customer 31,Small Business,426.95,3,2023-01-31
+32,SMB Customer 32,Small Business,499.0,4,2023-02-01
+33,SMB Customer 33,Small Business,444.6,1,2023-02-02
+34,SMB Customer 34,Small Business,413.27,1,2023-02-03
+35,SMB Customer 35,Small Business,469.68,2,2023-02-04
+36,SMB Customer 36,Small Business,408.37,1,2023-02-05
+37,SMB Customer 37,Small Business,451.27,3,2023-02-06
+38,SMB Customer 38,Small Business,386.21,1,2023-02-07
+39,SMB Customer 39,Small Business,405.15,3,2023-02-08
+40,SMB Customer 40,Small Business,450.91,3,2023-02-09
+41,SMB Customer 41,Small Business,467.15,2,2023-02-10
+42,SMB Customer 42,Small Business,450.14,1,2023-02-11
+43,SMB Customer 43,Small Business,441.53,1,2023-02-12
+44,SMB Customer 44,Small Business,435.97,1,2023-02-13
+45,SMB Customer 45,Small Business,400.64,2,2023-02-14
+46,SMB Customer 46,Small Business,423.4,4,2023-02-15
+47,SMB Customer 47,Small Business,431.18,3,2023-02-16
+48,SMB Customer 48,Small Business,476.71,2,2023-02-17
+49,SMB Customer 49,Small Business,455.31,1,2023-02-18
+50,SMB Customer 50,Small Business,392.11,2,2023-02-19
+51,SMB Customer 51,Small Business,454.72,4,2023-02-20
+52,SMB Customer 52,Small Business,433.45,1,2023-02-21
+53,SMB Customer 53,Small Business,424.69,3,2023-02-22
+54,SMB Customer 54,Small Business,463.35,2,2023-02-23
+55,SMB Customer 55,Small Business,475.93,1,2023-02-24
+56,SMB Customer 56,Small Business,472.94,4,2023-02-25
+57,SMB Customer 57,Small Business,419.82,3,2023-02-26
+58,SMB Customer 58,Small Business,435.72,2,2023-02-27
+59,SMB Customer 59,Small Business,454.94,1,2023-02-28
+60,SMB Customer 60,Small Business,474.27,1,2023-03-01
+61,SMB Customer 61,Small Business,430.62,1,2023-03-02
+62,SMB Customer 62,Small Business,439.43,4,2023-03-03
+63,SMB Customer 63,Small Business,411.81,1,2023-03-04
+64,SMB Customer 64,Small Business,409.11,1,2023-03-05
+65,SMB Customer 65,Small Business,469.38,1,2023-03-06
+66,SMB Customer 66,Small Business,485.69,1,2023-03-07
+67,SMB Customer 67,Small Business,442.84,3,2023-03-08
+68,SMB Customer 68,Small Business,475.11,2,2023-03-09
+69,SMB Customer 69,Small Business,455.85,3,2023-03-10
+70,SMB Customer 70,Small Business,425.65,2,2023-03-11
+71,SMB Customer 71,Small Business,455.84,4,2023-03-12
+72,SMB Customer 72,Small Business,491.14,2,2023-03-13
+73,SMB Customer 73,Small Business,443.93,4,2023-03-14
+74,SMB Customer 74,Small Business,491.94,1,2023-03-15
+75,SMB Customer 75,Small Business,366.41,3,2023-03-16
+76,SMB Customer 76,Small Business,469.66,2,2023-03-17
+77,SMB Customer 77,Small Business,447.61,3,2023-03-18
+78,SMB Customer 78,Small Business,436.03,1,2023-03-19
+79,SMB Customer 79,Small Business,447.75,1,2023-03-20
+80,SMB Customer 80,Small Business,385.37,1,2023-03-21
+81,SMB Customer 81,Small Business,438.41,1,2023-03-22
+82,SMB Customer 82,Small Business,455.71,2,2023-03-23
+83,SMB Customer 83,Small Business,489.34,4,2023-03-24
+84,SMB Customer 84,Small Business,429.45,3,2023-03-25
+85,SMB Customer 85,Small Business,420.75,3,2023-03-26
+86,SMB Customer 86,Small Business,429.95,1,2023-03-27
+87,SMB Customer 87,Small Business,472.46,1,2023-03-28
+88,SMB Customer 88,Small Business,454.86,2,2023-03-29
+89,SMB Customer 89,Small Business,429.11,1,2023-03-30
+90,SMB Customer 90,Small Business,460.4,4,2023-03-31
+91,SMB Customer 91,Small Business,447.91,1,2023-04-01
+92,SMB Customer 92,Small Business,474.06,2,2023-04-02
+93,SMB Customer 93,Small Business,423.94,4,2023-04-03
+94,SMB Customer 94,Small Business,435.17,1,2023-04-04
+95,SMB Customer 95,Small Business,433.24,2,2023-04-05
+96,SMB Customer 96,Small Business,401.09,4,2023-04-06
+97,SMB Customer 97,Small Business,453.88,4,2023-04-07
+98,SMB Customer 98,Small Business,452.83,2,2023-04-08
+99,SMB Customer 99,Small Business,445.15,2,2023-04-09
+100,SMB Customer 100,Small Business,437.96,1,2023-04-10
+101,SMB Customer 101,Small Business,402.54,1,2023-04-11
+102,SMB Customer 102,Small Business,432.38,3,2023-04-12
+103,SMB Customer 103,Small Business,434.72,1,2023-04-13
+104,SMB Customer 104,Small Business,420.93,3,2023-04-14
+105,SMB Customer 105,Small Business,440.16,1,2023-04-15
+106,SMB Customer 106,Small Business,457.12,3,2023-04-16
+107,SMB Customer 107,Small Business,499.0,2,2023-04-17
+108,SMB Customer 108,Small Business,450.24,3,2023-04-18
+109,SMB Customer 109,Small Business,452.73,4,2023-04-19
+110,SMB Customer 110,Small Business,442.77,2,2023-04-20
+111,SMB Customer 111,Small Business,387.44,3,2023-04-21
+112,SMB Customer 112,Small Business,444.2,4,2023-04-22
+113,SMB Customer 113,Small Business,446.81,4,2023-04-23
+114,SMB Customer 114,Small Business,499.0,2,2023-04-24
+115,SMB Customer 115,Small Business,439.23,1,2023-04-25
+116,SMB Customer 116,Small Business,454.05,1,2023-04-26
+117,SMB Customer 117,Small Business,443.96,4,2023-04-27
+118,SMB Customer 118,Small Business,409.94,1,2023-04-28
+119,SMB Customer 119,Small Business,479.28,2,2023-04-29
+120,SMB Customer 120,Small Business,467.56,2,2023-04-30
+121,SMB Customer 121,Small Business,468.73,3,2023-05-01
+122,SMB Customer 122,Small Business,417.72,2,2023-05-02
+123,SMB Customer 123,Small Business,487.08,1,2023-05-03
+124,SMB Customer 124,Small Business,402.94,2,2023-05-04
+125,SMB Customer 125,Small Business,462.61,3,2023-05-05
+126,SMB Customer 126,Small Business,499.0,2,2023-05-06
+127,SMB Customer 127,Small Business,415.28,3,2023-05-07
+128,SMB Customer 128,Small Business,428.01,1,2023-05-08
+129,SMB Customer 129,Small Business,447.99,4,2023-05-09
+130,SMB Customer 130,Small Business,429.9,1,2023-05-10
+131,SMB Customer 131,Small Business,398.48,1,2023-05-11
+132,SMB Customer 132,Small Business,447.06,1,2023-05-12
+133,SMB Customer 133,Small Business,413.13,4,2023-05-13
+134,SMB Customer 134,Small Business,459.21,4,2023-05-14
+135,SMB Customer 135,Small Business,417.42,3,2023-05-15
+136,SMB Customer 136,Small Business,491.5,1,2023-05-16
+137,SMB Customer 137,Small Business,421.5,1,2023-05-17
+138,SMB Customer 138,Small Business,435.34,3,2023-05-18
+139,SMB Customer 139,Small Business,469.41,2,2023-05-19
+140,SMB Customer 140,Small Business,408.07,3,2023-05-20
+141,SMB Customer 141,Small Business,451.82,2,2023-05-21
+142,SMB Customer 142,Small Business,484.21,2,2023-05-22
+143,SMB Customer 143,Small Business,396.78,1,2023-05-23
+144,SMB Customer 144,Small Business,450.54,3,2023-05-24
+145,SMB Customer 145,Small Business,452.8,3,2023-05-25
+146,SMB Customer 146,Small Business,468.45,1,2023-05-26
+147,SMB Customer 147,Small Business,407.89,2,2023-05-27
+148,SMB Customer 148,Small Business,405.39,2,2023-05-28
+149,SMB Customer 149,Small Business,460.66,3,2023-05-29
+150,SMB Customer 150,Small Business,453.91,1,2023-05-30
+151,SMB Customer 151,Small Business,452.51,4,2023-05-31
+152,SMB Customer 152,Small Business,455.39,2,2023-06-01
+153,SMB Customer 153,Small Business,424.6,4,2023-06-02
+154,SMB Customer 154,Small Business,451.97,4,2023-06-03
+155,SMB Customer 155,Small Business,453.79,1,2023-06-04
+156,SMB Customer 156,Small Business,423.57,3,2023-06-05
+157,SMB Customer 157,Small Business,499.0,3,2023-06-06
+158,SMB Customer 158,Small Business,459.21,2,2023-06-07
+159,SMB Customer 159,Small Business,409.26,3,2023-06-08
+160,SMB Customer 160,Small Business,464.7,1,2023-06-09
+161,SMB Customer 161,Small Business,415.76,1,2023-06-10
+162,SMB Customer 162,Small Business,468.61,2,2023-06-11
+163,SMB Customer 163,Small Business,479.76,3,2023-06-12
+164,SMB Customer 164,Small Business,420.38,2,2023-06-13
+165,SMB Customer 165,Small Business,473.9,3,2023-06-14
+166,SMB Customer 166,Small Business,457.38,4,2023-06-15
+167,SMB Customer 167,Small Business,469.66,1,2023-06-16
+168,SMB Customer 168,Small Business,499.0,3,2023-06-17
+169,SMB Customer 169,Small Business,437.64,1,2023-06-18
+170,SMB Customer 170,Small Business,422.39,1,2023-06-19
+171,SMB Customer 171,Small Business,418.31,2,2023-06-20
+172,SMB Customer 172,Small Business,420.53,3,2023-06-21
+173,SMB Customer 173,Small Business,442.69,4,2023-06-22
+174,SMB Customer 174,Small Business,455.23,3,2023-06-23
+175,SMB Customer 175,Small Business,453.3,1,2023-06-24
+176,SMB Customer 176,Small Business,469.82,4,2023-06-25
+177,SMB Customer 177,Small Business,445.39,1,2023-06-26
+178,SMB Customer 178,Small Business,488.61,1,2023-06-27
+179,SMB Customer 179,Small Business,437.06,3,2023-06-28
+180,SMB Customer 180,Small Business,499.0,2,2023-06-29
+181,SMB Customer 181,Small Business,463.77,1,2023-06-30
+182,SMB Customer 182,Small Business,419.29,1,2023-07-01
+183,SMB Customer 183,Small Business,412.87,4,2023-07-02
+184,SMB Customer 184,Small Business,459.47,3,2023-07-03
+185,SMB Customer 185,Small Business,438.3,3,2023-07-04
+186,SMB Customer 186,Small Business,466.42,3,2023-07-05
+187,SMB Customer 187,Small Business,459.2,1,2023-07-06
+188,SMB Customer 188,Small Business,442.82,4,2023-07-07
+189,SMB Customer 189,Small Business,419.6,1,2023-07-08
+190,SMB Customer 190,Small Business,399.55,2,2023-07-09
+191,SMB Customer 191,Small Business,431.6,3,2023-07-10
+192,SMB Customer 192,Small Business,470.69,1,2023-07-11
+193,SMB Customer 193,Small Business,451.42,3,2023-07-12
+194,SMB Customer 194,Small Business,407.63,3,2023-07-13
+195,SMB Customer 195,Small Business,450.2,4,2023-07-14
+196,SMB Customer 196,Small Business,456.56,2,2023-07-15
+197,SMB Customer 197,Small Business,418.48,2,2023-07-16
+198,SMB Customer 198,Small Business,449.61,2,2023-07-17
+199,SMB Customer 199,Small Business,446.75,3,2023-07-18
+200,SMB Customer 200,Small Business,410.71,3,2023-07-19
+201,SMB Customer 201,Small Business,455.73,3,2023-07-20
+202,SMB Customer 202,Small Business,461.82,3,2023-07-21
+203,SMB Customer 203,Small Business,477.49,3,2023-07-22
+204,SMB Customer 204,Small Business,476.61,2,2023-07-23
+205,SMB Customer 205,Small Business,403.67,2,2023-07-24
+206,SMB Customer 206,Small Business,416.87,3,2023-07-25
+207,SMB Customer 207,Small Business,460.45,4,2023-07-26
+208,SMB Customer 208,Small Business,460.41,2,2023-07-27
+209,SMB Customer 209,Small Business,460.45,3,2023-07-28
+210,SMB Customer 210,Small Business,499.0,1,2023-07-29
+211,SMB Customer 211,Small Business,462.13,4,2023-07-30
+212,SMB Customer 212,Small Business,479.07,4,2023-07-31
+213,SMB Customer 213,Small Business,473.62,1,2023-08-01
+214,SMB Customer 214,Small Business,464.54,1,2023-08-02
+215,SMB Customer 215,Small Business,435.54,1,2023-08-03
+216,SMB Customer 216,Small Business,467.77,3,2023-08-04
+217,SMB Customer 217,Small Business,421.82,1,2023-08-05
+218,SMB Customer 218,Small Business,437.9,4,2023-08-06
+219,SMB Customer 219,Small Business,430.44,2,2023-08-07
+220,SMB Customer 220,Small Business,447.46,2,2023-08-08
+221,SMB Customer 221,Small Business,499.0,3,2023-08-09
+222,SMB Customer 222,Small Business,388.98,1,2023-08-10
+223,SMB Customer 223,Small Business,465.59,3,2023-08-11
+224,SMB Customer 224,Small Business,396.62,1,2023-08-12
+225,SMB Customer 225,Small Business,430.84,2,2023-08-13
+226,SMB Customer 226,Small Business,477.67,1,2023-08-14
+227,SMB Customer 227,Small Business,446.93,4,2023-08-15
+228,SMB Customer 228,Small Business,412.67,3,2023-08-16
+229,SMB Customer 229,Small Business,423.54,3,2023-08-17
+230,SMB Customer 230,Small Business,465.39,4,2023-08-18
+231,SMB Customer 231,Small Business,423.09,2,2023-08-19
+232,SMB Customer 232,Small Business,451.49,2,2023-08-20
+233,SMB Customer 233,Small Business,446.37,4,2023-08-21
+234,SMB Customer 234,Small Business,425.45,2,2023-08-22
+235,SMB Customer 235,Small Business,499.0,4,2023-08-23
+236,SMB Customer 236,Small Business,464.02,1,2023-08-24
+237,SMB Customer 237,Small Business,384.25,3,2023-08-25
+238,SMB Customer 238,Small Business,450.59,2,2023-08-26
+239,SMB Customer 239,Small Business,425.15,1,2023-08-27
+240,SMB Customer 240,Small Business,470.57,1,2023-08-28
+241,SMB Customer 241,Small Business,421.22,2,2023-08-29
+242,SMB Customer 242,Small Business,441.56,4,2023-08-30
+243,SMB Customer 243,Small Business,460.15,2,2023-08-31
+244,SMB Customer 244,Small Business,470.97,2,2023-09-01
+245,SMB Customer 245,Small Business,408.99,2,2023-09-02
+246,SMB Customer 246,Small Business,434.96,2,2023-09-03
+247,SMB Customer 247,Small Business,430.75,3,2023-09-04
+248,SMB Customer 248,Small Business,425.4,2,2023-09-05
+249,SMB Customer 249,Small Business,497.96,3,2023-09-06
+250,SMB Customer 250,Small Business,457.15,3,2023-09-07
+251,SMB Customer 251,Small Business,407.17,1,2023-09-08
+252,SMB Customer 252,Small Business,472.54,4,2023-09-09
+253,SMB Customer 253,Small Business,499.0,1,2023-09-10
+254,SMB Customer 254,Small Business,475.97,4,2023-09-11
+255,SMB Customer 255,Small Business,399.42,4,2023-09-12
+256,SMB Customer 256,Small Business,430.47,4,2023-09-13
+257,SMB Customer 257,Small Business,483.01,4,2023-09-14
+258,SMB Customer 258,Small Business,423.77,2,2023-09-15
+259,SMB Customer 259,Small Business,458.31,4,2023-09-16
+260,SMB Customer 260,Small Business,468.24,4,2023-09-17
+261,SMB Customer 261,Small Business,417.19,3,2023-09-18
+262,SMB Customer 262,Small Business,443.21,3,2023-09-19
+263,SMB Customer 263,Small Business,347.76,1,2023-09-20
+264,SMB Customer 264,Small Business,414.27,1,2023-09-21
+265,SMB Customer 265,Small Business,437.42,2,2023-09-22
+266,SMB Customer 266,Small Business,407.57,1,2023-09-23
+267,SMB Customer 267,Small Business,493.97,2,2023-09-24
+268,SMB Customer 268,Small Business,402.1,2,2023-09-25
+269,SMB Customer 269,Small Business,431.8,4,2023-09-26
+270,SMB Customer 270,Small Business,448.92,2,2023-09-27
+271,SMB Customer 271,Small Business,488.24,4,2023-09-28
+272,SMB Customer 272,Small Business,401.92,2,2023-09-29
+273,SMB Customer 273,Small Business,479.89,1,2023-09-30
+274,SMB Customer 274,Small Business,445.31,4,2023-10-01
+275,SMB Customer 275,Small Business,415.55,1,2023-10-02
+276,SMB Customer 276,Small Business,458.86,3,2023-10-03
+277,SMB Customer 277,Small Business,450.97,3,2023-10-04
+278,SMB Customer 278,Small Business,426.99,4,2023-10-05
+279,SMB Customer 279,Small Business,447.09,2,2023-10-06
+280,SMB Customer 280,Small Business,433.44,3,2023-10-07
+281,SMB Customer 281,Small Business,448.41,1,2023-10-08
+282,SMB Customer 282,Small Business,464.86,1,2023-10-09
+283,SMB Customer 283,Small Business,492.58,4,2023-10-10
+284,SMB Customer 284,Small Business,407.87,1,2023-10-11
+285,SMB Customer 285,Small Business,499.0,4,2023-10-12
+286,SMB Customer 286,Small Business,386.44,2,2023-10-13
+287,SMB Customer 287,Small Business,440.45,4,2023-10-14
+288,SMB Customer 288,Small Business,462.65,2,2023-10-15
+289,SMB Customer 289,Small Business,453.43,4,2023-10-16
+290,SMB Customer 290,Small Business,426.32,4,2023-10-17
+291,SMB Customer 291,Small Business,438.76,1,2023-10-18
+292,SMB Customer 292,Small Business,430.21,1,2023-10-19
+293,SMB Customer 293,Small Business,427.32,3,2023-10-20
+294,SMB Customer 294,Small Business,470.49,2,2023-10-21
+295,SMB Customer 295,Small Business,455.71,2,2023-10-22
+296,SMB Customer 296,Small Business,424.21,2,2023-10-23
+297,SMB Customer 297,Small Business,471.99,3,2023-10-24
+298,SMB Customer 298,Small Business,454.22,2,2023-10-25
+299,SMB Customer 299,Small Business,469.39,1,2023-10-26
+300,SMB Customer 300,Small Business,463.89,4,2023-10-27
+301,SMB Customer 301,Small Business,420.13,4,2023-10-28
+302,SMB Customer 302,Small Business,428.19,4,2023-10-29
+303,SMB Customer 303,Small Business,467.42,2,2023-10-30
+304,SMB Customer 304,Small Business,463.31,1,2023-10-31
+305,SMB Customer 305,Small Business,444.37,3,2023-11-01
+306,SMB Customer 306,Small Business,448.52,1,2023-11-02
+307,SMB Customer 307,Small Business,483.33,2,2023-11-03
+308,SMB Customer 308,Small Business,427.25,3,2023-11-04
+309,SMB Customer 309,Small Business,461.41,3,2023-11-05
+310,SMB Customer 310,Small Business,438.93,4,2023-11-06
+311,SMB Customer 311,Small Business,438.47,3,2023-11-07
+312,SMB Customer 312,Small Business,477.96,3,2023-11-08
+313,SMB Customer 313,Small Business,469.76,1,2023-11-09
+314,SMB Customer 314,Small Business,469.41,1,2023-11-10
+315,SMB Customer 315,Small Business,484.16,2,2023-11-11
+316,SMB Customer 316,Small Business,445.63,3,2023-11-12
+317,SMB Customer 317,Small Business,465.46,3,2023-11-13
+318,SMB Customer 318,Small Business,435.69,2,2023-11-14
+319,SMB Customer 319,Small Business,454.72,1,2023-11-15
+320,SMB Customer 320,Small Business,441.1,2,2023-11-16
+321,SMB Customer 321,Small Business,447.91,1,2023-11-17
+322,SMB Customer 322,Small Business,462.85,3,2023-11-18
+323,SMB Customer 323,Small Business,420.45,3,2023-11-19
+324,SMB Customer 324,Small Business,499.0,4,2023-11-20
+325,SMB Customer 325,Small Business,414.82,1,2023-11-21
+326,SMB Customer 326,Small Business,408.57,4,2023-11-22
+327,SMB Customer 327,Small Business,479.74,4,2023-11-23
+328,SMB Customer 328,Small Business,468.75,3,2023-11-24
+329,SMB Customer 329,Small Business,463.72,4,2023-11-25
+330,SMB Customer 330,Small Business,463.85,1,2023-11-26
+331,SMB Customer 331,Small Business,444.63,4,2023-11-27
+332,SMB Customer 332,Small Business,418.08,3,2023-11-28
+333,SMB Customer 333,Small Business,447.27,2,2023-11-29
+334,SMB Customer 334,Small Business,424.69,4,2023-11-30
+335,SMB Customer 335,Small Business,474.25,2,2023-12-01
+336,SMB Customer 336,Small Business,440.59,1,2023-12-02
+337,SMB Customer 337,Small Business,420.24,3,2023-12-03
+338,SMB Customer 338,Small Business,435.36,2,2023-12-04
+339,SMB Customer 339,Small Business,457.39,1,2023-12-05
+340,SMB Customer 340,Small Business,428.09,3,2023-12-06
+341,SMB Customer 341,Small Business,420.33,3,2023-12-07
+342,SMB Customer 342,Small Business,452.31,3,2023-12-08
+343,SMB Customer 343,Small Business,452.35,2,2023-12-09
+344,SMB Customer 344,Small Business,429.79,1,2023-12-10
+345,SMB Customer 345,Small Business,430.87,1,2023-12-11
+346,SMB Customer 346,Small Business,451.96,1,2023-12-12
+347,SMB Customer 347,Small Business,401.56,2,2023-12-13
+348,SMB Customer 348,Small Business,402.78,2,2023-12-14
+349,SMB Customer 349,Small Business,423.45,3,2023-12-15
+350,SMB Customer 350,Small Business,438.6,4,2023-12-16
+351,SMB Customer 351,Small Business,454.33,4,2023-12-17
+352,SMB Customer 352,Small Business,489.26,4,2023-12-18
+353,SMB Customer 353,Small Business,470.73,3,2023-12-19
+354,SMB Customer 354,Small Business,440.2,2,2023-12-20
+355,SMB Customer 355,Small Business,444.43,3,2023-12-21
+356,SMB Customer 356,Small Business,414.92,1,2023-12-22
+357,SMB Customer 357,Small Business,444.44,3,2023-12-23
+358,SMB Customer 358,Small Business,436.34,1,2023-12-24
+359,SMB Customer 359,Small Business,454.68,3,2023-12-25
+360,SMB Customer 360,Small Business,420.18,1,2023-12-26
+361,SMB Customer 361,Small Business,460.58,4,2023-12-27
+362,SMB Customer 362,Small Business,490.98,3,2023-12-28
+363,SMB Customer 363,Small Business,441.74,3,2023-12-29
+364,SMB Customer 364,Small Business,457.05,3,2023-12-30
+365,SMB Customer 365,Small Business,465.7,1,2023-12-31
+366,SMB Customer 366,Small Business,432.96,3,2023-01-01
+367,SMB Customer 367,Small Business,451.72,3,2023-01-02
+368,SMB Customer 368,Small Business,445.38,3,2023-01-03
+369,SMB Customer 369,Small Business,447.93,3,2023-01-04
+370,SMB Customer 370,Small Business,421.81,3,2023-01-05
+371,SMB Customer 371,Small Business,445.74,4,2023-01-06
+372,SMB Customer 372,Small Business,459.94,4,2023-01-07
+373,SMB Customer 373,Small Business,488.53,4,2023-01-08
+374,SMB Customer 374,Small Business,473.78,1,2023-01-09
+375,SMB Customer 375,Small Business,499.0,2,2023-01-10
+376,SMB Customer 376,Small Business,421.98,4,2023-01-11
+377,SMB Customer 377,Small Business,471.17,3,2023-01-12
+378,SMB Customer 378,Small Business,450.5,1,2023-01-13
+379,SMB Customer 379,Small Business,499.0,1,2023-01-14
+380,SMB Customer 380,Small Business,420.75,2,2023-01-15
+381,SMB Customer 381,Small Business,419.81,4,2023-01-16
+382,SMB Customer 382,Small Business,427.02,2,2023-01-17
+383,SMB Customer 383,Small Business,381.28,4,2023-01-18
+384,SMB Customer 384,Small Business,429.23,2,2023-01-19
+385,SMB Customer 385,Small Business,422.23,2,2023-01-20
+386,SMB Customer 386,Small Business,449.51,4,2023-01-21
+387,SMB Customer 387,Small Business,455.25,3,2023-01-22
+388,SMB Customer 388,Small Business,499.0,2,2023-01-23
+389,SMB Customer 389,Small Business,473.51,3,2023-01-24
+390,SMB Customer 390,Small Business,427.69,4,2023-01-25
+391,SMB Customer 391,Small Business,418.05,4,2023-01-26
+392,SMB Customer 392,Small Business,459.76,3,2023-01-27
+393,SMB Customer 393,Small Business,405.39,3,2023-01-28
+394,SMB Customer 394,Small Business,499.0,1,2023-01-29
+395,SMB Customer 395,Small Business,480.38,1,2023-01-30
+396,SMB Customer 396,Small Business,430.92,4,2023-01-31
+397,SMB Customer 397,Small Business,393.61,4,2023-02-01
+398,SMB Customer 398,Small Business,485.62,4,2023-02-02
+399,SMB Customer 399,Small Business,441.56,4,2023-02-03
+400,SMB Customer 400,Small Business,482.13,3,2023-02-04
+401,SMB Customer 401,Small Business,397.17,2,2023-02-05
+402,SMB Customer 402,Small Business,427.02,2,2023-02-06
+403,SMB Customer 403,Small Business,445.16,3,2023-02-07
+404,SMB Customer 404,Small Business,446.41,1,2023-02-08
+405,SMB Customer 405,Small Business,431.5,3,2023-02-09
+406,SMB Customer 406,Small Business,463.69,4,2023-02-10
+407,SMB Customer 407,Small Business,412.97,2,2023-02-11
+408,SMB Customer 408,Small Business,440.73,2,2023-02-12
+409,SMB Customer 409,Small Business,448.61,4,2023-02-13
+410,SMB Customer 410,Small Business,460.43,2,2023-02-14
+411,SMB Customer 411,Small Business,466.35,3,2023-02-15
+412,SMB Customer 412,Small Business,411.26,1,2023-02-16
+413,SMB Customer 413,Small Business,398.98,2,2023-02-17
+414,SMB Customer 414,Small Business,483.33,3,2023-02-18
+415,SMB Customer 415,Small Business,454.97,2,2023-02-19
+416,SMB Customer 416,Small Business,422.55,4,2023-02-20
+417,SMB Customer 417,Small Business,491.53,4,2023-02-21
+418,SMB Customer 418,Small Business,448.47,3,2023-02-22
+419,SMB Customer 419,Small Business,480.38,1,2023-02-23
+420,SMB Customer 420,Small Business,447.03,2,2023-02-24
+421,SMB Customer 421,Small Business,499.0,3,2023-02-25
+422,SMB Customer 422,Small Business,497.66,4,2023-02-26
+423,SMB Customer 423,Small Business,437.53,2,2023-02-27
+424,SMB Customer 424,Small Business,474.15,3,2023-02-28
+425,SMB Customer 425,Small Business,464.36,4,2023-03-01
+426,SMB Customer 426,Small Business,486.06,2,2023-03-02
+427,SMB Customer 427,Small Business,416.05,3,2023-03-03
+428,SMB Customer 428,Small Business,465.58,4,2023-03-04
+429,SMB Customer 429,Small Business,476.75,1,2023-03-05
+430,SMB Customer 430,Small Business,392.24,3,2023-03-06
+431,SMB Customer 431,Small Business,409.5,3,2023-03-07
+432,SMB Customer 432,Small Business,383.82,4,2023-03-08
+433,SMB Customer 433,Small Business,436.92,2,2023-03-09
+434,SMB Customer 434,Small Business,466.53,1,2023-03-10
+435,SMB Customer 435,Small Business,490.07,4,2023-03-11
+436,SMB Customer 436,Small Business,447.22,1,2023-03-12
+437,SMB Customer 437,Small Business,493.86,3,2023-03-13
+438,SMB Customer 438,Small Business,403.6,1,2023-03-14
+439,SMB Customer 439,Small Business,393.9,2,2023-03-15
+440,SMB Customer 440,Small Business,443.33,2,2023-03-16
+441,SMB Customer 441,Small Business,456.52,2,2023-03-17
+442,SMB Customer 442,Small Business,444.02,2,2023-03-18
+443,SMB Customer 443,Small Business,382.98,2,2023-03-19
+444,SMB Customer 444,Small Business,442.33,2,2023-03-20
+445,SMB Customer 445,Small Business,405.87,3,2023-03-21
+446,SMB Customer 446,Small Business,465.09,2,2023-03-22
+447,SMB Customer 447,Small Business,456.0,2,2023-03-23
+448,SMB Customer 448,Small Business,416.8,4,2023-03-24
+449,SMB Customer 449,Small Business,429.58,2,2023-03-25
+450,SMB Customer 450,Small Business,413.22,3,2023-03-26
+451,SMB Customer 451,Small Business,443.12,3,2023-03-27
+452,SMB Customer 452,Small Business,473.65,3,2023-03-28
+453,SMB Customer 453,Small Business,415.43,4,2023-03-29
+454,SMB Customer 454,Small Business,460.12,2,2023-03-30
+455,SMB Customer 455,Small Business,429.09,1,2023-03-31
+456,SMB Customer 456,Small Business,421.21,3,2023-04-01
+457,SMB Customer 457,Small Business,441.79,4,2023-04-02
+458,SMB Customer 458,Small Business,413.94,1,2023-04-03
+459,SMB Customer 459,Small Business,428.39,3,2023-04-04
+460,SMB Customer 460,Small Business,409.06,2,2023-04-05
+461,SMB Customer 461,Small Business,499.0,2,2023-04-06
+462,SMB Customer 462,Small Business,446.06,3,2023-04-07
+463,SMB Customer 463,Small Business,424.01,3,2023-04-08
+464,SMB Customer 464,Small Business,451.42,3,2023-04-09
+465,SMB Customer 465,Small Business,441.63,4,2023-04-10
+466,SMB Customer 466,Small Business,438.37,2,2023-04-11
+467,SMB Customer 467,Small Business,463.43,2,2023-04-12
+468,SMB Customer 468,Small Business,467.73,2,2023-04-13
+469,SMB Customer 469,Small Business,429.08,2,2023-04-14
+470,SMB Customer 470,Small Business,427.73,1,2023-04-15
+471,SMB Customer 471,Small Business,436.75,3,2023-04-16
+472,SMB Customer 472,Small Business,375.94,4,2023-04-17
+473,SMB Customer 473,Small Business,399.54,4,2023-04-18
+474,SMB Customer 474,Small Business,486.01,2,2023-04-19
+475,SMB Customer 475,Small Business,494.35,4,2023-04-20
+476,SMB Customer 476,Small Business,437.53,1,2023-04-21
+477,SMB Customer 477,Small Business,462.3,4,2023-04-22
+478,SMB Customer 478,Small Business,454.34,1,2023-04-23
+479,SMB Customer 479,Small Business,499.0,4,2023-04-24
+480,SMB Customer 480,Small Business,478.59,3,2023-04-25
+481,SMB Customer 481,Small Business,441.16,2,2023-04-26
+482,SMB Customer 482,Small Business,416.33,1,2023-04-27
+483,SMB Customer 483,Small Business,396.81,1,2023-04-28
+484,SMB Customer 484,Small Business,451.1,2,2023-04-29
+485,SMB Customer 485,Small Business,422.31,1,2023-04-30
+486,SMB Customer 486,Small Business,402.33,2,2023-05-01
+487,SMB Customer 487,Small Business,425.6,3,2023-05-02
+488,SMB Customer 488,Small Business,412.55,1,2023-05-03
+489,SMB Customer 489,Small Business,495.61,1,2023-05-04
+490,SMB Customer 490,Small Business,471.45,1,2023-05-05
+491,SMB Customer 491,Small Business,444.76,3,2023-05-06
+492,SMB Customer 492,Small Business,489.4,3,2023-05-07
+493,SMB Customer 493,Small Business,447.32,1,2023-05-08
+494,SMB Customer 494,Small Business,419.16,4,2023-05-09
+495,SMB Customer 495,Small Business,490.69,2,2023-05-10
+496,SMB Customer 496,Small Business,461.17,4,2023-05-11
+497,SMB Customer 497,Small Business,413.88,4,2023-05-12
+498,SMB Customer 498,Small Business,439.29,3,2023-05-13
+499,SMB Customer 499,Small Business,418.73,4,2023-05-14
+500,SMB Customer 500,Small Business,403.52,3,2023-05-15
+501,SMB Customer 501,Small Business,472.79,3,2023-05-16
+502,SMB Customer 502,Small Business,499.0,4,2023-05-17
+503,SMB Customer 503,Small Business,403.04,3,2023-05-18
+504,SMB Customer 504,Small Business,461.89,1,2023-05-19
+505,SMB Customer 505,Small Business,425.48,1,2023-05-20
+506,SMB Customer 506,Small Business,430.39,2,2023-05-21
+507,SMB Customer 507,Small Business,427.23,4,2023-05-22
+508,SMB Customer 508,Small Business,419.08,2,2023-05-23
+509,SMB Customer 509,Small Business,446.46,2,2023-05-24
+510,SMB Customer 510,Small Business,420.07,1,2023-05-25
+511,SMB Customer 511,Small Business,453.11,4,2023-05-26
+512,SMB Customer 512,Small Business,443.49,4,2023-05-27
+513,SMB Customer 513,Small Business,437.83,3,2023-05-28
+514,SMB Customer 514,Small Business,417.77,2,2023-05-29
+515,SMB Customer 515,Small Business,427.7,4,2023-05-30
+516,SMB Customer 516,Small Business,467.66,3,2023-05-31
+517,SMB Customer 517,Small Business,460.03,2,2023-06-01
+518,SMB Customer 518,Small Business,415.67,1,2023-06-02
+519,SMB Customer 519,Small Business,447.98,4,2023-06-03
+520,SMB Customer 520,Small Business,467.54,2,2023-06-04
+521,SMB Customer 521,Small Business,394.92,2,2023-06-05
+522,SMB Customer 522,Small Business,461.3,2,2023-06-06
+523,SMB Customer 523,Small Business,425.12,2,2023-06-07
+524,SMB Customer 524,Small Business,462.12,3,2023-06-08
+525,SMB Customer 525,Small Business,422.1,2,2023-06-09
+526,SMB Customer 526,Small Business,390.85,4,2023-06-10
+527,SMB Customer 527,Small Business,396.17,1,2023-06-11
+528,SMB Customer 528,Small Business,446.44,4,2023-06-12
+529,SMB Customer 529,Small Business,452.79,4,2023-06-13
+530,SMB Customer 530,Small Business,417.87,2,2023-06-14
+531,SMB Customer 531,Small Business,464.16,3,2023-06-15
+532,SMB Customer 532,Small Business,395.15,1,2023-06-16
+533,SMB Customer 533,Small Business,443.02,4,2023-06-17
+534,SMB Customer 534,Small Business,408.67,1,2023-06-18
+535,SMB Customer 535,Small Business,425.44,2,2023-06-19
+536,SMB Customer 536,Small Business,446.42,4,2023-06-20
+537,SMB Customer 537,Small Business,419.19,3,2023-06-21
+538,SMB Customer 538,Small Business,433.46,3,2023-06-22
+539,SMB Customer 539,Small Business,475.19,2,2023-06-23
+540,SMB Customer 540,Small Business,427.69,2,2023-06-24
+541,SMB Customer 541,Small Business,470.07,2,2023-06-25
+542,SMB Customer 542,Small Business,411.11,4,2023-06-26
+543,SMB Customer 543,Small Business,460.89,1,2023-06-27
+544,SMB Customer 544,Small Business,488.25,3,2023-06-28
+545,SMB Customer 545,Small Business,370.85,1,2023-06-29
+546,SMB Customer 546,Small Business,421.09,4,2023-06-30
+547,SMB Customer 547,Small Business,462.31,1,2023-07-01
+548,SMB Customer 548,Small Business,438.91,4,2023-07-02
+549,SMB Customer 549,Small Business,456.13,3,2023-07-03
+550,SMB Customer 550,Small Business,426.88,1,2023-07-04
+551,SMB Customer 551,Small Business,447.6,3,2023-07-05
+552,SMB Customer 552,Small Business,440.33,4,2023-07-06
+553,SMB Customer 553,Small Business,480.03,1,2023-07-07
+554,SMB Customer 554,Small Business,452.63,3,2023-07-08
+555,SMB Customer 555,Small Business,455.13,2,2023-07-09
+556,SMB Customer 556,Small Business,432.64,4,2023-07-10
+557,SMB Customer 557,Small Business,430.37,2,2023-07-11
+558,SMB Customer 558,Small Business,432.02,2,2023-07-12
+559,SMB Customer 559,Small Business,456.83,1,2023-07-13
+560,SMB Customer 560,Small Business,432.37,1,2023-07-14
+561,SMB Customer 561,Small Business,453.69,3,2023-07-15
+562,SMB Customer 562,Small Business,499.0,1,2023-07-16
+563,SMB Customer 563,Small Business,471.13,4,2023-07-17
+564,SMB Customer 564,Small Business,435.22,3,2023-07-18
+565,SMB Customer 565,Small Business,481.04,3,2023-07-19
+566,SMB Customer 566,Small Business,432.76,3,2023-07-20
+567,SMB Customer 567,Small Business,383.86,2,2023-07-21
+568,SMB Customer 568,Small Business,414.76,3,2023-07-22
+569,SMB Customer 569,Small Business,388.88,2,2023-07-23
+570,SMB Customer 570,Small Business,434.45,1,2023-07-24
+571,SMB Customer 571,Small Business,445.55,1,2023-07-25
+572,SMB Customer 572,Small Business,495.29,2,2023-07-26
+573,SMB Customer 573,Small Business,454.81,4,2023-07-27
+574,SMB Customer 574,Small Business,438.43,1,2023-07-28
+575,SMB Customer 575,Small Business,469.88,1,2023-07-29
+576,SMB Customer 576,Small Business,378.67,4,2023-07-30
+577,SMB Customer 577,Small Business,452.07,3,2023-07-31
+578,SMB Customer 578,Small Business,468.13,1,2023-08-01
+579,SMB Customer 579,Small Business,400.64,1,2023-08-02
+580,SMB Customer 580,Small Business,479.31,2,2023-08-03
+581,SMB Customer 581,Small Business,455.15,4,2023-08-04
+582,SMB Customer 582,Small Business,432.54,3,2023-08-05
+583,SMB Customer 583,Small Business,463.98,2,2023-08-06
+584,SMB Customer 584,Small Business,499.0,1,2023-08-07
+585,SMB Customer 585,Small Business,450.46,2,2023-08-08
+586,SMB Customer 586,Small Business,452.45,3,2023-08-09
+587,SMB Customer 587,Small Business,431.22,3,2023-08-10
+588,SMB Customer 588,Small Business,419.5,1,2023-08-11
+589,SMB Customer 589,Small Business,469.91,1,2023-08-12
+590,SMB Customer 590,Small Business,419.32,3,2023-08-13
+591,SMB Customer 591,Small Business,447.15,1,2023-08-14
+592,SMB Customer 592,Small Business,430.67,2,2023-08-15
+593,SMB Customer 593,Small Business,459.37,4,2023-08-16
+594,SMB Customer 594,Small Business,455.01,4,2023-08-17
+595,SMB Customer 595,Small Business,476.13,3,2023-08-18
+596,SMB Customer 596,Small Business,429.7,4,2023-08-19
+597,SMB Customer 597,Small Business,436.9,2,2023-08-20
+598,SMB Customer 598,Small Business,415.64,3,2023-08-21
+599,SMB Customer 599,Small Business,431.67,2,2023-08-22
+600,SMB Customer 600,Small Business,456.32,4,2023-08-23
+601,SMB Customer 601,Small Business,467.71,2,2023-08-24
+602,SMB Customer 602,Small Business,417.34,2,2023-08-25
+603,SMB Customer 603,Small Business,471.09,4,2023-08-26
+604,SMB Customer 604,Small Business,485.67,1,2023-08-27
+605,SMB Customer 605,Small Business,457.4,1,2023-08-28
+606,SMB Customer 606,Small Business,499.0,2,2023-08-29
+607,SMB Customer 607,Small Business,421.79,4,2023-08-30
+608,SMB Customer 608,Small Business,407.66,1,2023-08-31
+609,SMB Customer 609,Small Business,391.64,4,2023-09-01
+610,SMB Customer 610,Small Business,489.88,4,2023-09-02
+611,SMB Customer 611,Small Business,464.63,2,2023-09-03
+612,SMB Customer 612,Small Business,443.33,3,2023-09-04
+613,SMB Customer 613,Small Business,453.4,1,2023-09-05
+614,SMB Customer 614,Small Business,411.24,1,2023-09-06
+615,SMB Customer 615,Small Business,499.0,2,2023-09-07
+616,SMB Customer 616,Small Business,448.88,1,2023-09-08
+617,SMB Customer 617,Small Business,448.28,1,2023-09-09
+618,SMB Customer 618,Small Business,466.77,4,2023-09-10
+619,SMB Customer 619,Small Business,459.43,4,2023-09-11
+620,SMB Customer 620,Small Business,451.72,1,2023-09-12
+621,SMB Customer 621,Small Business,421.29,2,2023-09-13
+622,SMB Customer 622,Small Business,459.14,3,2023-09-14
+623,SMB Customer 623,Small Business,499.0,3,2023-09-15
+624,SMB Customer 624,Small Business,485.36,3,2023-09-16
+625,SMB Customer 625,Small Business,492.8,4,2023-09-17
+626,SMB Customer 626,Small Business,429.66,4,2023-09-18
+627,SMB Customer 627,Small Business,415.31,3,2023-09-19
+628,SMB Customer 628,Small Business,441.23,4,2023-09-20
+629,SMB Customer 629,Small Business,446.67,3,2023-09-21
+630,SMB Customer 630,Small Business,477.83,2,2023-09-22
+631,SMB Customer 631,Small Business,394.23,4,2023-09-23
+632,SMB Customer 632,Small Business,490.89,4,2023-09-24
+633,SMB Customer 633,Small Business,440.26,4,2023-09-25
+634,SMB Customer 634,Small Business,432.19,1,2023-09-26
+635,SMB Customer 635,Small Business,414.64,1,2023-09-27
+636,SMB Customer 636,Small Business,395.35,4,2023-09-28
+637,SMB Customer 637,Small Business,469.7,2,2023-09-29
+638,SMB Customer 638,Small Business,447.2,1,2023-09-30
+639,SMB Customer 639,Small Business,406.3,4,2023-10-01
+640,SMB Customer 640,Small Business,406.15,1,2023-10-02
+641,SMB Customer 641,Small Business,434.93,4,2023-10-03
+642,SMB Customer 642,Small Business,495.07,2,2023-10-04
+643,SMB Customer 643,Small Business,437.21,1,2023-10-05
+644,SMB Customer 644,Small Business,399.91,4,2023-10-06
+645,SMB Customer 645,Small Business,437.63,2,2023-10-07
+646,SMB Customer 646,Small Business,436.82,4,2023-10-08
+647,SMB Customer 647,Small Business,364.09,3,2023-10-09
+648,SMB Customer 648,Small Business,443.37,2,2023-10-10
+649,SMB Customer 649,Small Business,438.07,1,2023-10-11
+650,SMB Customer 650,Small Business,465.89,2,2023-10-12
+651,SMB Customer 651,Small Business,499.0,2,2023-10-13
+652,SMB Customer 652,Small Business,478.8,1,2023-10-14
+653,SMB Customer 653,Small Business,436.93,1,2023-10-15
+654,SMB Customer 654,Small Business,411.8,2,2023-10-16
+655,SMB Customer 655,Small Business,499.0,3,2023-10-17
+656,SMB Customer 656,Small Business,446.78,3,2023-10-18
+657,SMB Customer 657,Small Business,445.42,3,2023-10-19
+658,SMB Customer 658,Small Business,444.28,2,2023-10-20
+659,SMB Customer 659,Small Business,450.94,4,2023-10-21
+660,SMB Customer 660,Small Business,440.67,3,2023-10-22
+661,SMB Customer 661,Small Business,427.79,1,2023-10-23
+662,SMB Customer 662,Small Business,428.59,1,2023-10-24
+663,SMB Customer 663,Small Business,444.02,1,2023-10-25
+664,SMB Customer 664,Small Business,428.7,4,2023-10-26
+665,SMB Customer 665,Small Business,423.61,1,2023-10-27
+666,SMB Customer 666,Small Business,448.19,2,2023-10-28
+667,SMB Customer 667,Small Business,437.35,1,2023-10-29
+668,SMB Customer 668,Small Business,490.12,3,2023-10-30
+669,SMB Customer 669,Small Business,365.47,4,2023-10-31
+670,SMB Customer 670,Small Business,477.75,1,2023-11-01
+671,SMB Customer 671,Small Business,482.38,1,2023-11-02
+672,SMB Customer 672,Small Business,382.8,3,2023-11-03
+673,SMB Customer 673,Small Business,434.72,4,2023-11-04
+674,SMB Customer 674,Small Business,433.86,1,2023-11-05
+675,SMB Customer 675,Small Business,402.77,3,2023-11-06
+676,SMB Customer 676,Small Business,421.67,3,2023-11-07
+677,SMB Customer 677,Small Business,411.68,2,2023-11-08
+678,SMB Customer 678,Small Business,497.57,1,2023-11-09
+679,SMB Customer 679,Small Business,473.07,2,2023-11-10
+680,SMB Customer 680,Small Business,483.15,3,2023-11-11
+681,SMB Customer 681,Small Business,466.65,1,2023-11-12
+682,SMB Customer 682,Small Business,411.13,3,2023-11-13
+683,SMB Customer 683,Small Business,429.26,3,2023-11-14
+684,SMB Customer 684,Small Business,459.68,4,2023-11-15
+685,SMB Customer 685,Small Business,408.34,2,2023-11-16
+686,SMB Customer 686,Small Business,466.39,3,2023-11-17
+687,SMB Customer 687,Small Business,437.79,4,2023-11-18
+688,SMB Customer 688,Small Business,433.76,1,2023-11-19
+689,SMB Customer 689,Small Business,466.33,1,2023-11-20
+690,SMB Customer 690,Small Business,458.33,2,2023-11-21
+691,SMB Customer 691,Small Business,434.17,1,2023-11-22
+692,SMB Customer 692,Small Business,479.78,1,2023-11-23
+693,SMB Customer 693,Small Business,412.57,4,2023-11-24
+694,SMB Customer 694,Small Business,463.48,1,2023-11-25
+695,SMB Customer 695,Small Business,462.79,4,2023-11-26
+696,SMB Customer 696,Small Business,435.71,1,2023-11-27
+697,SMB Customer 697,Small Business,454.78,1,2023-11-28
+698,SMB Customer 698,Small Business,407.47,3,2023-11-29
+699,SMB Customer 699,Small Business,472.72,3,2023-11-30
+700,SMB Customer 700,Small Business,439.45,4,2023-12-01
+701,SMB Customer 701,Small Business,429.32,1,2023-12-02
+702,SMB Customer 702,Small Business,476.47,3,2023-12-03
+703,SMB Customer 703,Small Business,423.87,2,2023-12-04
+704,SMB Customer 704,Small Business,402.75,4,2023-12-05
+705,SMB Customer 705,Small Business,398.3,1,2023-12-06
+706,SMB Customer 706,Small Business,463.18,1,2023-12-07
+707,SMB Customer 707,Small Business,406.59,3,2023-12-08
+708,SMB Customer 708,Small Business,497.64,4,2023-12-09
+709,SMB Customer 709,Small Business,382.54,4,2023-12-10
+710,SMB Customer 710,Small Business,495.89,4,2023-12-11
+711,SMB Customer 711,Small Business,451.33,3,2023-12-12
+712,SMB Customer 712,Small Business,442.1,4,2023-12-13
+713,SMB Customer 713,Small Business,428.65,2,2023-12-14
+714,SMB Customer 714,Small Business,456.97,3,2023-12-15
+715,SMB Customer 715,Small Business,443.87,2,2023-12-16
+716,SMB Customer 716,Small Business,478.1,3,2023-12-17
+717,SMB Customer 717,Small Business,448.43,4,2023-12-18
+718,SMB Customer 718,Small Business,449.51,3,2023-12-19
+719,SMB Customer 719,Small Business,434.09,3,2023-12-20
+720,SMB Customer 720,Small Business,443.29,2,2023-12-21
+721,SMB Customer 721,Small Business,454.23,3,2023-12-22
+722,SMB Customer 722,Small Business,393.69,4,2023-12-23
+723,SMB Customer 723,Small Business,404.55,2,2023-12-24
+724,SMB Customer 724,Small Business,467.3,3,2023-12-25
+725,SMB Customer 725,Small Business,450.13,2,2023-12-26
+726,SMB Customer 726,Small Business,439.48,2,2023-12-27
+727,SMB Customer 727,Small Business,445.55,4,2023-12-28
+728,SMB Customer 728,Small Business,455.43,1,2023-12-29
+729,SMB Customer 729,Small Business,428.81,2,2023-12-30
+730,SMB Customer 730,Small Business,421.65,1,2023-12-31
+731,SMB Customer 731,Small Business,450.88,2,2023-01-01
+732,SMB Customer 732,Small Business,415.65,1,2023-01-02
+733,SMB Customer 733,Small Business,457.25,4,2023-01-03
+734,SMB Customer 734,Small Business,393.92,4,2023-01-04
+735,SMB Customer 735,Small Business,475.87,1,2023-01-05
+736,SMB Customer 736,Small Business,459.18,4,2023-01-06
+737,SMB Customer 737,Small Business,452.68,4,2023-01-07
+738,SMB Customer 738,Small Business,474.48,2,2023-01-08
+739,SMB Customer 739,Small Business,494.96,4,2023-01-09
+740,SMB Customer 740,Small Business,475.43,3,2023-01-10
+741,SMB Customer 741,Small Business,389.77,3,2023-01-11
+742,SMB Customer 742,Small Business,406.61,3,2023-01-12
+743,SMB Customer 743,Small Business,426.26,3,2023-01-13
+744,SMB Customer 744,Small Business,445.78,2,2023-01-14
+745,SMB Customer 745,Small Business,460.53,4,2023-01-15
+746,SMB Customer 746,Small Business,423.23,2,2023-01-16
+747,SMB Customer 747,Small Business,450.6,3,2023-01-17
+748,SMB Customer 748,Small Business,422.34,3,2023-01-18
+749,SMB Customer 749,Small Business,426.65,2,2023-01-19
+750,SMB Customer 750,Small Business,402.8,2,2023-01-20
+751,SMB Customer 751,Small Business,417.3,4,2023-01-21
+752,SMB Customer 752,Small Business,404.45,2,2023-01-22
+753,SMB Customer 753,Small Business,415.72,4,2023-01-23
+754,SMB Customer 754,Small Business,476.61,2,2023-01-24
+755,SMB Customer 755,Small Business,416.52,3,2023-01-25
+756,SMB Customer 756,Small Business,499.0,1,2023-01-26
+757,SMB Customer 757,Small Business,459.8,3,2023-01-27
+758,SMB Customer 758,Small Business,450.55,4,2023-01-28
+759,SMB Customer 759,Small Business,419.25,2,2023-01-29
+760,SMB Customer 760,Small Business,466.01,1,2023-01-30
+761,SMB Customer 761,Small Business,427.73,1,2023-01-31
+762,SMB Customer 762,Small Business,448.66,3,2023-02-01
+763,SMB Customer 763,Small Business,499.0,1,2023-02-02
+764,SMB Customer 764,Small Business,442.12,3,2023-02-03
+765,SMB Customer 765,Small Business,479.48,4,2023-02-04
+766,SMB Customer 766,Small Business,423.9,2,2023-02-05
+767,SMB Customer 767,Small Business,443.95,2,2023-02-06
+768,SMB Customer 768,Small Business,498.12,4,2023-02-07
+769,SMB Customer 769,Small Business,426.19,1,2023-02-08
+770,SMB Customer 770,Small Business,499.0,4,2023-02-09
+771,SMB Customer 771,Small Business,466.23,3,2023-02-10
+772,SMB Customer 772,Small Business,428.13,1,2023-02-11
+773,SMB Customer 773,Small Business,463.97,1,2023-02-12
+774,SMB Customer 774,Small Business,474.18,4,2023-02-13
+775,SMB Customer 775,Small Business,463.65,4,2023-02-14
+776,SMB Customer 776,Small Business,397.89,2,2023-02-15
+777,SMB Customer 777,Small Business,423.19,2,2023-02-16
+778,SMB Customer 778,Small Business,437.57,3,2023-02-17
+779,SMB Customer 779,Small Business,442.77,3,2023-02-18
+780,SMB Customer 780,Small Business,463.62,2,2023-02-19
+781,SMB Customer 781,Small Business,450.33,1,2023-02-20
+782,SMB Customer 782,Small Business,404.94,4,2023-02-21
+783,SMB Customer 783,Small Business,456.41,1,2023-02-22
+784,SMB Customer 784,Small Business,463.32,2,2023-02-23
+785,SMB Customer 785,Small Business,461.79,4,2023-02-24
+786,SMB Customer 786,Small Business,477.42,1,2023-02-25
+787,SMB Customer 787,Small Business,470.02,2,2023-02-26
+788,SMB Customer 788,Small Business,458.78,3,2023-02-27
+789,SMB Customer 789,Small Business,442.9,2,2023-02-28
+790,SMB Customer 790,Small Business,395.17,4,2023-03-01
+791,SMB Customer 791,Small Business,457.89,4,2023-03-02
+792,SMB Customer 792,Small Business,451.23,3,2023-03-03
+793,SMB Customer 793,Small Business,453.15,3,2023-03-04
+794,SMB Customer 794,Small Business,406.7,4,2023-03-05
+795,SMB Customer 795,Small Business,412.57,1,2023-03-06
+796,SMB Customer 796,Small Business,476.59,1,2023-03-07
+797,SMB Customer 797,Small Business,443.81,3,2023-03-08
+798,SMB Customer 798,Small Business,465.45,4,2023-03-09
+799,SMB Customer 799,Small Business,445.85,2,2023-03-10
+800,SMB Customer 800,Small Business,445.89,3,2023-03-11
+801,Enterprise Customer 801,Enterprise,15483.73,49,2023-01-01
+802,Enterprise Customer 802,Enterprise,34856.7,37,2023-01-04
+803,Enterprise Customer 803,Enterprise,4764.2,40,2023-01-07
+804,Enterprise Customer 804,Enterprise,26016.16,36,2023-01-10
+805,Enterprise Customer 805,Enterprise,12098.24,47,2023-01-13
+806,Enterprise Customer 806,Enterprise,7939.45,43,2023-01-16
+807,Enterprise Customer 807,Enterprise,6282.13,19,2023-01-19
+808,Enterprise Customer 808,Enterprise,29816.88,47,2023-01-22
+809,Enterprise Customer 809,Enterprise,16273.16,37,2023-01-25
+810,Enterprise Customer 810,Enterprise,30899.05,16,2023-01-28
+811,Enterprise Customer 811,Enterprise,5841.45,37,2023-01-31
+812,Enterprise Customer 812,Enterprise,15338.94,50,2023-02-03
+813,Enterprise Customer 813,Enterprise,23858.58,48,2023-02-06
+814,Enterprise Customer 814,Enterprise,33405.39,19,2023-02-09
+815,Enterprise Customer 815,Enterprise,15470.5,25,2023-02-12
+816,Enterprise Customer 816,Enterprise,27141.78,26,2023-02-15
+817,Enterprise Customer 817,Enterprise,37025.06,26,2023-02-18
+818,Enterprise Customer 818,Enterprise,26760.71,26,2023-02-21
+819,Enterprise Customer 819,Enterprise,12210.37,12,2023-02-24
+820,Enterprise Customer 820,Enterprise,4285.14,24,2023-02-27
+821,Enterprise Customer 821,Enterprise,36421.67,44,2023-03-02
+822,Enterprise Customer 822,Enterprise,4166.15,19,2023-03-05
+823,Enterprise Customer 823,Enterprise,36596.57,20,2023-03-08
+824,Enterprise Customer 824,Enterprise,23457.52,44,2023-03-11
+825,Enterprise Customer 825,Enterprise,39042.48,45,2023-03-14
+826,Enterprise Customer 826,Enterprise,33711.67,13,2023-03-17
+827,Enterprise Customer 827,Enterprise,41279.4,15,2023-03-20
+828,Enterprise Customer 828,Enterprise,16684.96,32,2023-03-23
+829,Enterprise Customer 829,Enterprise,32511.06,44,2023-03-26
+830,Enterprise Customer 830,Enterprise,18631.28,49,2023-03-29
+831,Enterprise Customer 831,Enterprise,21593.18,22,2023-04-01
+832,Enterprise Customer 832,Enterprise,27203.12,47,2023-04-04
+833,Enterprise Customer 833,Enterprise,36557.64,23,2023-04-07
+834,Enterprise Customer 834,Enterprise,40753.08,18,2023-04-10
+835,Enterprise Customer 835,Enterprise,32552.3,15,2023-04-13
+836,Enterprise Customer 836,Enterprise,19233.05,41,2023-04-16
+837,Enterprise Customer 837,Enterprise,19369.47,34,2023-04-19
+838,Enterprise Customer 838,Enterprise,31386.04,19,2023-04-22
+839,Enterprise Customer 839,Enterprise,12431.44,25,2023-04-25
+840,Enterprise Customer 840,Enterprise,7555.92,22,2023-04-28
+841,Enterprise Customer 841,Enterprise,16833.55,16,2023-05-01
+842,Enterprise Customer 842,Enterprise,14272.99,16,2023-05-04
+843,Enterprise Customer 843,Enterprise,14617.62,33,2023-05-07
+844,Enterprise Customer 844,Enterprise,12235.0,31,2023-05-10
+845,Enterprise Customer 845,Enterprise,4957.45,24,2023-05-13
+846,Enterprise Customer 846,Enterprise,4037.12,26,2023-05-16
+847,Enterprise Customer 847,Enterprise,40891.36,30,2023-05-19
+848,Enterprise Customer 848,Enterprise,19613.29,33,2023-05-22
+849,Enterprise Customer 849,Enterprise,17962.32,23,2023-05-25
+850,Enterprise Customer 850,Enterprise,29184.51,26,2023-05-28
+851,Enterprise Customer 851,Enterprise,11651.56,44,2023-05-31
+852,Enterprise Customer 852,Enterprise,39456.43,23,2023-06-03
+853,Enterprise Customer 853,Enterprise,33239.02,20,2023-06-06
+854,Enterprise Customer 854,Enterprise,6755.53,10,2023-06-09
+855,Enterprise Customer 855,Enterprise,19225.98,16,2023-06-12
+856,Enterprise Customer 856,Enterprise,36764.4,11,2023-06-15
+857,Enterprise Customer 857,Enterprise,39257.73,36,2023-06-18
+858,Enterprise Customer 858,Enterprise,21119.17,28,2023-06-21
+859,Enterprise Customer 859,Enterprise,26667.54,46,2023-06-24
+860,Enterprise Customer 860,Enterprise,9705.2,19,2023-06-27
+861,Enterprise Customer 861,Enterprise,41022.32,36,2023-06-30
+862,Enterprise Customer 862,Enterprise,12161.43,14,2023-07-03
+863,Enterprise Customer 863,Enterprise,39181.72,34,2023-07-06
+864,Enterprise Customer 864,Enterprise,28044.48,18,2023-07-09
+865,Enterprise Customer 865,Enterprise,26451.91,11,2023-07-12
+866,Enterprise Customer 866,Enterprise,22840.07,37,2023-07-15
+867,Enterprise Customer 867,Enterprise,12123.36,21,2023-07-18
+868,Enterprise Customer 868,Enterprise,10065.97,19,2023-07-21
+869,Enterprise Customer 869,Enterprise,11736.38,19,2023-07-24
+870,Enterprise Customer 870,Enterprise,10442.56,15,2023-07-27
+871,Enterprise Customer 871,Enterprise,32982.12,48,2023-07-30
+872,Enterprise Customer 872,Enterprise,16662.67,47,2023-08-02
+873,Enterprise Customer 873,Enterprise,5555.93,32,2023-08-05
+874,Enterprise Customer 874,Enterprise,40183.81,13,2023-08-08
+875,Enterprise Customer 875,Enterprise,36941.77,16,2023-08-11
+876,Enterprise Customer 876,Enterprise,38612.5,31,2023-08-14
+877,Enterprise Customer 877,Enterprise,41164.41,37,2023-08-17
+878,Enterprise Customer 878,Enterprise,9965.93,11,2023-08-20
+879,Enterprise Customer 879,Enterprise,18415.11,37,2023-08-23
+880,Enterprise Customer 880,Enterprise,32170.97,12,2023-08-26
+881,Enterprise Customer 881,Enterprise,29806.69,45,2023-08-29
+882,Enterprise Customer 882,Enterprise,9205.95,42,2023-09-01
+883,Enterprise Customer 883,Enterprise,34359.57,40,2023-09-04
+884,Enterprise Customer 884,Enterprise,11886.65,14,2023-09-07
+885,Enterprise Customer 885,Enterprise,11862.98,14,2023-09-10
+886,Enterprise Customer 886,Enterprise,23762.94,18,2023-09-13
+887,Enterprise Customer 887,Enterprise,25889.63,48,2023-09-16
+888,Enterprise Customer 888,Enterprise,25401.18,14,2023-09-19
+889,Enterprise Customer 889,Enterprise,6834.41,24,2023-09-22
+890,Enterprise Customer 890,Enterprise,36701.42,25,2023-09-25
+891,Enterprise Customer 891,Enterprise,13450.71,17,2023-09-28
+892,Enterprise Customer 892,Enterprise,8279.48,34,2023-10-01
+893,Enterprise Customer 893,Enterprise,37130.34,44,2023-10-04
+894,Enterprise Customer 894,Enterprise,39672.67,32,2023-10-07
+895,Enterprise Customer 895,Enterprise,36118.76,20,2023-10-10
+896,Enterprise Customer 896,Enterprise,34119.52,23,2023-10-13
+897,Enterprise Customer 897,Enterprise,28257.1,41,2023-10-16
+898,Enterprise Customer 898,Enterprise,24290.49,17,2023-10-19
+899,Enterprise Customer 899,Enterprise,6663.41,40,2023-10-22
+900,Enterprise Customer 900,Enterprise,18879.13,34,2023-10-25
+901,Enterprise Customer 901,Enterprise,17520.07,10,2023-10-28
+902,Enterprise Customer 902,Enterprise,13228.55,23,2023-10-31
+903,Enterprise Customer 903,Enterprise,30847.87,11,2023-11-03
+904,Enterprise Customer 904,Enterprise,22201.19,33,2023-11-06
+905,Enterprise Customer 905,Enterprise,6437.66,18,2023-11-09
+906,Enterprise Customer 906,Enterprise,11724.87,40,2023-11-12
+907,Enterprise Customer 907,Enterprise,29321.74,28,2023-11-15
+908,Enterprise Customer 908,Enterprise,6250.88,12,2023-11-18
+909,Enterprise Customer 909,Enterprise,35703.77,38,2023-11-21
+910,Enterprise Customer 910,Enterprise,22173.48,25,2023-11-24
+911,Enterprise Customer 911,Enterprise,21620.2,13,2023-11-27
+912,Enterprise Customer 912,Enterprise,25869.4,32,2023-11-30
+913,Enterprise Customer 913,Enterprise,34695.79,45,2023-12-03
+914,Enterprise Customer 914,Enterprise,16574.66,10,2023-12-06
+915,Enterprise Customer 915,Enterprise,29122.52,29,2023-12-09
+916,Enterprise Customer 916,Enterprise,24855.72,38,2023-12-12
+917,Enterprise Customer 917,Enterprise,13504.98,36,2023-12-15
+918,Enterprise Customer 918,Enterprise,36745.85,32,2023-12-18
+919,Enterprise Customer 919,Enterprise,33660.1,14,2023-12-21
+920,Enterprise Customer 920,Enterprise,28379.08,36,2023-12-24
+921,Enterprise Customer 921,Enterprise,35680.01,47,2023-12-27
+922,Enterprise Customer 922,Enterprise,36315.09,14,2023-12-30
+923,Enterprise Customer 923,Enterprise,30275.7,27,2023-01-02
+924,Enterprise Customer 924,Enterprise,35164.41,28,2023-01-05
+925,Enterprise Customer 925,Enterprise,29861.82,37,2023-01-08
+926,Enterprise Customer 926,Enterprise,29203.26,14,2023-01-11
+927,Enterprise Customer 927,Enterprise,26865.14,50,2023-01-14
+928,Enterprise Customer 928,Enterprise,31961.14,10,2023-01-17
+929,Enterprise Customer 929,Enterprise,9384.9,28,2023-01-20
+930,Enterprise Customer 930,Enterprise,36831.0,18,2023-01-23
+931,Enterprise Customer 931,Enterprise,36487.96,32,2023-01-26
+932,Enterprise Customer 932,Enterprise,4469.31,32,2023-01-29
+933,Enterprise Customer 933,Enterprise,34738.94,47,2023-02-01
+934,Enterprise Customer 934,Enterprise,8254.96,15,2023-02-04
+935,Enterprise Customer 935,Enterprise,16092.42,41,2023-02-07
+936,Enterprise Customer 936,Enterprise,31611.22,31,2023-02-10
+937,Enterprise Customer 937,Enterprise,9466.78,36,2023-02-13
+938,Enterprise Customer 938,Enterprise,34440.66,34,2023-02-16
+939,Enterprise Customer 939,Enterprise,34979.01,27,2023-02-19
+940,Enterprise Customer 940,Enterprise,22641.68,13,2023-02-22
+941,Enterprise Customer 941,Enterprise,3600.57,37,2023-02-25
+942,Enterprise Customer 942,Enterprise,14265.36,27,2023-02-28
+943,Enterprise Customer 943,Enterprise,26801.13,33,2023-03-03
+944,Enterprise Customer 944,Enterprise,40642.98,19,2023-03-06
+945,Enterprise Customer 945,Enterprise,27366.82,15,2023-03-09
+946,Enterprise Customer 946,Enterprise,13230.44,12,2023-03-12
+947,Enterprise Customer 947,Enterprise,27450.13,44,2023-03-15
+948,Enterprise Customer 948,Enterprise,23877.35,35,2023-03-18
+949,Enterprise Customer 949,Enterprise,32992.03,25,2023-03-21
+950,Enterprise Customer 950,Enterprise,7423.17,10,2023-03-24
+951,Enterprise Customer 951,Enterprise,32276.97,15,2023-03-27
+952,Enterprise Customer 952,Enterprise,23926.04,46,2023-03-30
+953,Enterprise Customer 953,Enterprise,39951.6,27,2023-04-02
+954,Enterprise Customer 954,Enterprise,16349.05,12,2023-04-05
+955,Enterprise Customer 955,Enterprise,27397.54,18,2023-04-08
+956,Enterprise Customer 956,Enterprise,38774.98,11,2023-04-11
+957,Enterprise Customer 957,Enterprise,7253.28,13,2023-04-14
+958,Enterprise Customer 958,Enterprise,38972.59,13,2023-04-17
+959,Enterprise Customer 959,Enterprise,29497.57,37,2023-04-20
+960,Enterprise Customer 960,Enterprise,5935.72,49,2023-04-23
+961,Enterprise Customer 961,Enterprise,14794.52,40,2023-04-26
+962,Enterprise Customer 962,Enterprise,30268.45,22,2023-04-29
+963,Enterprise Customer 963,Enterprise,5917.23,32,2023-05-02
+964,Enterprise Customer 964,Enterprise,25480.39,41,2023-05-05
+965,Enterprise Customer 965,Enterprise,16501.46,43,2023-05-08
+966,Enterprise Customer 966,Enterprise,26952.7,31,2023-05-11
+967,Enterprise Customer 967,Enterprise,5096.11,22,2023-05-14
+968,Enterprise Customer 968,Enterprise,36476.31,13,2023-05-17
+969,Enterprise Customer 969,Enterprise,40350.49,26,2023-05-20
+970,Enterprise Customer 970,Enterprise,40175.27,39,2023-05-23
+971,Enterprise Customer 971,Enterprise,31844.68,14,2023-05-26
+972,Enterprise Customer 972,Enterprise,8301.19,27,2023-05-29
+973,Enterprise Customer 973,Enterprise,32171.91,35,2023-06-01
+974,Enterprise Customer 974,Enterprise,4292.21,27,2023-06-04
+975,Enterprise Customer 975,Enterprise,4198.6,38,2023-06-07
+976,Enterprise Customer 976,Enterprise,15655.1,21,2023-06-10
+977,Enterprise Customer 977,Enterprise,21926.35,13,2023-06-13
+978,Enterprise Customer 978,Enterprise,32633.39,29,2023-06-16
+979,Enterprise Customer 979,Enterprise,29323.13,15,2023-06-19
+980,Enterprise Customer 980,Enterprise,20302.21,25,2023-06-22
+981,Enterprise Customer 981,Enterprise,13755.72,26,2023-06-25
+982,Enterprise Customer 982,Enterprise,41248.64,26,2023-06-28
+983,Enterprise Customer 983,Enterprise,19552.8,38,2023-07-01
+984,Enterprise Customer 984,Enterprise,20510.62,16,2023-07-04
+985,Enterprise Customer 985,Enterprise,9575.61,29,2023-07-07
+986,Enterprise Customer 986,Enterprise,33560.67,43,2023-07-10
+987,Enterprise Customer 987,Enterprise,29717.83,16,2023-07-13
+988,Enterprise Customer 988,Enterprise,11747.15,25,2023-07-16
+989,Enterprise Customer 989,Enterprise,6488.39,38,2023-07-19
+990,Enterprise Customer 990,Enterprise,29216.88,36,2023-07-22
+991,Enterprise Customer 991,Enterprise,28229.33,10,2023-07-25
+992,Enterprise Customer 992,Enterprise,13741.77,38,2023-07-28
+993,Enterprise Customer 993,Enterprise,39490.72,40,2023-07-31
+994,Enterprise Customer 994,Enterprise,9098.11,38,2023-08-03
+995,Enterprise Customer 995,Enterprise,19786.63,28,2023-08-06
+996,Enterprise Customer 996,Enterprise,39215.31,23,2023-08-09
+997,Enterprise Customer 997,Enterprise,19307.55,26,2023-08-12
+998,Enterprise Customer 998,Enterprise,27621.89,31,2023-08-15
+999,Enterprise Customer 999,Enterprise,18466.5,49,2023-08-18
+1000,Enterprise Customer 1000,Enterprise,13778.09,45,2023-08-21
