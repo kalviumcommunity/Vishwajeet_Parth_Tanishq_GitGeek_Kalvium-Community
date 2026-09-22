@@ -1,4 +1,2 @@
-pandas>=2.0.0
-duckdb>=1.0.0
-sqlalchemy>=2.0.0
-duckdb-engine>=0.17.0
+streamlit==1.38.0
+pandas==2.1.4
