@@ -9,6 +9,7 @@ import os
 import duckdb
 from datetime import datetime, timedelta, date
 import random
+import numpy as np
 
 DB_PATH = os.path.join(os.path.dirname(__file__), 'data', 'business_metrics.duckdb')
 
@@ -370,11 +371,93 @@ def init_database(db_path=DB_PATH):
     funnel_csv_path = os.path.join(os.path.dirname(__file__), 'data', 'funnel_events.csv')
     con.execute(f"COPY user_funnel TO '{funnel_csv_path}' (HEADER, DELIMITER ',')")
 
+    # 10. Seed Hourly KPI Metrics & Anomaly Detection (Module 2.36: Anomaly Detection)
+    con.execute("""
+    CREATE OR REPLACE TABLE hourly_kpi_metrics (
+        metric_id INTEGER PRIMARY KEY,
+        timestamp TIMESTAMP NOT NULL,
+        date DATE NOT NULL,
+        hour INTEGER NOT NULL,
+        revenue DOUBLE NOT NULL,
+        transaction_count INTEGER NOT NULL,
+        signup_count INTEGER NOT NULL,
+        active_users INTEGER NOT NULL,
+        is_anomaly BOOLEAN NOT NULL,
+        anomaly_type VARCHAR
+    );
+    """)
+
+    np.random.seed(101)
+    kpi_rows = []
+    start_time = datetime(2024, 1, 1, 0, 0, 0)
+    total_hours = 30 * 24  # 720 hours (30 days)
+
+    for h_idx in range(total_hours):
+        current_time = start_time + timedelta(hours=h_idx)
+        cur_date = current_time.date()
+        cur_hour = current_time.hour
+        day_num = (h_idx // 24) + 1  # Day 1 to 30
+
+        # Normal diurnal baseline:
+        # Peak around 14:00 (2 PM), low around 03:00 (3 AM)
+        diurnal_factor = 0.5 * (1 + np.sin((cur_hour - 8) * np.pi / 12))  # ranges [0, 1]
+        
+        base_rev = 14000.0 + diurnal_factor * 11000.0 + np.random.normal(0, 800.0)
+        base_tx = int(180 + diurnal_factor * 160 + np.random.normal(0, 15.0))
+        base_signups = int(18 + diurnal_factor * 16 + np.random.normal(0, 3.0))
+        base_active = int(1000 + diurnal_factor * 1000 + np.random.normal(0, 75.0))
+
+        rev = max(base_rev, 1000.0)
+        tx = max(base_tx, 10)
+        signups = max(base_signups, 1)
+        active = max(base_active, 50)
+        is_anom = False
+        anom_desc = "Normal"
+
+        # Injected Anomaly 1: Payment Processing Outage on Day 28, Hours 14 and 15
+        if day_num == 28 and cur_hour in (14, 15):
+            rev = 0.0
+            tx = 0
+            is_anom = True
+            anom_desc = "Payment Gateway Outage"
+        
+        # Injected Anomaly 2: Bot Attack / Fake Signups on Day 15, Hour 3
+        elif day_num == 15 and cur_hour == 3:
+            signups = 260  # 10x normal rate of ~22
+            is_anom = True
+            anom_desc = "Bot Attack (Signup Surge)"
+
+        # Injected Anomaly 3: Pricing Glitch / 4x Transaction Surge on Day 22, Hour 18
+        elif day_num == 22 and cur_hour == 18:
+            tx = 1350  # ~4x normal of ~320
+            rev = 1485.0  # Glitch price ($1.10/tx instead of ~$75/tx)
+            is_anom = True
+            anom_desc = "Pricing Glitch Surge"
+
+        kpi_rows.append((
+            h_idx + 1,
+            current_time,
+            cur_date,
+            cur_hour,
+            round(float(rev), 2),
+            int(tx),
+            int(signups),
+            int(active),
+            is_anom,
+            anom_desc
+        ))
+
+    con.executemany("INSERT INTO hourly_kpi_metrics VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", kpi_rows)
+
+    kpi_csv_path = os.path.join(os.path.dirname(__file__), 'data', 'hourly_kpi_metrics.csv')
+    con.execute(f"COPY hourly_kpi_metrics TO '{kpi_csv_path}' (HEADER, DELIMITER ',')")
+
     con.close()
     print(f"Database initialized and populated at: {db_path}")
     print(f"Customer revenue distribution data exported to: {csv_path}")
     print(f"Customer churn segments data exported to: {churn_csv_path}")
     print(f"User funnel events data exported to: {funnel_csv_path}")
+    print(f"Hourly KPI metrics data exported to: {kpi_csv_path}")
 
 if __name__ == '__main__':
     init_database()
