@@ -6,6 +6,7 @@ from run_filtering_analysis import run_all_queries
 from joins_runner import run_joins_analysis
 from distribution_runner import run_distribution_analysis
 from segment_aggregation_runner import run_segment_aggregation
+from funnel_analysis_runner import run_funnel_analysis
 
 if __name__ == '__main__':
     print("\n=======================================================")
@@ -32,3 +33,8 @@ if __name__ == '__main__':
     print(">>> 5. RUNNING MODULE 2.30: GROUPBY AGGREGATION & SEGMENT INSIGHTS <<<")
     print("=======================================================\n")
     run_segment_aggregation()
+
+    print("\n=======================================================")
+    print(">>> 6. RUNNING MODULE 2.33: FUNNEL ANALYSIS & DROP-OFF DETECTION <<<")
+    print("=======================================================\n")
+    run_funnel_analysis()
