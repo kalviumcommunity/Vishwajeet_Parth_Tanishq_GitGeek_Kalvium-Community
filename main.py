@@ -9,6 +9,7 @@ from segment_aggregation_runner import run_segment_aggregation
 from funnel_analysis_runner import run_funnel_analysis
 from anomaly_runner import run_anomaly_analysis
 from query_optimization_runner import run_query_optimization
+from visualisation_principles_runner import run_visualisation_principles
 
 if __name__ == '__main__':
     print("\n=======================================================")
@@ -50,3 +51,8 @@ if __name__ == '__main__':
     print(">>> 8. RUNNING MODULE: SQL QUERY OPTIMIZATION & PERFORMANCE TUNING <<<")
     print("=======================================================\n")
     run_query_optimization()
+
+    print("\n=======================================================")
+    print(">>> 9. RUNNING MODULE 2.45: BUSINESS VISUALISATION PRINCIPLES <<<")
+    print("=======================================================\n")
+    run_visualisation_principles()
