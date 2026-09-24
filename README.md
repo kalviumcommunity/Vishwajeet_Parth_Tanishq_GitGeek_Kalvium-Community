@@ -103,9 +103,12 @@ contributor-retention-analytics/
 ├── visualisation_principles_runner.py
 ├── data_storytelling_runner.py
 ├── streamlit_structure_runner.py
+├── session_state_runner.py
 ├── app.py
 ├── main.py
 ├── requirements.txt
+├── STREAMLIT_SESSION_STATE_GUIDE.md
+├── VIDEO_SCRIPT_STREAMLIT_SESSION_STATE.md
 ├── STREAMLIT_NAVIGATION_GUIDE.md
 ├── VIDEO_SCRIPT_STREAMLIT_NAVIGATION.md
 ├── DATA_STORYTELLING_GUIDE.md
@@ -528,6 +531,47 @@ python main.py
 ### Video Guide & Documentation
 - Comprehensive engineering guide: [`STREAMLIT_NAVIGATION_GUIDE.md`](./STREAMLIT_NAVIGATION_GUIDE.md)
 - Step-by-step video script: [`VIDEO_SCRIPT_STREAMLIT_NAVIGATION.md`](./VIDEO_SCRIPT_STREAMLIT_NAVIGATION.md)
+
+---
+
+## 2.52 Streamlit Session State & Workflow Management
+
+Implements persistent state management across script reruns using `st.session_state` to prevent analytical workflows from resetting when independent widgets or filters are adjusted.
+
+### Core Business Problem
+*"An analyst builds a two-step workflow: Step 1 selects a customer segment for analysis. Step 2 computes churn metrics for that segment. The user selects Enterprise in step 1, sees the metrics in step 2, then changes a date filter. Streamlit reruns the script. The segment selection resets to default. Step 2 now shows metrics for all segments instead of Enterprise. The user must re-select Enterprise every time they touch any other control."*
+
+### Key Deliverables & Architecture
+- **Persistent Session State (`st.session_state`)**:
+  - Stores multi-step state across full script reruns (`selected_segment`, `workflow_step`, `analysis_result`, `selected_tier_metric`, `workflow_history`).
+- **Safe Default Initialization Pattern**:
+  - Employs `if key not in st.session_state:` checks before variable assignment to prevent reruns from overwriting in-flight user decisions.
+- **Multi-Step Analytical Workflow Dependency**:
+  - Step 1 selects and confirms the target cohort (`All`, `Enterprise`, `Mid-Market`, `Startup`).
+  - Step 2 conditionally renders only when confirmed (`workflow_step >= 2`), calculating dynamic cohort spend, support ticket counts, and observed churn without resetting.
+- **Widget State Synchronization**:
+  - Reads `st.session_state` directly into widget `index` parameters to keep UI visual dropdowns perfectly synchronized with session memory.
+- **Targeted Reset Mechanism**:
+  - Dedicated "Reset Workflow State" button that deletes only specific workflow keys and triggers `st.rerun()`, preserving clean isolation without wiping unrelated session settings.
+- **Automated Validation Suite (`session_state_runner.py`)**:
+  - Simulates script reruns, step transitions, filter interactions, and reset actions across 5 automated test assertions.
+
+### Running Session State Tests & Workflows
+```bash
+# Run standalone Session State & Workflow validation suite
+python session_state_runner.py
+
+# Launch interactive Streamlit application with session state
+streamlit run app.py
+
+# Run full project analytics suite (all modules)
+python main.py
+```
+
+### Video Guide & Documentation
+- Comprehensive engineering guide: [`STREAMLIT_SESSION_STATE_GUIDE.md`](./STREAMLIT_SESSION_STATE_GUIDE.md)
+- Step-by-step video script: [`VIDEO_SCRIPT_STREAMLIT_SESSION_STATE.md`](./VIDEO_SCRIPT_STREAMLIT_SESSION_STATE.md)
+
 
 
 

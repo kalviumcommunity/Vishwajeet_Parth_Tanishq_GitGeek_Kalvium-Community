@@ -77,7 +77,22 @@ def load_data_explorer_sample():
 
 
 # -----------------------------------------------------------------------------
-# 3. Sidebar Navigation & Global Filters
+# 3. Session State Initialization & Reset Mechanism
+# -----------------------------------------------------------------------------
+# Safe default initialization: Check before assigning to avoid overwriting on reruns
+if "selected_segment" not in st.session_state:
+    st.session_state["selected_segment"] = "All"
+if "workflow_step" not in st.session_state:
+    st.session_state["workflow_step"] = 1
+if "analysis_result" not in st.session_state:
+    st.session_state["analysis_result"] = None
+if "selected_tier_metric" not in st.session_state:
+    st.session_state["selected_tier_metric"] = "Revenue"
+if "workflow_history" not in st.session_state:
+    st.session_state["workflow_history"] = []
+
+# -----------------------------------------------------------------------------
+# 4. Sidebar Navigation & Global Filters
 # -----------------------------------------------------------------------------
 st.sidebar.title("Navigation")
 page = st.sidebar.radio(
@@ -93,10 +108,21 @@ page = st.sidebar.radio(
 )
 
 st.sidebar.divider()
-st.sidebar.markdown("### Global Filters")
+st.sidebar.markdown("### Global Filters & Session Control")
 selected_fiscal_year = st.sidebar.selectbox("Fiscal Year", ["FY2024", "FY2023", "FY2022"])
 currency_toggle = st.sidebar.radio("Display Units", ["USD ($)", "EUR (€)", "GBP (£)"])
-st.sidebar.info("💡 Changes in the sidebar automatically reload relevant cached views.")
+
+# Clean session state reset mechanism
+if st.sidebar.button("🔄 Reset Workflow State"):
+    # Delete specific keys and rerun cleanly without wiping unrelated app state
+    for key in ["selected_segment", "workflow_step", "analysis_result", "selected_tier_metric", "workflow_history"]:
+        if key in st.session_state:
+            del st.session_state[key]
+    st.sidebar.success("Workflow state reset successfully!")
+    st.rerun()
+
+st.sidebar.info("💡 Changes in the sidebar preserve workflow state across script reruns.")
+
 
 
 # -----------------------------------------------------------------------------
@@ -254,15 +280,91 @@ elif page == "Segments":
 
     st.divider()
 
-    st.header("Comparative Tier Metrics")
-    st.dataframe(df_segments, use_container_width=True)
+    # -------------------------------------------------------------------------
+    # Multi-Step Workflow with Persistent Session State
+    # -------------------------------------------------------------------------
+    st.header("Interactive Segment Deep-Dive Workflow (Session State)")
+    st.markdown("Demonstrating multi-step workflow continuity: step 2 depends on values chosen in step 1 and persists across reruns.")
 
-    with st.expander("Segment Definitions & Thresholds"):
+    # Status Breadcrumbs
+    col_w1, col_w2, col_w3 = st.columns([2, 2, 1])
+    with col_w1:
+        current_step = st.session_state.get("workflow_step", 1)
+        st.info(f"📍 **Current Workflow Phase:** Step {current_step} of 2")
+    with col_w2:
+        saved_seg = st.session_state.get("selected_segment", "All")
+        st.success(f"💾 **Persisted Target:** {saved_seg}")
+    with col_w3:
+        if st.button("Clear Step"):
+            st.session_state["workflow_step"] = 1
+            st.session_state["analysis_result"] = None
+            st.rerun()
+
+    # Step 1: Select Segment
+    st.subheader("Step 1: Select Target Customer Cohort")
+    segment_options = ["All", "Enterprise", "Mid-Market", "Startup"]
+    # Sync widget default with persisted session state to stay in sync
+    current_index = segment_options.index(st.session_state["selected_segment"]) if st.session_state["selected_segment"] in segment_options else 0
+
+    chosen_segment = st.selectbox(
+        "Choose a segment to analyze",
+        options=segment_options,
+        index=current_index,
+        help="Selection is preserved in st.session_state and survives global filter changes."
+    )
+
+    if st.button("Confirm Segment & Advance to Step 2"):
+        st.session_state["selected_segment"] = chosen_segment
+        st.session_state["workflow_step"] = 2
+        # Record workflow step transition
+        if chosen_segment not in st.session_state["workflow_history"]:
+            st.session_state["workflow_history"].append(chosen_segment)
+        st.rerun()
+
+    # Step 2: Show Analysis (Only rendered if Step 1 is confirmed)
+    if st.session_state["workflow_step"] >= 2:
+        st.divider()
+        st.subheader("Step 2: Cohort Profitability & Churn Analysis")
+        confirmed_seg = st.session_state["selected_segment"]
+        st.markdown(f"Now analyzing confirmed cohort: **{confirmed_seg}**")
+
+        df_raw = load_data_explorer_sample()
+        if confirmed_seg == "All":
+            analysis_df = df_raw
+        else:
+            analysis_df = df_raw[df_raw["Segment"] == confirmed_seg]
+
+        total_rev = analysis_df["Annual Spend ($)"].sum()
+        avg_tickets = analysis_df["Support Tickets"].mean()
+        churn_count = (analysis_df["Status"] == "Churned").sum()
+        churn_pct = (churn_count / len(analysis_df) * 100) if len(analysis_df) > 0 else 0
+
+        # Store computed result in session state
+        st.session_state["analysis_result"] = total_rev
+
+        m_col1, m_col2, m_col3, m_col4 = st.columns(4)
+        m_col1.metric("Analyzed Accounts", f"{len(analysis_df):,}")
+        m_col2.metric("Cohort Total Spend", f"${total_rev:,.2f}")
+        m_col3.metric("Avg Support Tickets", f"{avg_tickets:.1f}")
+        m_col4.metric("Observed Churn", f"{churn_pct:.1f}%")
+
+        st.dataframe(analysis_df.head(10), use_container_width=True)
+
+    with st.expander("Session State Memory Inspector & Methodology"):
         st.markdown("""
-        - **Enterprise Tier**: Annual contract value exceeding $10,000 with dedicated SLA.
-        - **Mid-Market Tier**: Annual contract value between $1,000 and $9,999.
-        - **Startup Tier**: Self-serve tier with contract value under $1,000.
-        """)
+        **Session State Values Currently Persisted:**
+        - `selected_segment`: `{}`
+        - `workflow_step`: `{}`
+        - `analysis_result`: `{}`
+        - `workflow_history`: `{}`
+
+        *Note: Interacting with sidebar controls (such as Fiscal Year or Currency Units) triggers a script rerun, but the workflow step and cohort metrics remain intact because they are stored in `st.session_state`.*
+        """.format(
+            st.session_state.get("selected_segment"),
+            st.session_state.get("workflow_step"),
+            st.session_state.get("analysis_result"),
+            st.session_state.get("workflow_history")
+        ))
 
 
 # -----------------------------------------------------------------------------
