@@ -1,0 +1,2001 @@
+customer_id,customer_name,customer_type,product,region,revenue,churn,signup_date
+1,Enterprise Client 1,Enterprise,Developer Tools,EMEA,70218.89,1,2023-01-01
+2,Enterprise Client 2,Enterprise,Cloud Platform,North America,85333.41,0,2023-01-04
+3,Enterprise Client 3,Enterprise,Security Suite,EMEA,48877.09,0,2023-01-07
+4,Enterprise Client 4,Enterprise,Cloud Platform,LATAM,92712.28,0,2023-01-10
+5,Enterprise Client 5,Enterprise,Cloud Platform,North America,101099.79,0,2023-01-13
+6,Enterprise Client 6,Enterprise,Cloud Platform,EMEA,57328.72,0,2023-01-16
+7,Enterprise Client 7,Enterprise,Cloud Platform,EMEA,74090.27,0,2023-01-19
+8,Enterprise Client 8,Enterprise,Cloud Platform,North America,54367.39,0,2023-01-22
+9,Enterprise Client 9,Enterprise,Security Suite,North America,75717.25,0,2023-01-25
+10,Enterprise Client 10,Enterprise,Analytics Pro,North America,79639.86,0,2023-01-28
+11,Enterprise Client 11,Enterprise,Cloud Platform,North America,85932.7,0,2023-01-31
+12,Enterprise Client 12,Enterprise,Developer Tools,APAC,108952.68,0,2023-02-03
+13,Enterprise Client 13,Enterprise,Cloud Platform,EMEA,65503.06,0,2023-02-06
+14,Enterprise Client 14,Enterprise,Cloud Platform,North America,74643.78,0,2023-02-09
+15,Enterprise Client 15,Enterprise,Developer Tools,North America,47279.09,0,2023-02-12
+16,Enterprise Client 16,Enterprise,Cloud Platform,EMEA,89640.37,0,2023-02-15
+17,Enterprise Client 17,Enterprise,Cloud Platform,LATAM,81830.02,0,2023-02-18
+18,Enterprise Client 18,Enterprise,Developer Tools,APAC,97234.82,0,2023-02-21
+19,Enterprise Client 19,Enterprise,Developer Tools,North America,85282.25,0,2023-02-24
+20,Enterprise Client 20,Enterprise,Cloud Platform,North America,58177.0,0,2023-02-27
+21,Enterprise Client 21,Enterprise,Cloud Platform,APAC,71172.29,0,2023-03-02
+22,Enterprise Client 22,Enterprise,Cloud Platform,EMEA,69019.35,0,2023-03-05
+23,Enterprise Client 23,Enterprise,Security Suite,North America,54463.85,0,2023-03-08
+24,Enterprise Client 24,Enterprise,Security Suite,North America,111515.5,0,2023-03-11
+25,Enterprise Client 25,Enterprise,Security Suite,EMEA,45332.35,0,2023-03-14
+26,Enterprise Client 26,Enterprise,Security Suite,North America,94124.11,0,2023-03-17
+27,Enterprise Client 27,Enterprise,Cloud Platform,APAC,69134.83,0,2023-03-20
+28,Enterprise Client 28,Enterprise,Cloud Platform,North America,86995.1,0,2023-03-23
+29,Enterprise Client 29,Enterprise,Cloud Platform,EMEA,65932.55,0,2023-03-26
+30,Enterprise Client 30,Enterprise,Security Suite,North America,87956.75,0,2023-03-29
+31,Enterprise Client 31,Enterprise,Security Suite,EMEA,53025.36,0,2023-04-01
+32,Enterprise Client 32,Enterprise,Security Suite,North America,82812.42,0,2023-04-04
+33,Enterprise Client 33,Enterprise,Cloud Platform,North America,80212.99,0,2023-04-07
+34,Enterprise Client 34,Enterprise,Cloud Platform,EMEA,52236.12,0,2023-04-10
+35,Enterprise Client 35,Enterprise,Analytics Pro,APAC,66160.07,0,2023-04-13
+36,Enterprise Client 36,Enterprise,Cloud Platform,EMEA,61772.18,0,2023-04-16
+37,Enterprise Client 37,Enterprise,Cloud Platform,North America,60390.06,0,2023-04-19
+38,Enterprise Client 38,Enterprise,Developer Tools,APAC,55832.68,0,2023-04-22
+39,Enterprise Client 39,Enterprise,Security Suite,APAC,87676.62,0,2023-04-25
+40,Enterprise Client 40,Enterprise,Security Suite,EMEA,57542.2,0,2023-04-28
+41,Enterprise Client 41,Enterprise,Security Suite,North America,99413.62,0,2023-05-01
+42,Enterprise Client 42,Enterprise,Cloud Platform,North America,52381.83,0,2023-05-04
+43,Enterprise Client 43,Enterprise,Security Suite,North America,100126.77,0,2023-05-07
+44,Enterprise Client 44,Enterprise,Cloud Platform,North America,79404.68,0,2023-05-10
+45,Enterprise Client 45,Enterprise,Cloud Platform,APAC,53043.64,0,2023-05-13
+46,Enterprise Client 46,Enterprise,Analytics Pro,EMEA,66756.71,0,2023-05-16
+47,Enterprise Client 47,Enterprise,Developer Tools,LATAM,69483.08,0,2023-05-19
+48,Enterprise Client 48,Enterprise,Analytics Pro,North America,61940.11,0,2023-05-22
+49,Enterprise Client 49,Enterprise,Cloud Platform,EMEA,64169.55,0,2023-05-25
+50,Enterprise Client 50,Enterprise,Cloud Platform,North America,78860.56,0,2023-05-28
+51,Enterprise Client 51,Enterprise,Cloud Platform,North America,106213.3,0,2023-05-31
+52,Enterprise Client 52,Enterprise,Developer Tools,North America,77968.58,0,2023-06-03
+53,Enterprise Client 53,Enterprise,Security Suite,North America,90288.69,0,2023-06-06
+54,Enterprise Client 54,Enterprise,Cloud Platform,EMEA,94070.78,0,2023-06-09
+55,Enterprise Client 55,Enterprise,Analytics Pro,North America,87685.12,0,2023-06-12
+56,Enterprise Client 56,Enterprise,Cloud Platform,North America,101292.66,0,2023-06-15
+57,Enterprise Client 57,Enterprise,Analytics Pro,EMEA,47709.81,0,2023-06-18
+58,Enterprise Client 58,Enterprise,Analytics Pro,North America,46078.62,0,2023-06-21
+59,Enterprise Client 59,Enterprise,Cloud Platform,EMEA,88470.33,0,2023-06-24
+60,Enterprise Client 60,Enterprise,Developer Tools,North America,71041.33,0,2023-06-27
+61,Enterprise Client 61,Enterprise,Cloud Platform,APAC,67961.42,0,2023-06-30
+62,Enterprise Client 62,Enterprise,Cloud Platform,EMEA,104127.62,0,2023-07-03
+63,Enterprise Client 63,Enterprise,Analytics Pro,EMEA,100073.32,0,2023-07-06
+64,Enterprise Client 64,Enterprise,Cloud Platform,APAC,61270.43,0,2023-07-09
+65,Enterprise Client 65,Enterprise,Analytics Pro,North America,105684.04,0,2023-07-12
+66,Enterprise Client 66,Enterprise,Security Suite,APAC,68510.6,0,2023-07-15
+67,Enterprise Client 67,Enterprise,Security Suite,EMEA,104784.96,0,2023-07-18
+68,Enterprise Client 68,Enterprise,Cloud Platform,APAC,50634.33,0,2023-07-21
+69,Enterprise Client 69,Enterprise,Cloud Platform,North America,85857.45,0,2023-07-24
+70,Enterprise Client 70,Enterprise,Cloud Platform,North America,89706.43,0,2023-07-27
+71,Enterprise Client 71,Enterprise,Analytics Pro,EMEA,81966.49,0,2023-07-30
+72,Enterprise Client 72,Enterprise,Security Suite,North America,60084.64,0,2023-08-02
+73,Enterprise Client 73,Enterprise,Security Suite,EMEA,66904.86,0,2023-08-05
+74,Enterprise Client 74,Enterprise,Analytics Pro,EMEA,102231.48,0,2023-08-08
+75,Enterprise Client 75,Enterprise,Cloud Platform,North America,51277.35,0,2023-08-11
+76,Enterprise Client 76,Enterprise,Developer Tools,North America,61414.57,0,2023-08-14
+77,Enterprise Client 77,Enterprise,Analytics Pro,EMEA,105119.47,0,2023-08-17
+78,Enterprise Client 78,Enterprise,Analytics Pro,North America,78857.73,0,2023-08-20
+79,Enterprise Client 79,Enterprise,Security Suite,North America,58127.1,0,2023-08-23
+80,Enterprise Client 80,Enterprise,Analytics Pro,North America,46599.8,0,2023-08-26
+81,Enterprise Client 81,Enterprise,Developer Tools,APAC,108384.37,0,2023-08-29
+82,Enterprise Client 82,Enterprise,Cloud Platform,APAC,69923.4,0,2023-09-01
+83,Enterprise Client 83,Enterprise,Developer Tools,LATAM,73836.63,0,2023-09-04
+84,Enterprise Client 84,Enterprise,Cloud Platform,North America,102486.81,0,2023-09-07
+85,Enterprise Client 85,Enterprise,Cloud Platform,North America,102360.51,0,2023-09-10
+86,Enterprise Client 86,Enterprise,Developer Tools,EMEA,82510.56,0,2023-09-13
+87,Enterprise Client 87,Enterprise,Cloud Platform,EMEA,83404.81,0,2023-09-16
+88,Enterprise Client 88,Enterprise,Cloud Platform,EMEA,111729.07,0,2023-09-19
+89,Enterprise Client 89,Enterprise,Security Suite,EMEA,104129.89,0,2023-09-22
+90,Enterprise Client 90,Enterprise,Cloud Platform,North America,92335.39,0,2023-09-25
+91,Enterprise Client 91,Enterprise,Security Suite,APAC,99543.17,0,2023-09-28
+92,Enterprise Client 92,Enterprise,Analytics Pro,EMEA,106548.79,0,2023-10-01
+93,Enterprise Client 93,Enterprise,Analytics Pro,EMEA,98796.89,0,2023-10-04
+94,Enterprise Client 94,Enterprise,Security Suite,North America,98628.12,0,2023-10-07
+95,Enterprise Client 95,Enterprise,Cloud Platform,EMEA,70289.21,0,2023-10-10
+96,Enterprise Client 96,Enterprise,Analytics Pro,EMEA,47383.88,0,2023-10-13
+97,Enterprise Client 97,Enterprise,Analytics Pro,North America,64284.25,0,2023-10-16
+98,Enterprise Client 98,Enterprise,Security Suite,North America,47478.69,0,2023-10-19
+99,Enterprise Client 99,Enterprise,Analytics Pro,EMEA,53528.88,0,2023-10-22
+100,Enterprise Client 100,Enterprise,Analytics Pro,North America,59514.88,0,2023-10-25
+101,SMB Client 101,SMB,Analytics Pro,EMEA,939.54,1,2023-01-01
+102,SMB Client 102,SMB,Security Suite,LATAM,2521.06,1,2023-01-02
+103,SMB Client 103,SMB,Analytics Pro,APAC,2194.01,1,2023-01-03
+104,SMB Client 104,SMB,Analytics Pro,North America,1531.25,1,2023-01-04
+105,SMB Client 105,SMB,Developer Tools,APAC,868.45,1,2023-01-05
+106,SMB Client 106,SMB,Analytics Pro,North America,2679.13,1,2023-01-06
+107,SMB Client 107,SMB,Analytics Pro,EMEA,1222.38,1,2023-01-07
+108,SMB Client 108,SMB,Security Suite,North America,2729.41,1,2023-01-08
+109,SMB Client 109,SMB,Security Suite,EMEA,3378.14,1,2023-01-09
+110,SMB Client 110,SMB,Analytics Pro,North America,2451.65,1,2023-01-10
+111,SMB Client 111,SMB,Developer Tools,North America,1761.13,1,2023-01-11
+112,SMB Client 112,SMB,Cloud Platform,North America,1113.4,1,2023-01-12
+113,SMB Client 113,SMB,Security Suite,EMEA,3109.74,1,2023-01-13
+114,SMB Client 114,SMB,Analytics Pro,EMEA,1064.15,1,2023-01-14
+115,SMB Client 115,SMB,Analytics Pro,North America,1267.65,1,2023-01-15
+116,SMB Client 116,SMB,Security Suite,North America,2462.8,1,2023-01-16
+117,SMB Client 117,SMB,Security Suite,EMEA,1811.45,1,2023-01-17
+118,SMB Client 118,SMB,Security Suite,North America,3112.52,1,2023-01-18
+119,SMB Client 119,SMB,Security Suite,North America,990.54,1,2023-01-19
+120,SMB Client 120,SMB,Developer Tools,EMEA,2381.59,1,2023-01-20
+121,SMB Client 121,SMB,Security Suite,EMEA,1848.06,1,2023-01-21
+122,SMB Client 122,SMB,Developer Tools,North America,2273.17,1,2023-01-22
+123,SMB Client 123,SMB,Developer Tools,North America,3395.21,1,2023-01-23
+124,SMB Client 124,SMB,Cloud Platform,North America,987.28,1,2023-01-24
+125,SMB Client 125,SMB,Security Suite,North America,1055.0,1,2023-01-25
+126,SMB Client 126,SMB,Developer Tools,North America,1661.23,1,2023-01-26
+127,SMB Client 127,SMB,Analytics Pro,North America,2999.06,1,2023-01-27
+128,SMB Client 128,SMB,Security Suite,APAC,2681.19,1,2023-01-28
+129,SMB Client 129,SMB,Developer Tools,North America,2784.69,1,2023-01-29
+130,SMB Client 130,SMB,Developer Tools,APAC,1279.09,1,2023-01-30
+131,SMB Client 131,SMB,Analytics Pro,North America,3474.36,1,2023-01-31
+132,SMB Client 132,SMB,Analytics Pro,LATAM,2896.31,1,2023-02-01
+133,SMB Client 133,SMB,Analytics Pro,APAC,3117.71,1,2023-02-02
+134,SMB Client 134,SMB,Cloud Platform,LATAM,2837.27,1,2023-02-03
+135,SMB Client 135,SMB,Developer Tools,North America,2164.18,1,2023-02-04
+136,SMB Client 136,SMB,Analytics Pro,North America,3217.91,1,2023-02-05
+137,SMB Client 137,SMB,Cloud Platform,North America,3244.53,1,2023-02-06
+138,SMB Client 138,SMB,Developer Tools,EMEA,3365.17,1,2023-02-07
+139,SMB Client 139,SMB,Analytics Pro,North America,2505.96,1,2023-02-08
+140,SMB Client 140,SMB,Security Suite,APAC,1687.39,1,2023-02-09
+141,SMB Client 141,SMB,Developer Tools,North America,2937.26,1,2023-02-10
+142,SMB Client 142,SMB,Cloud Platform,EMEA,2134.93,1,2023-02-11
+143,SMB Client 143,SMB,Developer Tools,North America,1992.13,1,2023-02-12
+144,SMB Client 144,SMB,Cloud Platform,APAC,1116.08,1,2023-02-13
+145,SMB Client 145,SMB,Cloud Platform,North America,2469.19,1,2023-02-14
+146,SMB Client 146,SMB,Cloud Platform,APAC,2692.62,1,2023-02-15
+147,SMB Client 147,SMB,Cloud Platform,North America,2706.85,1,2023-02-16
+148,SMB Client 148,SMB,Analytics Pro,North America,3463.93,1,2023-02-17
+149,SMB Client 149,SMB,Developer Tools,LATAM,2994.56,1,2023-02-18
+150,SMB Client 150,SMB,Analytics Pro,North America,2834.12,1,2023-02-19
+151,SMB Client 151,SMB,Analytics Pro,EMEA,2898.3,1,2023-02-20
+152,SMB Client 152,SMB,Cloud Platform,EMEA,3247.16,1,2023-02-21
+153,SMB Client 153,SMB,Analytics Pro,North America,830.65,1,2023-02-22
+154,SMB Client 154,SMB,Cloud Platform,EMEA,1120.81,1,2023-02-23
+155,SMB Client 155,SMB,Analytics Pro,LATAM,2814.32,1,2023-02-24
+156,SMB Client 156,SMB,Analytics Pro,APAC,1812.15,1,2023-02-25
+157,SMB Client 157,SMB,Developer Tools,North America,1403.71,1,2023-02-26
+158,SMB Client 158,SMB,Cloud Platform,APAC,3418.67,1,2023-02-27
+159,SMB Client 159,SMB,Developer Tools,North America,2224.79,1,2023-02-28
+160,SMB Client 160,SMB,Developer Tools,EMEA,2295.41,1,2023-03-01
+161,SMB Client 161,SMB,Security Suite,EMEA,2499.38,1,2023-03-02
+162,SMB Client 162,SMB,Analytics Pro,LATAM,2494.41,1,2023-03-03
+163,SMB Client 163,SMB,Analytics Pro,LATAM,922.71,1,2023-03-04
+164,SMB Client 164,SMB,Analytics Pro,EMEA,3203.71,1,2023-03-05
+165,SMB Client 165,SMB,Cloud Platform,EMEA,1548.93,1,2023-03-06
+166,SMB Client 166,SMB,Analytics Pro,North America,1754.05,1,2023-03-07
+167,SMB Client 167,SMB,Developer Tools,EMEA,3430.87,1,2023-03-08
+168,SMB Client 168,SMB,Analytics Pro,APAC,2247.46,1,2023-03-09
+169,SMB Client 169,SMB,Cloud Platform,LATAM,2648.77,1,2023-03-10
+170,SMB Client 170,SMB,Developer Tools,APAC,3020.85,1,2023-03-11
+171,SMB Client 171,SMB,Analytics Pro,LATAM,2456.22,1,2023-03-12
+172,SMB Client 172,SMB,Cloud Platform,North America,3138.37,1,2023-03-13
+173,SMB Client 173,SMB,Developer Tools,LATAM,1816.45,1,2023-03-14
+174,SMB Client 174,SMB,Analytics Pro,North America,1206.13,1,2023-03-15
+175,SMB Client 175,SMB,Developer Tools,APAC,3418.77,1,2023-03-16
+176,SMB Client 176,SMB,Analytics Pro,North America,2065.47,1,2023-03-17
+177,SMB Client 177,SMB,Developer Tools,APAC,952.21,1,2023-03-18
+178,SMB Client 178,SMB,Developer Tools,EMEA,3499.24,1,2023-03-19
+179,SMB Client 179,SMB,Developer Tools,APAC,2876.27,1,2023-03-20
+180,SMB Client 180,SMB,Analytics Pro,North America,1467.84,1,2023-03-21
+181,SMB Client 181,SMB,Security Suite,North America,3375.94,1,2023-03-22
+182,SMB Client 182,SMB,Security Suite,North America,2613.59,1,2023-03-23
+183,SMB Client 183,SMB,Security Suite,EMEA,1106.61,1,2023-03-24
+184,SMB Client 184,SMB,Analytics Pro,APAC,2885.26,1,2023-03-25
+185,SMB Client 185,SMB,Analytics Pro,APAC,2290.15,1,2023-03-26
+186,SMB Client 186,SMB,Cloud Platform,North America,1889.4,1,2023-03-27
+187,SMB Client 187,SMB,Security Suite,APAC,2838.87,1,2023-03-28
+188,SMB Client 188,SMB,Cloud Platform,North America,1375.0,1,2023-03-29
+189,SMB Client 189,SMB,Analytics Pro,North America,1746.59,1,2023-03-30
+190,SMB Client 190,SMB,Developer Tools,North America,1981.18,1,2023-03-31
+191,SMB Client 191,SMB,Developer Tools,North America,2187.77,1,2023-04-01
+192,SMB Client 192,SMB,Developer Tools,LATAM,2479.63,1,2023-04-02
+193,SMB Client 193,SMB,Developer Tools,EMEA,1197.1,1,2023-04-03
+194,SMB Client 194,SMB,Analytics Pro,LATAM,1497.26,1,2023-04-04
+195,SMB Client 195,SMB,Analytics Pro,EMEA,2130.07,1,2023-04-05
+196,SMB Client 196,SMB,Cloud Platform,North America,1448.39,1,2023-04-06
+197,SMB Client 197,SMB,Cloud Platform,North America,1145.72,0,2023-04-07
+198,SMB Client 198,SMB,Cloud Platform,North America,2530.36,0,2023-04-08
+199,SMB Client 199,SMB,Analytics Pro,EMEA,3221.33,0,2023-04-09
+200,SMB Client 200,SMB,Cloud Platform,North America,1265.26,0,2023-04-10
+201,SMB Client 201,SMB,Analytics Pro,North America,1256.12,0,2023-04-11
+202,SMB Client 202,SMB,Cloud Platform,EMEA,1039.5,0,2023-04-12
+203,SMB Client 203,SMB,Analytics Pro,EMEA,1357.1,0,2023-04-13
+204,SMB Client 204,SMB,Cloud Platform,APAC,2664.07,0,2023-04-14
+205,SMB Client 205,SMB,Cloud Platform,APAC,2495.33,0,2023-04-15
+206,SMB Client 206,SMB,Cloud Platform,North America,3286.36,0,2023-04-16
+207,SMB Client 207,SMB,Security Suite,North America,2976.74,0,2023-04-17
+208,SMB Client 208,SMB,Analytics Pro,EMEA,1365.24,0,2023-04-18
+209,SMB Client 209,SMB,Analytics Pro,EMEA,2469.29,0,2023-04-19
+210,SMB Client 210,SMB,Cloud Platform,North America,2818.17,0,2023-04-20
+211,SMB Client 211,SMB,Developer Tools,EMEA,2726.04,0,2023-04-21
+212,SMB Client 212,SMB,Cloud Platform,EMEA,2236.71,0,2023-04-22
+213,SMB Client 213,SMB,Cloud Platform,North America,2238.07,0,2023-04-23
+214,SMB Client 214,SMB,Cloud Platform,North America,1818.67,0,2023-04-24
+215,SMB Client 215,SMB,Analytics Pro,North America,1370.91,0,2023-04-25
+216,SMB Client 216,SMB,Analytics Pro,EMEA,3204.42,0,2023-04-26
+217,SMB Client 217,SMB,Analytics Pro,North America,2930.76,0,2023-04-27
+218,SMB Client 218,SMB,Analytics Pro,APAC,2250.19,0,2023-04-28
+219,SMB Client 219,SMB,Cloud Platform,North America,1965.48,0,2023-04-29
+220,SMB Client 220,SMB,Security Suite,EMEA,1780.32,0,2023-04-30
+221,SMB Client 221,SMB,Developer Tools,EMEA,1761.46,0,2023-05-01
+222,SMB Client 222,SMB,Cloud Platform,North America,1440.51,0,2023-05-02
+223,SMB Client 223,SMB,Cloud Platform,North America,1464.09,0,2023-05-03
+224,SMB Client 224,SMB,Cloud Platform,APAC,1569.76,0,2023-05-04
+225,SMB Client 225,SMB,Analytics Pro,EMEA,1016.63,0,2023-05-05
+226,SMB Client 226,SMB,Cloud Platform,North America,3452.42,0,2023-05-06
+227,SMB Client 227,SMB,Developer Tools,APAC,3417.57,0,2023-05-07
+228,SMB Client 228,SMB,Cloud Platform,EMEA,1496.34,0,2023-05-08
+229,SMB Client 229,SMB,Analytics Pro,EMEA,3309.32,0,2023-05-09
+230,SMB Client 230,SMB,Developer Tools,North America,1555.94,0,2023-05-10
+231,SMB Client 231,SMB,Analytics Pro,EMEA,1673.93,0,2023-05-11
+232,SMB Client 232,SMB,Cloud Platform,EMEA,1454.51,0,2023-05-12
+233,SMB Client 233,SMB,Analytics Pro,North America,1579.3,0,2023-05-13
+234,SMB Client 234,SMB,Analytics Pro,North America,2099.08,0,2023-05-14
+235,SMB Client 235,SMB,Cloud Platform,North America,1708.83,0,2023-05-15
+236,SMB Client 236,SMB,Analytics Pro,APAC,3472.89,0,2023-05-16
+237,SMB Client 237,SMB,Security Suite,APAC,1487.53,0,2023-05-17
+238,SMB Client 238,SMB,Analytics Pro,EMEA,2408.22,0,2023-05-18
+239,SMB Client 239,SMB,Developer Tools,APAC,1741.94,0,2023-05-19
+240,SMB Client 240,SMB,Cloud Platform,APAC,3405.57,0,2023-05-20
+241,SMB Client 241,SMB,Cloud Platform,North America,3333.52,0,2023-05-21
+242,SMB Client 242,SMB,Analytics Pro,APAC,2801.03,0,2023-05-22
+243,SMB Client 243,SMB,Developer Tools,North America,1177.39,0,2023-05-23
+244,SMB Client 244,SMB,Cloud Platform,APAC,1241.87,0,2023-05-24
+245,SMB Client 245,SMB,Analytics Pro,North America,2596.03,0,2023-05-25
+246,SMB Client 246,SMB,Analytics Pro,APAC,3168.44,0,2023-05-26
+247,SMB Client 247,SMB,Analytics Pro,EMEA,1985.66,0,2023-05-27
+248,SMB Client 248,SMB,Security Suite,EMEA,1613.72,0,2023-05-28
+249,SMB Client 249,SMB,Developer Tools,North America,1426.97,0,2023-05-29
+250,SMB Client 250,SMB,Developer Tools,EMEA,2267.59,0,2023-05-30
+251,SMB Client 251,SMB,Developer Tools,EMEA,1115.62,0,2023-05-31
+252,SMB Client 252,SMB,Cloud Platform,APAC,1704.25,0,2023-06-01
+253,SMB Client 253,SMB,Analytics Pro,APAC,2474.2,0,2023-06-02
+254,SMB Client 254,SMB,Cloud Platform,North America,2929.21,0,2023-06-03
+255,SMB Client 255,SMB,Security Suite,North America,1470.92,0,2023-06-04
+256,SMB Client 256,SMB,Developer Tools,APAC,2338.7,0,2023-06-05
+257,SMB Client 257,SMB,Developer Tools,North America,1723.62,0,2023-06-06
+258,SMB Client 258,SMB,Cloud Platform,North America,3085.42,0,2023-06-07
+259,SMB Client 259,SMB,Cloud Platform,North America,2952.7,0,2023-06-08
+260,SMB Client 260,SMB,Security Suite,EMEA,2750.08,0,2023-06-09
+261,SMB Client 261,SMB,Analytics Pro,North America,2673.66,0,2023-06-10
+262,SMB Client 262,SMB,Cloud Platform,LATAM,1733.38,0,2023-06-11
+263,SMB Client 263,SMB,Analytics Pro,EMEA,2375.16,0,2023-06-12
+264,SMB Client 264,SMB,Cloud Platform,EMEA,3357.67,0,2023-06-13
+265,SMB Client 265,SMB,Security Suite,North America,2165.9,0,2023-06-14
+266,SMB Client 266,SMB,Developer Tools,EMEA,3154.73,0,2023-06-15
+267,SMB Client 267,SMB,Developer Tools,APAC,2680.96,0,2023-06-16
+268,SMB Client 268,SMB,Analytics Pro,EMEA,1211.86,0,2023-06-17
+269,SMB Client 269,SMB,Security Suite,LATAM,1945.15,0,2023-06-18
+270,SMB Client 270,SMB,Analytics Pro,North America,3299.03,0,2023-06-19
+271,SMB Client 271,SMB,Developer Tools,North America,3459.07,0,2023-06-20
+272,SMB Client 272,SMB,Developer Tools,EMEA,3286.27,0,2023-06-21
+273,SMB Client 273,SMB,Analytics Pro,North America,2396.44,0,2023-06-22
+274,SMB Client 274,SMB,Developer Tools,North America,1705.03,0,2023-06-23
+275,SMB Client 275,SMB,Analytics Pro,EMEA,1700.45,0,2023-06-24
+276,SMB Client 276,SMB,Analytics Pro,North America,3283.61,0,2023-06-25
+277,SMB Client 277,SMB,Analytics Pro,North America,2791.25,0,2023-06-26
+278,SMB Client 278,SMB,Cloud Platform,North America,2021.59,0,2023-06-27
+279,SMB Client 279,SMB,Analytics Pro,LATAM,2145.59,0,2023-06-28
+280,SMB Client 280,SMB,Analytics Pro,EMEA,1778.46,0,2023-06-29
+281,SMB Client 281,SMB,Security Suite,North America,835.36,0,2023-06-30
+282,SMB Client 282,SMB,Cloud Platform,EMEA,3394.89,0,2023-07-01
+283,SMB Client 283,SMB,Developer Tools,EMEA,1030.44,0,2023-07-02
+284,SMB Client 284,SMB,Cloud Platform,APAC,2407.54,0,2023-07-03
+285,SMB Client 285,SMB,Developer Tools,North America,1366.75,0,2023-07-04
+286,SMB Client 286,SMB,Cloud Platform,EMEA,1314.86,0,2023-07-05
+287,SMB Client 287,SMB,Cloud Platform,APAC,2325.07,0,2023-07-06
+288,SMB Client 288,SMB,Analytics Pro,EMEA,2023.88,0,2023-07-07
+289,SMB Client 289,SMB,Analytics Pro,North America,1882.06,0,2023-07-08
+290,SMB Client 290,SMB,Developer Tools,LATAM,1291.21,0,2023-07-09
+291,SMB Client 291,SMB,Analytics Pro,EMEA,1807.94,0,2023-07-10
+292,SMB Client 292,SMB,Cloud Platform,North America,1903.58,0,2023-07-11
+293,SMB Client 293,SMB,Security Suite,North America,2733.13,0,2023-07-12
+294,SMB Client 294,SMB,Cloud Platform,EMEA,1399.32,0,2023-07-13
+295,SMB Client 295,SMB,Cloud Platform,APAC,853.22,0,2023-07-14
+296,SMB Client 296,SMB,Security Suite,North America,1282.07,0,2023-07-15
+297,SMB Client 297,SMB,Cloud Platform,APAC,1068.49,0,2023-07-16
+298,SMB Client 298,SMB,Developer Tools,North America,3110.38,0,2023-07-17
+299,SMB Client 299,SMB,Cloud Platform,North America,2603.83,0,2023-07-18
+300,SMB Client 300,SMB,Cloud Platform,North America,3220.11,0,2023-07-19
+301,SMB Client 301,SMB,Cloud Platform,North America,1361.29,0,2023-07-20
+302,SMB Client 302,SMB,Analytics Pro,APAC,2374.21,0,2023-07-21
+303,SMB Client 303,SMB,Analytics Pro,North America,3007.1,0,2023-07-22
+304,SMB Client 304,SMB,Analytics Pro,North America,1825.17,0,2023-07-23
+305,SMB Client 305,SMB,Analytics Pro,EMEA,2485.2,0,2023-07-24
+306,SMB Client 306,SMB,Analytics Pro,LATAM,1977.54,0,2023-07-25
+307,SMB Client 307,SMB,Cloud Platform,APAC,2861.74,0,2023-07-26
+308,SMB Client 308,SMB,Developer Tools,APAC,2116.06,0,2023-07-27
+309,SMB Client 309,SMB,Cloud Platform,North America,1948.08,0,2023-07-28
+310,SMB Client 310,SMB,Security Suite,North America,2262.41,0,2023-07-29
+311,SMB Client 311,SMB,Developer Tools,LATAM,1176.26,0,2023-07-30
+312,SMB Client 312,SMB,Cloud Platform,North America,2219.36,0,2023-07-31
+313,SMB Client 313,SMB,Developer Tools,North America,849.65,0,2023-08-01
+314,SMB Client 314,SMB,Analytics Pro,EMEA,2356.59,0,2023-08-02
+315,SMB Client 315,SMB,Developer Tools,North America,2558.84,0,2023-08-03
+316,SMB Client 316,SMB,Cloud Platform,LATAM,829.69,0,2023-08-04
+317,SMB Client 317,SMB,Analytics Pro,EMEA,3159.5,0,2023-08-05
+318,SMB Client 318,SMB,Cloud Platform,LATAM,2595.6,0,2023-08-06
+319,SMB Client 319,SMB,Analytics Pro,EMEA,1930.68,0,2023-08-07
+320,SMB Client 320,SMB,Cloud Platform,APAC,926.81,0,2023-08-08
+321,SMB Client 321,SMB,Security Suite,North America,1023.56,0,2023-08-09
+322,SMB Client 322,SMB,Analytics Pro,North America,1851.1,0,2023-08-10
+323,SMB Client 323,SMB,Analytics Pro,EMEA,2741.42,0,2023-08-11
+324,SMB Client 324,SMB,Security Suite,LATAM,2085.34,0,2023-08-12
+325,SMB Client 325,SMB,Cloud Platform,North America,2777.94,0,2023-08-13
+326,SMB Client 326,SMB,Analytics Pro,North America,1508.11,0,2023-08-14
+327,SMB Client 327,SMB,Analytics Pro,North America,2140.19,0,2023-08-15
+328,SMB Client 328,SMB,Cloud Platform,North America,2881.46,0,2023-08-16
+329,SMB Client 329,SMB,Analytics Pro,EMEA,2766.11,0,2023-08-17
+330,SMB Client 330,SMB,Cloud Platform,APAC,1974.03,0,2023-08-18
+331,SMB Client 331,SMB,Security Suite,North America,2958.42,0,2023-08-19
+332,SMB Client 332,SMB,Analytics Pro,North America,2393.62,0,2023-08-20
+333,SMB Client 333,SMB,Cloud Platform,LATAM,3276.75,0,2023-08-21
+334,SMB Client 334,SMB,Cloud Platform,EMEA,2004.22,0,2023-08-22
+335,SMB Client 335,SMB,Security Suite,APAC,3156.95,0,2023-08-23
+336,SMB Client 336,SMB,Security Suite,APAC,2578.72,0,2023-08-24
+337,SMB Client 337,SMB,Analytics Pro,North America,1474.1,0,2023-08-25
+338,SMB Client 338,SMB,Developer Tools,North America,3466.7,0,2023-08-26
+339,SMB Client 339,SMB,Developer Tools,North America,2705.05,0,2023-08-27
+340,SMB Client 340,SMB,Developer Tools,North America,2333.45,0,2023-08-28
+341,SMB Client 341,SMB,Analytics Pro,LATAM,2683.03,0,2023-08-29
+342,SMB Client 342,SMB,Developer Tools,EMEA,3421.86,0,2023-08-30
+343,SMB Client 343,SMB,Developer Tools,North America,3127.52,0,2023-08-31
+344,SMB Client 344,SMB,Cloud Platform,EMEA,3038.07,0,2023-09-01
+345,SMB Client 345,SMB,Cloud Platform,North America,1421.02,0,2023-09-02
+346,SMB Client 346,SMB,Analytics Pro,APAC,2679.98,0,2023-09-03
+347,SMB Client 347,SMB,Analytics Pro,EMEA,976.46,0,2023-09-04
+348,SMB Client 348,SMB,Analytics Pro,EMEA,2934.95,0,2023-09-05
+349,SMB Client 349,SMB,Security Suite,North America,3192.14,0,2023-09-06
+350,SMB Client 350,SMB,Developer Tools,North America,865.88,0,2023-09-07
+351,SMB Client 351,SMB,Analytics Pro,LATAM,3161.69,0,2023-09-08
+352,SMB Client 352,SMB,Developer Tools,North America,2956.71,0,2023-09-09
+353,SMB Client 353,SMB,Analytics Pro,EMEA,2871.41,0,2023-09-10
+354,SMB Client 354,SMB,Developer Tools,LATAM,2494.26,0,2023-09-11
+355,SMB Client 355,SMB,Analytics Pro,EMEA,2874.34,0,2023-09-12
+356,SMB Client 356,SMB,Cloud Platform,North America,2791.47,0,2023-09-13
+357,SMB Client 357,SMB,Analytics Pro,North America,1757.48,0,2023-09-14
+358,SMB Client 358,SMB,Cloud Platform,North America,1430.74,0,2023-09-15
+359,SMB Client 359,SMB,Analytics Pro,North America,3466.85,0,2023-09-16
+360,SMB Client 360,SMB,Cloud Platform,LATAM,2635.05,0,2023-09-17
+361,SMB Client 361,SMB,Cloud Platform,EMEA,2923.13,0,2023-09-18
+362,SMB Client 362,SMB,Developer Tools,EMEA,3173.62,0,2023-09-19
+363,SMB Client 363,SMB,Cloud Platform,LATAM,2456.21,0,2023-09-20
+364,SMB Client 364,SMB,Developer Tools,EMEA,1425.51,0,2023-09-21
+365,SMB Client 365,SMB,Analytics Pro,North America,2440.89,0,2023-09-22
+366,SMB Client 366,SMB,Cloud Platform,North America,1276.63,0,2023-09-23
+367,SMB Client 367,SMB,Analytics Pro,North America,2904.88,0,2023-09-24
+368,SMB Client 368,SMB,Developer Tools,LATAM,3416.58,0,2023-09-25
+369,SMB Client 369,SMB,Cloud Platform,North America,3486.25,0,2023-09-26
+370,SMB Client 370,SMB,Security Suite,North America,2847.24,0,2023-09-27
+371,SMB Client 371,SMB,Cloud Platform,North America,3002.75,0,2023-09-28
+372,SMB Client 372,SMB,Analytics Pro,EMEA,2249.83,0,2023-09-29
+373,SMB Client 373,SMB,Developer Tools,North America,1047.01,0,2023-09-30
+374,SMB Client 374,SMB,Developer Tools,LATAM,1149.69,0,2023-10-01
+375,SMB Client 375,SMB,Developer Tools,EMEA,3127.74,0,2023-10-02
+376,SMB Client 376,SMB,Cloud Platform,EMEA,2287.31,0,2023-10-03
+377,SMB Client 377,SMB,Analytics Pro,APAC,1806.26,0,2023-10-04
+378,SMB Client 378,SMB,Cloud Platform,North America,2138.86,0,2023-10-05
+379,SMB Client 379,SMB,Cloud Platform,APAC,2644.8,0,2023-10-06
+380,SMB Client 380,SMB,Analytics Pro,EMEA,2136.9,0,2023-10-07
+381,SMB Client 381,SMB,Analytics Pro,EMEA,3026.64,0,2023-10-08
+382,SMB Client 382,SMB,Analytics Pro,APAC,2327.48,0,2023-10-09
+383,SMB Client 383,SMB,Security Suite,APAC,2953.05,0,2023-10-10
+384,SMB Client 384,SMB,Security Suite,APAC,3141.69,0,2023-10-11
+385,SMB Client 385,SMB,Security Suite,EMEA,2683.17,0,2023-10-12
+386,SMB Client 386,SMB,Cloud Platform,APAC,2832.33,0,2023-10-13
+387,SMB Client 387,SMB,Cloud Platform,APAC,3153.98,0,2023-10-14
+388,SMB Client 388,SMB,Analytics Pro,APAC,1147.95,0,2023-10-15
+389,SMB Client 389,SMB,Developer Tools,APAC,1234.05,0,2023-10-16
+390,SMB Client 390,SMB,Cloud Platform,North America,2170.16,0,2023-10-17
+391,SMB Client 391,SMB,Developer Tools,EMEA,2465.7,0,2023-10-18
+392,SMB Client 392,SMB,Security Suite,EMEA,1501.47,0,2023-10-19
+393,SMB Client 393,SMB,Cloud Platform,APAC,2905.58,0,2023-10-20
+394,SMB Client 394,SMB,Developer Tools,North America,2261.42,0,2023-10-21
+395,SMB Client 395,SMB,Developer Tools,North America,2508.08,0,2023-10-22
+396,SMB Client 396,SMB,Security Suite,North America,3330.52,0,2023-10-23
+397,SMB Client 397,SMB,Security Suite,North America,1612.6,0,2023-10-24
+398,SMB Client 398,SMB,Analytics Pro,EMEA,2371.86,0,2023-10-25
+399,SMB Client 399,SMB,Developer Tools,LATAM,923.5,0,2023-10-26
+400,SMB Client 400,SMB,Security Suite,North America,3415.97,0,2023-10-27
+401,SMB Client 401,SMB,Cloud Platform,North America,2847.31,0,2023-10-28
+402,SMB Client 402,SMB,Analytics Pro,APAC,1673.75,0,2023-10-29
+403,SMB Client 403,SMB,Analytics Pro,North America,2644.9,0,2023-10-30
+404,SMB Client 404,SMB,Analytics Pro,EMEA,3492.24,0,2023-10-31
+405,SMB Client 405,SMB,Developer Tools,EMEA,1241.78,0,2023-11-01
+406,SMB Client 406,SMB,Cloud Platform,EMEA,1396.08,0,2023-11-02
+407,SMB Client 407,SMB,Analytics Pro,LATAM,2567.18,0,2023-11-03
+408,SMB Client 408,SMB,Analytics Pro,LATAM,1207.86,0,2023-11-04
+409,SMB Client 409,SMB,Security Suite,North America,1933.26,0,2023-11-05
+410,SMB Client 410,SMB,Developer Tools,EMEA,1540.38,0,2023-11-06
+411,SMB Client 411,SMB,Cloud Platform,North America,3214.07,0,2023-11-07
+412,SMB Client 412,SMB,Security Suite,North America,884.06,0,2023-11-08
+413,SMB Client 413,SMB,Analytics Pro,LATAM,3133.77,0,2023-11-09
+414,SMB Client 414,SMB,Developer Tools,APAC,1300.92,0,2023-11-10
+415,SMB Client 415,SMB,Developer Tools,APAC,2881.49,0,2023-11-11
+416,SMB Client 416,SMB,Cloud Platform,North America,2490.79,0,2023-11-12
+417,SMB Client 417,SMB,Security Suite,APAC,3286.29,0,2023-11-13
+418,SMB Client 418,SMB,Cloud Platform,North America,2100.11,0,2023-11-14
+419,SMB Client 419,SMB,Analytics Pro,North America,2651.03,0,2023-11-15
+420,SMB Client 420,SMB,Cloud Platform,EMEA,2127.31,0,2023-11-16
+421,SMB Client 421,SMB,Developer Tools,North America,1526.28,0,2023-11-17
+422,SMB Client 422,SMB,Cloud Platform,North America,2029.09,0,2023-11-18
+423,SMB Client 423,SMB,Analytics Pro,EMEA,1859.73,0,2023-11-19
+424,SMB Client 424,SMB,Security Suite,APAC,1587.49,0,2023-11-20
+425,SMB Client 425,SMB,Cloud Platform,EMEA,2905.6,0,2023-11-21
+426,SMB Client 426,SMB,Cloud Platform,LATAM,1083.31,0,2023-11-22
+427,SMB Client 427,SMB,Analytics Pro,EMEA,1184.74,0,2023-11-23
+428,SMB Client 428,SMB,Analytics Pro,North America,2696.66,0,2023-11-24
+429,SMB Client 429,SMB,Analytics Pro,North America,1681.45,0,2023-11-25
+430,SMB Client 430,SMB,Cloud Platform,North America,1746.69,0,2023-11-26
+431,SMB Client 431,SMB,Cloud Platform,EMEA,1871.69,0,2023-11-27
+432,SMB Client 432,SMB,Developer Tools,North America,2661.56,0,2023-11-28
+433,SMB Client 433,SMB,Cloud Platform,EMEA,1252.2,0,2023-11-29
+434,SMB Client 434,SMB,Cloud Platform,LATAM,2707.48,0,2023-11-30
+435,SMB Client 435,SMB,Analytics Pro,APAC,940.32,0,2023-12-01
+436,SMB Client 436,SMB,Security Suite,APAC,3151.62,0,2023-12-02
+437,SMB Client 437,SMB,Developer Tools,North America,1716.52,0,2023-12-03
+438,SMB Client 438,SMB,Analytics Pro,APAC,3216.0,0,2023-12-04
+439,SMB Client 439,SMB,Security Suite,EMEA,2021.26,0,2023-12-05
+440,SMB Client 440,SMB,Cloud Platform,North America,2775.29,0,2023-12-06
+441,SMB Client 441,SMB,Cloud Platform,APAC,1467.18,0,2023-12-07
+442,SMB Client 442,SMB,Developer Tools,North America,1391.88,0,2023-12-08
+443,SMB Client 443,SMB,Developer Tools,EMEA,1291.72,0,2023-12-09
+444,SMB Client 444,SMB,Analytics Pro,APAC,2145.13,0,2023-12-10
+445,SMB Client 445,SMB,Developer Tools,LATAM,1416.83,0,2023-12-11
+446,SMB Client 446,SMB,Cloud Platform,EMEA,2555.88,0,2023-12-12
+447,SMB Client 447,SMB,Cloud Platform,North America,994.94,0,2023-12-13
+448,SMB Client 448,SMB,Developer Tools,APAC,2049.08,0,2023-12-14
+449,SMB Client 449,SMB,Analytics Pro,North America,2805.31,0,2023-12-15
+450,SMB Client 450,SMB,Developer Tools,North America,1801.8,0,2023-12-16
+451,SMB Client 451,SMB,Analytics Pro,EMEA,3140.99,0,2023-12-17
+452,SMB Client 452,SMB,Analytics Pro,APAC,2758.2,0,2023-12-18
+453,SMB Client 453,SMB,Analytics Pro,North America,3231.9,0,2023-12-19
+454,SMB Client 454,SMB,Developer Tools,North America,2399.35,0,2023-12-20
+455,SMB Client 455,SMB,Security Suite,APAC,2482.01,0,2023-12-21
+456,SMB Client 456,SMB,Security Suite,LATAM,1155.23,0,2023-12-22
+457,SMB Client 457,SMB,Cloud Platform,LATAM,1285.14,0,2023-12-23
+458,SMB Client 458,SMB,Developer Tools,EMEA,1288.64,0,2023-12-24
+459,SMB Client 459,SMB,Developer Tools,EMEA,1467.52,0,2023-12-25
+460,SMB Client 460,SMB,Analytics Pro,EMEA,2190.01,0,2023-12-26
+461,SMB Client 461,SMB,Analytics Pro,LATAM,1241.51,0,2023-12-27
+462,SMB Client 462,SMB,Security Suite,North America,1496.96,0,2023-12-28
+463,SMB Client 463,SMB,Cloud Platform,LATAM,2888.38,0,2023-12-29
+464,SMB Client 464,SMB,Cloud Platform,North America,2025.23,0,2023-12-30
+465,SMB Client 465,SMB,Analytics Pro,North America,1258.35,0,2023-12-31
+466,SMB Client 466,SMB,Analytics Pro,North America,3037.99,0,2023-01-01
+467,SMB Client 467,SMB,Security Suite,North America,2466.29,0,2023-01-02
+468,SMB Client 468,SMB,Cloud Platform,APAC,1252.57,0,2023-01-03
+469,SMB Client 469,SMB,Analytics Pro,APAC,2592.27,0,2023-01-04
+470,SMB Client 470,SMB,Analytics Pro,APAC,2975.31,0,2023-01-05
+471,SMB Client 471,SMB,Cloud Platform,North America,1355.77,0,2023-01-06
+472,SMB Client 472,SMB,Analytics Pro,LATAM,954.13,0,2023-01-07
+473,SMB Client 473,SMB,Cloud Platform,EMEA,906.23,0,2023-01-08
+474,SMB Client 474,SMB,Analytics Pro,EMEA,3321.46,0,2023-01-09
+475,SMB Client 475,SMB,Cloud Platform,LATAM,912.25,0,2023-01-10
+476,SMB Client 476,SMB,Cloud Platform,LATAM,3405.82,0,2023-01-11
+477,SMB Client 477,SMB,Developer Tools,EMEA,2525.62,0,2023-01-12
+478,SMB Client 478,SMB,Analytics Pro,EMEA,2192.11,0,2023-01-13
+479,SMB Client 479,SMB,Cloud Platform,North America,1177.06,0,2023-01-14
+480,SMB Client 480,SMB,Cloud Platform,EMEA,2702.64,0,2023-01-15
+481,SMB Client 481,SMB,Cloud Platform,EMEA,3418.76,0,2023-01-16
+482,SMB Client 482,SMB,Developer Tools,North America,1998.13,0,2023-01-17
+483,SMB Client 483,SMB,Developer Tools,LATAM,2670.09,0,2023-01-18
+484,SMB Client 484,SMB,Analytics Pro,EMEA,2644.77,0,2023-01-19
+485,SMB Client 485,SMB,Analytics Pro,North America,3146.04,0,2023-01-20
+486,SMB Client 486,SMB,Security Suite,EMEA,3313.56,0,2023-01-21
+487,SMB Client 487,SMB,Security Suite,North America,1382.32,0,2023-01-22
+488,SMB Client 488,SMB,Cloud Platform,EMEA,2558.33,0,2023-01-23
+489,SMB Client 489,SMB,Cloud Platform,LATAM,3498.42,0,2023-01-24
+490,SMB Client 490,SMB,Developer Tools,APAC,1898.65,0,2023-01-25
+491,SMB Client 491,SMB,Security Suite,APAC,2330.94,0,2023-01-26
+492,SMB Client 492,SMB,Analytics Pro,EMEA,1891.18,0,2023-01-27
+493,SMB Client 493,SMB,Developer Tools,APAC,2981.18,0,2023-01-28
+494,SMB Client 494,SMB,Developer Tools,North America,1976.07,0,2023-01-29
+495,SMB Client 495,SMB,Cloud Platform,North America,2270.12,0,2023-01-30
+496,SMB Client 496,SMB,Analytics Pro,EMEA,1789.45,0,2023-01-31
+497,SMB Client 497,SMB,Analytics Pro,North America,1849.11,0,2023-02-01
+498,SMB Client 498,SMB,Cloud Platform,North America,1807.78,0,2023-02-02
+499,SMB Client 499,SMB,Security Suite,EMEA,2429.31,0,2023-02-03
+500,SMB Client 500,SMB,Analytics Pro,APAC,2051.43,0,2023-02-04
+501,SMB Client 501,SMB,Analytics Pro,North America,2201.52,0,2023-02-05
+502,SMB Client 502,SMB,Analytics Pro,North America,1721.37,0,2023-02-06
+503,SMB Client 503,SMB,Analytics Pro,EMEA,2366.47,0,2023-02-07
+504,SMB Client 504,SMB,Developer Tools,APAC,2865.18,0,2023-02-08
+505,SMB Client 505,SMB,Cloud Platform,North America,3379.91,0,2023-02-09
+506,SMB Client 506,SMB,Security Suite,APAC,820.42,0,2023-02-10
+507,SMB Client 507,SMB,Developer Tools,North America,1457.4,0,2023-02-11
+508,SMB Client 508,SMB,Analytics Pro,North America,3322.98,0,2023-02-12
+509,SMB Client 509,SMB,Analytics Pro,North America,2111.85,0,2023-02-13
+510,SMB Client 510,SMB,Developer Tools,EMEA,1629.68,0,2023-02-14
+511,SMB Client 511,SMB,Security Suite,APAC,1640.53,0,2023-02-15
+512,SMB Client 512,SMB,Analytics Pro,North America,1536.08,0,2023-02-16
+513,SMB Client 513,SMB,Security Suite,North America,1289.1,0,2023-02-17
+514,SMB Client 514,SMB,Security Suite,North America,2217.94,0,2023-02-18
+515,SMB Client 515,SMB,Analytics Pro,LATAM,2331.74,0,2023-02-19
+516,SMB Client 516,SMB,Developer Tools,EMEA,2105.57,0,2023-02-20
+517,SMB Client 517,SMB,Security Suite,LATAM,917.21,0,2023-02-21
+518,SMB Client 518,SMB,Developer Tools,APAC,2424.35,0,2023-02-22
+519,SMB Client 519,SMB,Cloud Platform,EMEA,1415.82,0,2023-02-23
+520,SMB Client 520,SMB,Developer Tools,LATAM,1909.78,0,2023-02-24
+521,SMB Client 521,SMB,Cloud Platform,APAC,1754.24,0,2023-02-25
+522,SMB Client 522,SMB,Developer Tools,EMEA,1541.98,0,2023-02-26
+523,SMB Client 523,SMB,Cloud Platform,EMEA,2602.38,0,2023-02-27
+524,SMB Client 524,SMB,Analytics Pro,North America,2019.77,0,2023-02-28
+525,SMB Client 525,SMB,Developer Tools,North America,2789.56,0,2023-03-01
+526,SMB Client 526,SMB,Cloud Platform,EMEA,1058.43,0,2023-03-02
+527,SMB Client 527,SMB,Analytics Pro,North America,2439.15,0,2023-03-03
+528,SMB Client 528,SMB,Analytics Pro,EMEA,1855.45,0,2023-03-04
+529,SMB Client 529,SMB,Cloud Platform,EMEA,3467.02,0,2023-03-05
+530,SMB Client 530,SMB,Analytics Pro,APAC,1891.66,0,2023-03-06
+531,SMB Client 531,SMB,Developer Tools,North America,2669.58,0,2023-03-07
+532,SMB Client 532,SMB,Security Suite,EMEA,1081.1,0,2023-03-08
+533,SMB Client 533,SMB,Cloud Platform,North America,1540.23,0,2023-03-09
+534,SMB Client 534,SMB,Cloud Platform,North America,3214.32,0,2023-03-10
+535,SMB Client 535,SMB,Analytics Pro,North America,1411.97,0,2023-03-11
+536,SMB Client 536,SMB,Cloud Platform,APAC,2201.46,0,2023-03-12
+537,SMB Client 537,SMB,Analytics Pro,APAC,1431.02,0,2023-03-13
+538,SMB Client 538,SMB,Analytics Pro,North America,2557.37,0,2023-03-14
+539,SMB Client 539,SMB,Security Suite,LATAM,1699.11,0,2023-03-15
+540,SMB Client 540,SMB,Analytics Pro,APAC,2586.97,0,2023-03-16
+541,SMB Client 541,SMB,Cloud Platform,EMEA,2056.06,0,2023-03-17
+542,SMB Client 542,SMB,Cloud Platform,EMEA,3385.59,0,2023-03-18
+543,SMB Client 543,SMB,Analytics Pro,North America,1342.52,0,2023-03-19
+544,SMB Client 544,SMB,Developer Tools,North America,2016.0,0,2023-03-20
+545,SMB Client 545,SMB,Developer Tools,LATAM,2595.26,0,2023-03-21
+546,SMB Client 546,SMB,Analytics Pro,North America,1433.53,0,2023-03-22
+547,SMB Client 547,SMB,Developer Tools,EMEA,3479.71,0,2023-03-23
+548,SMB Client 548,SMB,Analytics Pro,EMEA,3073.49,0,2023-03-24
+549,SMB Client 549,SMB,Developer Tools,North America,1040.64,0,2023-03-25
+550,SMB Client 550,SMB,Developer Tools,APAC,3030.38,0,2023-03-26
+551,SMB Client 551,SMB,Analytics Pro,North America,897.63,0,2023-03-27
+552,SMB Client 552,SMB,Cloud Platform,LATAM,1772.37,0,2023-03-28
+553,SMB Client 553,SMB,Analytics Pro,North America,2295.27,0,2023-03-29
+554,SMB Client 554,SMB,Security Suite,EMEA,2007.45,0,2023-03-30
+555,SMB Client 555,SMB,Analytics Pro,LATAM,3282.36,0,2023-03-31
+556,SMB Client 556,SMB,Cloud Platform,LATAM,3098.85,0,2023-04-01
+557,SMB Client 557,SMB,Developer Tools,North America,1114.19,0,2023-04-02
+558,SMB Client 558,SMB,Developer Tools,APAC,3170.53,0,2023-04-03
+559,SMB Client 559,SMB,Analytics Pro,North America,2933.08,0,2023-04-04
+560,SMB Client 560,SMB,Cloud Platform,EMEA,1888.05,0,2023-04-05
+561,SMB Client 561,SMB,Developer Tools,EMEA,1734.47,0,2023-04-06
+562,SMB Client 562,SMB,Cloud Platform,APAC,3020.7,0,2023-04-07
+563,SMB Client 563,SMB,Analytics Pro,EMEA,3291.44,0,2023-04-08
+564,SMB Client 564,SMB,Cloud Platform,EMEA,2864.99,0,2023-04-09
+565,SMB Client 565,SMB,Cloud Platform,North America,1876.39,0,2023-04-10
+566,SMB Client 566,SMB,Cloud Platform,North America,984.07,0,2023-04-11
+567,SMB Client 567,SMB,Analytics Pro,LATAM,3400.41,0,2023-04-12
+568,SMB Client 568,SMB,Analytics Pro,EMEA,1967.74,0,2023-04-13
+569,SMB Client 569,SMB,Cloud Platform,EMEA,1986.68,0,2023-04-14
+570,SMB Client 570,SMB,Security Suite,EMEA,1383.3,0,2023-04-15
+571,SMB Client 571,SMB,Cloud Platform,APAC,1210.47,0,2023-04-16
+572,SMB Client 572,SMB,Cloud Platform,LATAM,2041.46,0,2023-04-17
+573,SMB Client 573,SMB,Security Suite,LATAM,956.01,0,2023-04-18
+574,SMB Client 574,SMB,Cloud Platform,North America,1445.79,0,2023-04-19
+575,SMB Client 575,SMB,Cloud Platform,EMEA,1618.84,0,2023-04-20
+576,SMB Client 576,SMB,Analytics Pro,LATAM,968.19,0,2023-04-21
+577,SMB Client 577,SMB,Security Suite,North America,2997.72,0,2023-04-22
+578,SMB Client 578,SMB,Analytics Pro,EMEA,2484.52,0,2023-04-23
+579,SMB Client 579,SMB,Developer Tools,EMEA,1152.92,0,2023-04-24
+580,SMB Client 580,SMB,Analytics Pro,EMEA,1325.48,0,2023-04-25
+581,SMB Client 581,SMB,Security Suite,APAC,3034.35,0,2023-04-26
+582,SMB Client 582,SMB,Analytics Pro,EMEA,829.78,0,2023-04-27
+583,SMB Client 583,SMB,Analytics Pro,APAC,851.82,0,2023-04-28
+584,SMB Client 584,SMB,Analytics Pro,North America,1170.2,0,2023-04-29
+585,SMB Client 585,SMB,Cloud Platform,LATAM,832.73,0,2023-04-30
+586,SMB Client 586,SMB,Developer Tools,EMEA,2964.15,0,2023-05-01
+587,SMB Client 587,SMB,Analytics Pro,EMEA,1096.29,0,2023-05-02
+588,SMB Client 588,SMB,Cloud Platform,EMEA,3079.76,0,2023-05-03
+589,SMB Client 589,SMB,Analytics Pro,APAC,1205.13,0,2023-05-04
+590,SMB Client 590,SMB,Analytics Pro,North America,2085.25,0,2023-05-05
+591,SMB Client 591,SMB,Developer Tools,APAC,2040.51,0,2023-05-06
+592,SMB Client 592,SMB,Developer Tools,North America,3379.4,0,2023-05-07
+593,SMB Client 593,SMB,Analytics Pro,North America,2657.96,0,2023-05-08
+594,SMB Client 594,SMB,Cloud Platform,LATAM,3070.35,0,2023-05-09
+595,SMB Client 595,SMB,Security Suite,EMEA,2045.99,0,2023-05-10
+596,SMB Client 596,SMB,Security Suite,EMEA,3216.82,0,2023-05-11
+597,SMB Client 597,SMB,Analytics Pro,North America,979.96,0,2023-05-12
+598,SMB Client 598,SMB,Analytics Pro,EMEA,2791.07,0,2023-05-13
+599,SMB Client 599,SMB,Cloud Platform,APAC,912.52,0,2023-05-14
+600,SMB Client 600,SMB,Cloud Platform,North America,994.63,0,2023-05-15
+601,SMB Client 601,SMB,Security Suite,North America,3382.55,0,2023-05-16
+602,SMB Client 602,SMB,Analytics Pro,APAC,1600.65,0,2023-05-17
+603,SMB Client 603,SMB,Cloud Platform,North America,2585.7,0,2023-05-18
+604,SMB Client 604,SMB,Security Suite,APAC,1065.67,0,2023-05-19
+605,SMB Client 605,SMB,Cloud Platform,North America,1515.63,0,2023-05-20
+606,SMB Client 606,SMB,Analytics Pro,APAC,3413.22,0,2023-05-21
+607,SMB Client 607,SMB,Analytics Pro,North America,2486.59,0,2023-05-22
+608,SMB Client 608,SMB,Security Suite,APAC,1127.74,0,2023-05-23
+609,SMB Client 609,SMB,Analytics Pro,North America,2538.54,0,2023-05-24
+610,SMB Client 610,SMB,Developer Tools,North America,3414.92,0,2023-05-25
+611,SMB Client 611,SMB,Security Suite,EMEA,3445.92,0,2023-05-26
+612,SMB Client 612,SMB,Developer Tools,EMEA,2819.8,0,2023-05-27
+613,SMB Client 613,SMB,Analytics Pro,LATAM,1145.86,0,2023-05-28
+614,SMB Client 614,SMB,Analytics Pro,EMEA,1406.46,0,2023-05-29
+615,SMB Client 615,SMB,Security Suite,LATAM,1986.39,0,2023-05-30
+616,SMB Client 616,SMB,Cloud Platform,North America,1449.87,0,2023-05-31
+617,SMB Client 617,SMB,Security Suite,North America,3194.7,0,2023-06-01
+618,SMB Client 618,SMB,Developer Tools,APAC,3003.06,0,2023-06-02
+619,SMB Client 619,SMB,Analytics Pro,APAC,3281.1,0,2023-06-03
+620,SMB Client 620,SMB,Developer Tools,APAC,2043.46,0,2023-06-04
+621,SMB Client 621,SMB,Security Suite,North America,2896.41,0,2023-06-05
+622,SMB Client 622,SMB,Developer Tools,LATAM,2271.57,0,2023-06-06
+623,SMB Client 623,SMB,Cloud Platform,North America,916.57,0,2023-06-07
+624,SMB Client 624,SMB,Developer Tools,North America,2760.15,0,2023-06-08
+625,SMB Client 625,SMB,Developer Tools,APAC,2165.8,0,2023-06-09
+626,SMB Client 626,SMB,Analytics Pro,EMEA,2264.04,0,2023-06-10
+627,SMB Client 627,SMB,Analytics Pro,EMEA,1603.38,0,2023-06-11
+628,SMB Client 628,SMB,Security Suite,APAC,3157.97,0,2023-06-12
+629,SMB Client 629,SMB,Analytics Pro,North America,1232.19,0,2023-06-13
+630,SMB Client 630,SMB,Security Suite,LATAM,1466.03,0,2023-06-14
+631,SMB Client 631,SMB,Analytics Pro,APAC,1067.78,0,2023-06-15
+632,SMB Client 632,SMB,Analytics Pro,APAC,1350.9,0,2023-06-16
+633,SMB Client 633,SMB,Cloud Platform,North America,2463.16,0,2023-06-17
+634,SMB Client 634,SMB,Analytics Pro,North America,2916.24,0,2023-06-18
+635,SMB Client 635,SMB,Cloud Platform,APAC,2854.68,0,2023-06-19
+636,SMB Client 636,SMB,Developer Tools,North America,1346.7,0,2023-06-20
+637,SMB Client 637,SMB,Cloud Platform,North America,1682.72,0,2023-06-21
+638,SMB Client 638,SMB,Developer Tools,North America,3166.96,0,2023-06-22
+639,SMB Client 639,SMB,Security Suite,APAC,2011.25,0,2023-06-23
+640,SMB Client 640,SMB,Analytics Pro,EMEA,2401.22,0,2023-06-24
+641,SMB Client 641,SMB,Cloud Platform,EMEA,2678.17,0,2023-06-25
+642,SMB Client 642,SMB,Developer Tools,North America,1759.83,0,2023-06-26
+643,SMB Client 643,SMB,Analytics Pro,EMEA,2388.15,0,2023-06-27
+644,SMB Client 644,SMB,Analytics Pro,EMEA,975.1,0,2023-06-28
+645,SMB Client 645,SMB,Security Suite,EMEA,2313.78,0,2023-06-29
+646,SMB Client 646,SMB,Analytics Pro,APAC,2973.47,0,2023-06-30
+647,SMB Client 647,SMB,Cloud Platform,North America,2145.29,0,2023-07-01
+648,SMB Client 648,SMB,Developer Tools,APAC,1702.44,0,2023-07-02
+649,SMB Client 649,SMB,Analytics Pro,EMEA,2929.26,0,2023-07-03
+650,SMB Client 650,SMB,Analytics Pro,EMEA,1198.12,0,2023-07-04
+651,SMB Client 651,SMB,Cloud Platform,EMEA,1039.22,0,2023-07-05
+652,SMB Client 652,SMB,Developer Tools,LATAM,2786.29,0,2023-07-06
+653,SMB Client 653,SMB,Analytics Pro,EMEA,2534.93,0,2023-07-07
+654,SMB Client 654,SMB,Cloud Platform,EMEA,2921.26,0,2023-07-08
+655,SMB Client 655,SMB,Analytics Pro,EMEA,3067.47,0,2023-07-09
+656,SMB Client 656,SMB,Cloud Platform,North America,2386.98,0,2023-07-10
+657,SMB Client 657,SMB,Cloud Platform,North America,1703.18,0,2023-07-11
+658,SMB Client 658,SMB,Analytics Pro,EMEA,3045.58,0,2023-07-12
+659,SMB Client 659,SMB,Developer Tools,North America,1606.56,0,2023-07-13
+660,SMB Client 660,SMB,Developer Tools,APAC,1960.07,0,2023-07-14
+661,SMB Client 661,SMB,Developer Tools,EMEA,1302.47,0,2023-07-15
+662,SMB Client 662,SMB,Cloud Platform,North America,2104.02,0,2023-07-16
+663,SMB Client 663,SMB,Analytics Pro,EMEA,2765.44,0,2023-07-17
+664,SMB Client 664,SMB,Developer Tools,North America,2769.67,0,2023-07-18
+665,SMB Client 665,SMB,Cloud Platform,APAC,2447.61,0,2023-07-19
+666,SMB Client 666,SMB,Developer Tools,North America,2573.78,0,2023-07-20
+667,SMB Client 667,SMB,Analytics Pro,North America,954.05,0,2023-07-21
+668,SMB Client 668,SMB,Developer Tools,North America,1466.84,0,2023-07-22
+669,SMB Client 669,SMB,Developer Tools,EMEA,1534.26,0,2023-07-23
+670,SMB Client 670,SMB,Cloud Platform,EMEA,2897.12,0,2023-07-24
+671,SMB Client 671,SMB,Cloud Platform,LATAM,890.76,0,2023-07-25
+672,SMB Client 672,SMB,Analytics Pro,EMEA,1175.96,0,2023-07-26
+673,SMB Client 673,SMB,Developer Tools,North America,1737.83,0,2023-07-27
+674,SMB Client 674,SMB,Developer Tools,EMEA,2592.23,0,2023-07-28
+675,SMB Client 675,SMB,Cloud Platform,EMEA,3329.42,0,2023-07-29
+676,SMB Client 676,SMB,Security Suite,LATAM,1502.43,0,2023-07-30
+677,SMB Client 677,SMB,Security Suite,North America,1492.63,0,2023-07-31
+678,SMB Client 678,SMB,Analytics Pro,LATAM,2326.39,0,2023-08-01
+679,SMB Client 679,SMB,Analytics Pro,North America,2443.02,0,2023-08-02
+680,SMB Client 680,SMB,Cloud Platform,North America,1208.37,0,2023-08-03
+681,SMB Client 681,SMB,Analytics Pro,EMEA,3096.66,0,2023-08-04
+682,SMB Client 682,SMB,Developer Tools,APAC,1109.88,0,2023-08-05
+683,SMB Client 683,SMB,Security Suite,EMEA,982.7,0,2023-08-06
+684,SMB Client 684,SMB,Analytics Pro,EMEA,1020.66,0,2023-08-07
+685,SMB Client 685,SMB,Developer Tools,APAC,1247.59,0,2023-08-08
+686,SMB Client 686,SMB,Analytics Pro,EMEA,2606.36,0,2023-08-09
+687,SMB Client 687,SMB,Analytics Pro,North America,2557.63,0,2023-08-10
+688,SMB Client 688,SMB,Developer Tools,EMEA,2183.76,0,2023-08-11
+689,SMB Client 689,SMB,Developer Tools,North America,940.28,0,2023-08-12
+690,SMB Client 690,SMB,Cloud Platform,North America,1498.28,0,2023-08-13
+691,SMB Client 691,SMB,Analytics Pro,North America,2843.23,0,2023-08-14
+692,SMB Client 692,SMB,Developer Tools,APAC,3170.14,0,2023-08-15
+693,SMB Client 693,SMB,Analytics Pro,LATAM,1444.75,0,2023-08-16
+694,SMB Client 694,SMB,Cloud Platform,North America,2884.43,0,2023-08-17
+695,SMB Client 695,SMB,Developer Tools,EMEA,2052.61,0,2023-08-18
+696,SMB Client 696,SMB,Cloud Platform,EMEA,2144.09,0,2023-08-19
+697,SMB Client 697,SMB,Analytics Pro,APAC,3019.68,0,2023-08-20
+698,SMB Client 698,SMB,Cloud Platform,EMEA,3404.09,0,2023-08-21
+699,SMB Client 699,SMB,Developer Tools,EMEA,1575.27,0,2023-08-22
+700,SMB Client 700,SMB,Developer Tools,North America,2513.37,0,2023-08-23
+701,SMB Client 701,SMB,Analytics Pro,North America,3270.74,0,2023-08-24
+702,SMB Client 702,SMB,Developer Tools,North America,2678.93,0,2023-08-25
+703,SMB Client 703,SMB,Developer Tools,North America,3114.38,0,2023-08-26
+704,SMB Client 704,SMB,Cloud Platform,North America,3455.51,0,2023-08-27
+705,SMB Client 705,SMB,Developer Tools,EMEA,1297.41,0,2023-08-28
+706,SMB Client 706,SMB,Analytics Pro,EMEA,1210.68,0,2023-08-29
+707,SMB Client 707,SMB,Developer Tools,APAC,1025.35,0,2023-08-30
+708,SMB Client 708,SMB,Developer Tools,EMEA,2164.06,0,2023-08-31
+709,SMB Client 709,SMB,Security Suite,EMEA,3457.1,0,2023-09-01
+710,SMB Client 710,SMB,Developer Tools,EMEA,1248.08,0,2023-09-02
+711,SMB Client 711,SMB,Cloud Platform,EMEA,1238.03,0,2023-09-03
+712,SMB Client 712,SMB,Security Suite,APAC,2223.98,0,2023-09-04
+713,SMB Client 713,SMB,Security Suite,North America,1014.4,0,2023-09-05
+714,SMB Client 714,SMB,Developer Tools,EMEA,3117.08,0,2023-09-06
+715,SMB Client 715,SMB,Analytics Pro,EMEA,2717.66,0,2023-09-07
+716,SMB Client 716,SMB,Analytics Pro,North America,3018.42,0,2023-09-08
+717,SMB Client 717,SMB,Developer Tools,North America,2134.37,0,2023-09-09
+718,SMB Client 718,SMB,Security Suite,APAC,1269.16,0,2023-09-10
+719,SMB Client 719,SMB,Cloud Platform,North America,1071.72,0,2023-09-11
+720,SMB Client 720,SMB,Analytics Pro,APAC,1739.44,0,2023-09-12
+721,SMB Client 721,SMB,Security Suite,North America,2558.1,0,2023-09-13
+722,SMB Client 722,SMB,Analytics Pro,LATAM,3071.91,0,2023-09-14
+723,SMB Client 723,SMB,Cloud Platform,EMEA,2512.18,0,2023-09-15
+724,SMB Client 724,SMB,Security Suite,North America,1677.78,0,2023-09-16
+725,SMB Client 725,SMB,Developer Tools,North America,1272.18,0,2023-09-17
+726,SMB Client 726,SMB,Analytics Pro,EMEA,3060.01,0,2023-09-18
+727,SMB Client 727,SMB,Analytics Pro,North America,2674.21,0,2023-09-19
+728,SMB Client 728,SMB,Cloud Platform,North America,1374.14,0,2023-09-20
+729,SMB Client 729,SMB,Developer Tools,APAC,2563.54,0,2023-09-21
+730,SMB Client 730,SMB,Developer Tools,EMEA,2868.37,0,2023-09-22
+731,SMB Client 731,SMB,Developer Tools,EMEA,1502.77,0,2023-09-23
+732,SMB Client 732,SMB,Cloud Platform,EMEA,2313.19,0,2023-09-24
+733,SMB Client 733,SMB,Developer Tools,EMEA,2042.97,0,2023-09-25
+734,SMB Client 734,SMB,Developer Tools,North America,1827.08,0,2023-09-26
+735,SMB Client 735,SMB,Cloud Platform,APAC,1940.88,0,2023-09-27
+736,SMB Client 736,SMB,Analytics Pro,APAC,3278.81,0,2023-09-28
+737,SMB Client 737,SMB,Developer Tools,APAC,1588.99,0,2023-09-29
+738,SMB Client 738,SMB,Cloud Platform,LATAM,2973.25,0,2023-09-30
+739,SMB Client 739,SMB,Analytics Pro,APAC,2762.01,0,2023-10-01
+740,SMB Client 740,SMB,Developer Tools,North America,1560.11,0,2023-10-02
+741,SMB Client 741,SMB,Analytics Pro,North America,2699.95,0,2023-10-03
+742,SMB Client 742,SMB,Cloud Platform,EMEA,1453.11,0,2023-10-04
+743,SMB Client 743,SMB,Analytics Pro,North America,1613.42,0,2023-10-05
+744,SMB Client 744,SMB,Security Suite,North America,1609.78,0,2023-10-06
+745,SMB Client 745,SMB,Developer Tools,EMEA,3237.82,0,2023-10-07
+746,SMB Client 746,SMB,Developer Tools,North America,2401.7,0,2023-10-08
+747,SMB Client 747,SMB,Cloud Platform,APAC,1013.22,0,2023-10-09
+748,SMB Client 748,SMB,Analytics Pro,LATAM,893.61,0,2023-10-10
+749,SMB Client 749,SMB,Analytics Pro,North America,3110.38,0,2023-10-11
+750,SMB Client 750,SMB,Analytics Pro,North America,3044.71,0,2023-10-12
+751,SMB Client 751,SMB,Developer Tools,EMEA,1053.41,0,2023-10-13
+752,SMB Client 752,SMB,Developer Tools,EMEA,3039.07,0,2023-10-14
+753,SMB Client 753,SMB,Analytics Pro,North America,2197.11,0,2023-10-15
+754,SMB Client 754,SMB,Developer Tools,EMEA,1973.41,0,2023-10-16
+755,SMB Client 755,SMB,Analytics Pro,EMEA,3209.81,0,2023-10-17
+756,SMB Client 756,SMB,Analytics Pro,APAC,2504.53,0,2023-10-18
+757,SMB Client 757,SMB,Analytics Pro,North America,1441.07,0,2023-10-19
+758,SMB Client 758,SMB,Analytics Pro,EMEA,1838.18,0,2023-10-20
+759,SMB Client 759,SMB,Security Suite,APAC,3366.43,0,2023-10-21
+760,SMB Client 760,SMB,Security Suite,North America,2166.92,0,2023-10-22
+761,SMB Client 761,SMB,Analytics Pro,EMEA,1486.86,0,2023-10-23
+762,SMB Client 762,SMB,Cloud Platform,North America,923.25,0,2023-10-24
+763,SMB Client 763,SMB,Analytics Pro,EMEA,3423.14,0,2023-10-25
+764,SMB Client 764,SMB,Security Suite,North America,1329.46,0,2023-10-26
+765,SMB Client 765,SMB,Analytics Pro,North America,1358.88,0,2023-10-27
+766,SMB Client 766,SMB,Cloud Platform,North America,820.69,0,2023-10-28
+767,SMB Client 767,SMB,Analytics Pro,APAC,1091.67,0,2023-10-29
+768,SMB Client 768,SMB,Analytics Pro,North America,2344.53,0,2023-10-30
+769,SMB Client 769,SMB,Analytics Pro,North America,3315.74,0,2023-10-31
+770,SMB Client 770,SMB,Cloud Platform,North America,2466.08,0,2023-11-01
+771,SMB Client 771,SMB,Developer Tools,EMEA,2170.01,0,2023-11-02
+772,SMB Client 772,SMB,Developer Tools,North America,2696.1,0,2023-11-03
+773,SMB Client 773,SMB,Analytics Pro,EMEA,1541.78,0,2023-11-04
+774,SMB Client 774,SMB,Developer Tools,APAC,1909.76,0,2023-11-05
+775,SMB Client 775,SMB,Analytics Pro,APAC,2441.34,0,2023-11-06
+776,SMB Client 776,SMB,Developer Tools,North America,3378.66,0,2023-11-07
+777,SMB Client 777,SMB,Cloud Platform,North America,2518.28,0,2023-11-08
+778,SMB Client 778,SMB,Security Suite,EMEA,960.72,0,2023-11-09
+779,SMB Client 779,SMB,Analytics Pro,EMEA,1109.12,0,2023-11-10
+780,SMB Client 780,SMB,Cloud Platform,EMEA,1796.44,0,2023-11-11
+781,SMB Client 781,SMB,Cloud Platform,North America,2828.18,0,2023-11-12
+782,SMB Client 782,SMB,Developer Tools,EMEA,1757.88,0,2023-11-13
+783,SMB Client 783,SMB,Analytics Pro,EMEA,2632.41,0,2023-11-14
+784,SMB Client 784,SMB,Security Suite,LATAM,827.35,0,2023-11-15
+785,SMB Client 785,SMB,Developer Tools,APAC,2453.95,0,2023-11-16
+786,SMB Client 786,SMB,Developer Tools,North America,1125.51,0,2023-11-17
+787,SMB Client 787,SMB,Cloud Platform,North America,2241.71,0,2023-11-18
+788,SMB Client 788,SMB,Analytics Pro,EMEA,1939.49,0,2023-11-19
+789,SMB Client 789,SMB,Cloud Platform,North America,2358.44,0,2023-11-20
+790,SMB Client 790,SMB,Analytics Pro,APAC,2308.33,0,2023-11-21
+791,SMB Client 791,SMB,Developer Tools,EMEA,2561.19,0,2023-11-22
+792,SMB Client 792,SMB,Security Suite,North America,1960.81,0,2023-11-23
+793,SMB Client 793,SMB,Developer Tools,EMEA,1627.05,0,2023-11-24
+794,SMB Client 794,SMB,Developer Tools,APAC,2955.63,0,2023-11-25
+795,SMB Client 795,SMB,Analytics Pro,North America,3274.92,0,2023-11-26
+796,SMB Client 796,SMB,Analytics Pro,EMEA,2371.94,0,2023-11-27
+797,SMB Client 797,SMB,Security Suite,North America,2705.08,0,2023-11-28
+798,SMB Client 798,SMB,Analytics Pro,North America,1250.52,0,2023-11-29
+799,SMB Client 799,SMB,Analytics Pro,North America,3203.26,0,2023-11-30
+800,SMB Client 800,SMB,Security Suite,EMEA,868.71,0,2023-12-01
+801,SMB Client 801,SMB,Cloud Platform,EMEA,1719.63,0,2023-12-02
+802,SMB Client 802,SMB,Security Suite,EMEA,1640.29,0,2023-12-03
+803,SMB Client 803,SMB,Cloud Platform,LATAM,1784.4,0,2023-12-04
+804,SMB Client 804,SMB,Security Suite,North America,2025.8,0,2023-12-05
+805,SMB Client 805,SMB,Cloud Platform,EMEA,2111.09,0,2023-12-06
+806,SMB Client 806,SMB,Analytics Pro,North America,3402.85,0,2023-12-07
+807,SMB Client 807,SMB,Analytics Pro,North America,883.58,0,2023-12-08
+808,SMB Client 808,SMB,Developer Tools,EMEA,863.05,0,2023-12-09
+809,SMB Client 809,SMB,Developer Tools,North America,1580.96,0,2023-12-10
+810,SMB Client 810,SMB,Analytics Pro,APAC,3380.98,0,2023-12-11
+811,SMB Client 811,SMB,Developer Tools,LATAM,2427.95,0,2023-12-12
+812,SMB Client 812,SMB,Developer Tools,North America,1578.69,0,2023-12-13
+813,SMB Client 813,SMB,Analytics Pro,EMEA,1840.88,0,2023-12-14
+814,SMB Client 814,SMB,Analytics Pro,EMEA,1216.19,0,2023-12-15
+815,SMB Client 815,SMB,Developer Tools,EMEA,2857.13,0,2023-12-16
+816,SMB Client 816,SMB,Analytics Pro,North America,1616.3,0,2023-12-17
+817,SMB Client 817,SMB,Analytics Pro,North America,955.65,0,2023-12-18
+818,SMB Client 818,SMB,Analytics Pro,North America,3409.33,0,2023-12-19
+819,SMB Client 819,SMB,Cloud Platform,EMEA,2367.26,0,2023-12-20
+820,SMB Client 820,SMB,Analytics Pro,EMEA,2490.83,0,2023-12-21
+821,SMB Client 821,SMB,Developer Tools,EMEA,3483.39,0,2023-12-22
+822,SMB Client 822,SMB,Security Suite,North America,2337.32,0,2023-12-23
+823,SMB Client 823,SMB,Cloud Platform,EMEA,1866.87,0,2023-12-24
+824,SMB Client 824,SMB,Cloud Platform,LATAM,2266.17,0,2023-12-25
+825,SMB Client 825,SMB,Security Suite,EMEA,3255.53,0,2023-12-26
+826,SMB Client 826,SMB,Cloud Platform,APAC,3148.92,0,2023-12-27
+827,SMB Client 827,SMB,Developer Tools,North America,1137.02,0,2023-12-28
+828,SMB Client 828,SMB,Developer Tools,North America,3168.14,0,2023-12-29
+829,SMB Client 829,SMB,Developer Tools,EMEA,2049.22,0,2023-12-30
+830,SMB Client 830,SMB,Analytics Pro,North America,3131.58,0,2023-12-31
+831,SMB Client 831,SMB,Cloud Platform,APAC,1571.62,0,2023-01-01
+832,SMB Client 832,SMB,Analytics Pro,EMEA,1843.66,0,2023-01-02
+833,SMB Client 833,SMB,Developer Tools,LATAM,2358.65,0,2023-01-03
+834,SMB Client 834,SMB,Developer Tools,APAC,1900.48,0,2023-01-04
+835,SMB Client 835,SMB,Developer Tools,North America,2348.53,0,2023-01-05
+836,SMB Client 836,SMB,Developer Tools,EMEA,1095.01,0,2023-01-06
+837,SMB Client 837,SMB,Developer Tools,North America,3086.82,0,2023-01-07
+838,SMB Client 838,SMB,Analytics Pro,EMEA,3185.35,0,2023-01-08
+839,SMB Client 839,SMB,Developer Tools,North America,2491.8,0,2023-01-09
+840,SMB Client 840,SMB,Security Suite,APAC,2087.48,0,2023-01-10
+841,SMB Client 841,SMB,Cloud Platform,North America,2669.84,0,2023-01-11
+842,SMB Client 842,SMB,Developer Tools,North America,1768.53,0,2023-01-12
+843,SMB Client 843,SMB,Developer Tools,North America,1368.9,0,2023-01-13
+844,SMB Client 844,SMB,Security Suite,APAC,3494.12,0,2023-01-14
+845,SMB Client 845,SMB,Cloud Platform,APAC,1595.47,0,2023-01-15
+846,SMB Client 846,SMB,Security Suite,North America,3052.19,0,2023-01-16
+847,SMB Client 847,SMB,Developer Tools,EMEA,2834.26,0,2023-01-17
+848,SMB Client 848,SMB,Developer Tools,EMEA,2868.51,0,2023-01-18
+849,SMB Client 849,SMB,Analytics Pro,North America,1039.23,0,2023-01-19
+850,SMB Client 850,SMB,Analytics Pro,North America,1900.37,0,2023-01-20
+851,SMB Client 851,SMB,Cloud Platform,APAC,1741.82,0,2023-01-21
+852,SMB Client 852,SMB,Cloud Platform,LATAM,3358.76,0,2023-01-22
+853,SMB Client 853,SMB,Analytics Pro,North America,2210.96,0,2023-01-23
+854,SMB Client 854,SMB,Developer Tools,APAC,2151.69,0,2023-01-24
+855,SMB Client 855,SMB,Cloud Platform,EMEA,935.61,0,2023-01-25
+856,SMB Client 856,SMB,Cloud Platform,North America,1597.28,0,2023-01-26
+857,SMB Client 857,SMB,Developer Tools,EMEA,2969.4,0,2023-01-27
+858,SMB Client 858,SMB,Analytics Pro,EMEA,3246.5,0,2023-01-28
+859,SMB Client 859,SMB,Security Suite,LATAM,1410.28,0,2023-01-29
+860,SMB Client 860,SMB,Analytics Pro,EMEA,2429.43,0,2023-01-30
+861,SMB Client 861,SMB,Developer Tools,EMEA,1131.89,0,2023-01-31
+862,SMB Client 862,SMB,Analytics Pro,EMEA,2013.24,0,2023-02-01
+863,SMB Client 863,SMB,Security Suite,North America,993.79,0,2023-02-02
+864,SMB Client 864,SMB,Developer Tools,APAC,2727.67,0,2023-02-03
+865,SMB Client 865,SMB,Analytics Pro,North America,2291.75,0,2023-02-04
+866,SMB Client 866,SMB,Analytics Pro,EMEA,2893.43,0,2023-02-05
+867,SMB Client 867,SMB,Cloud Platform,EMEA,1567.54,0,2023-02-06
+868,SMB Client 868,SMB,Security Suite,North America,946.7,0,2023-02-07
+869,SMB Client 869,SMB,Analytics Pro,North America,800.36,0,2023-02-08
+870,SMB Client 870,SMB,Security Suite,North America,1545.66,0,2023-02-09
+871,SMB Client 871,SMB,Cloud Platform,North America,3066.21,0,2023-02-10
+872,SMB Client 872,SMB,Analytics Pro,North America,2800.44,0,2023-02-11
+873,SMB Client 873,SMB,Analytics Pro,APAC,1772.63,0,2023-02-12
+874,SMB Client 874,SMB,Developer Tools,APAC,1646.04,0,2023-02-13
+875,SMB Client 875,SMB,Developer Tools,North America,1971.31,0,2023-02-14
+876,SMB Client 876,SMB,Cloud Platform,EMEA,3403.01,0,2023-02-15
+877,SMB Client 877,SMB,Analytics Pro,EMEA,2133.3,0,2023-02-16
+878,SMB Client 878,SMB,Cloud Platform,North America,2700.41,0,2023-02-17
+879,SMB Client 879,SMB,Security Suite,LATAM,2725.22,0,2023-02-18
+880,SMB Client 880,SMB,Developer Tools,APAC,2854.8,0,2023-02-19
+881,SMB Client 881,SMB,Cloud Platform,APAC,1604.74,0,2023-02-20
+882,SMB Client 882,SMB,Cloud Platform,North America,2539.2,0,2023-02-21
+883,SMB Client 883,SMB,Analytics Pro,EMEA,3383.36,0,2023-02-22
+884,SMB Client 884,SMB,Cloud Platform,North America,2035.79,0,2023-02-23
+885,SMB Client 885,SMB,Cloud Platform,APAC,1798.5,0,2023-02-24
+886,SMB Client 886,SMB,Developer Tools,APAC,1924.56,0,2023-02-25
+887,SMB Client 887,SMB,Security Suite,EMEA,1372.38,0,2023-02-26
+888,SMB Client 888,SMB,Cloud Platform,EMEA,3176.42,0,2023-02-27
+889,SMB Client 889,SMB,Analytics Pro,North America,2440.93,0,2023-02-28
+890,SMB Client 890,SMB,Security Suite,North America,2559.43,0,2023-03-01
+891,SMB Client 891,SMB,Analytics Pro,APAC,2541.05,0,2023-03-02
+892,SMB Client 892,SMB,Developer Tools,North America,1337.88,0,2023-03-03
+893,SMB Client 893,SMB,Cloud Platform,North America,1793.02,0,2023-03-04
+894,SMB Client 894,SMB,Analytics Pro,APAC,2192.83,0,2023-03-05
+895,SMB Client 895,SMB,Analytics Pro,North America,839.67,0,2023-03-06
+896,SMB Client 896,SMB,Cloud Platform,EMEA,852.18,0,2023-03-07
+897,SMB Client 897,SMB,Analytics Pro,EMEA,2130.73,0,2023-03-08
+898,SMB Client 898,SMB,Cloud Platform,EMEA,2406.86,0,2023-03-09
+899,SMB Client 899,SMB,Analytics Pro,EMEA,3401.45,0,2023-03-10
+900,SMB Client 900,SMB,Developer Tools,APAC,1642.03,0,2023-03-11
+901,Startup Client 901,Startup,Developer Tools,North America,1446.85,1,2023-01-01
+902,Startup Client 902,Startup,Developer Tools,APAC,337.28,1,2023-01-03
+903,Startup Client 903,Startup,Analytics Pro,North America,564.46,1,2023-01-05
+904,Startup Client 904,Startup,Developer Tools,EMEA,945.28,1,2023-01-07
+905,Startup Client 905,Startup,Analytics Pro,North America,1065.81,1,2023-01-09
+906,Startup Client 906,Startup,Developer Tools,LATAM,959.56,1,2023-01-11
+907,Startup Client 907,Startup,Cloud Platform,APAC,2163.53,1,2023-01-13
+908,Startup Client 908,Startup,Developer Tools,EMEA,2023.04,1,2023-01-15
+909,Startup Client 909,Startup,Analytics Pro,North America,1175.61,1,2023-01-17
+910,Startup Client 910,Startup,Analytics Pro,EMEA,802.12,1,2023-01-19
+911,Startup Client 911,Startup,Security Suite,North America,1944.38,1,2023-01-21
+912,Startup Client 912,Startup,Developer Tools,APAC,2407.14,1,2023-01-23
+913,Startup Client 913,Startup,Developer Tools,LATAM,2480.92,1,2023-01-25
+914,Startup Client 914,Startup,Analytics Pro,North America,466.33,1,2023-01-27
+915,Startup Client 915,Startup,Cloud Platform,EMEA,730.83,1,2023-01-29
+916,Startup Client 916,Startup,Developer Tools,North America,2018.91,1,2023-01-31
+917,Startup Client 917,Startup,Developer Tools,EMEA,2084.47,1,2023-02-02
+918,Startup Client 918,Startup,Analytics Pro,North America,1783.09,1,2023-02-04
+919,Startup Client 919,Startup,Analytics Pro,EMEA,2318.47,1,2023-02-06
+920,Startup Client 920,Startup,Developer Tools,North America,2258.31,1,2023-02-08
+921,Startup Client 921,Startup,Cloud Platform,EMEA,624.07,1,2023-02-10
+922,Startup Client 922,Startup,Cloud Platform,LATAM,1284.88,1,2023-02-12
+923,Startup Client 923,Startup,Analytics Pro,EMEA,1465.25,1,2023-02-14
+924,Startup Client 924,Startup,Cloud Platform,North America,1795.16,1,2023-02-16
+925,Startup Client 925,Startup,Security Suite,EMEA,2075.32,1,2023-02-18
+926,Startup Client 926,Startup,Cloud Platform,North America,1252.2,1,2023-02-20
+927,Startup Client 927,Startup,Analytics Pro,North America,1280.19,1,2023-02-22
+928,Startup Client 928,Startup,Developer Tools,APAC,2156.03,1,2023-02-24
+929,Startup Client 929,Startup,Analytics Pro,LATAM,2178.33,1,2023-02-26
+930,Startup Client 930,Startup,Developer Tools,LATAM,733.24,1,2023-02-28
+931,Startup Client 931,Startup,Developer Tools,EMEA,1865.79,1,2023-03-02
+932,Startup Client 932,Startup,Security Suite,EMEA,870.99,1,2023-03-04
+933,Startup Client 933,Startup,Developer Tools,LATAM,460.78,1,2023-03-06
+934,Startup Client 934,Startup,Developer Tools,LATAM,718.24,1,2023-03-08
+935,Startup Client 935,Startup,Developer Tools,EMEA,2376.14,1,2023-03-10
+936,Startup Client 936,Startup,Developer Tools,North America,2450.08,1,2023-03-12
+937,Startup Client 937,Startup,Developer Tools,North America,1349.18,1,2023-03-14
+938,Startup Client 938,Startup,Developer Tools,North America,1709.35,1,2023-03-16
+939,Startup Client 939,Startup,Developer Tools,EMEA,1543.19,1,2023-03-18
+940,Startup Client 940,Startup,Cloud Platform,EMEA,326.63,1,2023-03-20
+941,Startup Client 941,Startup,Analytics Pro,EMEA,2337.63,1,2023-03-22
+942,Startup Client 942,Startup,Analytics Pro,APAC,788.57,1,2023-03-24
+943,Startup Client 943,Startup,Cloud Platform,EMEA,1903.5,1,2023-03-26
+944,Startup Client 944,Startup,Security Suite,APAC,364.17,1,2023-03-28
+945,Startup Client 945,Startup,Analytics Pro,EMEA,560.71,1,2023-03-30
+946,Startup Client 946,Startup,Developer Tools,North America,2322.97,1,2023-04-01
+947,Startup Client 947,Startup,Analytics Pro,EMEA,1974.22,1,2023-04-03
+948,Startup Client 948,Startup,Developer Tools,LATAM,1959.38,1,2023-04-05
+949,Startup Client 949,Startup,Analytics Pro,APAC,1569.67,1,2023-04-07
+950,Startup Client 950,Startup,Developer Tools,EMEA,852.2,1,2023-04-09
+951,Startup Client 951,Startup,Analytics Pro,North America,1744.59,1,2023-04-11
+952,Startup Client 952,Startup,Cloud Platform,EMEA,2320.13,1,2023-04-13
+953,Startup Client 953,Startup,Cloud Platform,North America,785.88,1,2023-04-15
+954,Startup Client 954,Startup,Developer Tools,North America,685.49,1,2023-04-17
+955,Startup Client 955,Startup,Developer Tools,EMEA,2391.01,1,2023-04-19
+956,Startup Client 956,Startup,Developer Tools,APAC,1576.2,1,2023-04-21
+957,Startup Client 957,Startup,Analytics Pro,APAC,921.49,1,2023-04-23
+958,Startup Client 958,Startup,Developer Tools,EMEA,2382.2,1,2023-04-25
+959,Startup Client 959,Startup,Security Suite,EMEA,2016.8,1,2023-04-27
+960,Startup Client 960,Startup,Developer Tools,North America,750.3,1,2023-04-29
+961,Startup Client 961,Startup,Developer Tools,North America,1029.44,1,2023-05-01
+962,Startup Client 962,Startup,Cloud Platform,LATAM,456.55,1,2023-05-03
+963,Startup Client 963,Startup,Security Suite,APAC,1415.22,1,2023-05-05
+964,Startup Client 964,Startup,Analytics Pro,APAC,2138.82,1,2023-05-07
+965,Startup Client 965,Startup,Developer Tools,North America,1996.47,1,2023-05-09
+966,Startup Client 966,Startup,Developer Tools,North America,2226.94,1,2023-05-11
+967,Startup Client 967,Startup,Cloud Platform,North America,1235.5,1,2023-05-13
+968,Startup Client 968,Startup,Cloud Platform,EMEA,1984.2,1,2023-05-15
+969,Startup Client 969,Startup,Cloud Platform,LATAM,1449.52,1,2023-05-17
+970,Startup Client 970,Startup,Analytics Pro,North America,797.48,1,2023-05-19
+971,Startup Client 971,Startup,Cloud Platform,APAC,806.92,1,2023-05-21
+972,Startup Client 972,Startup,Analytics Pro,APAC,2427.06,1,2023-05-23
+973,Startup Client 973,Startup,Developer Tools,EMEA,1932.17,1,2023-05-25
+974,Startup Client 974,Startup,Analytics Pro,APAC,966.45,1,2023-05-27
+975,Startup Client 975,Startup,Cloud Platform,EMEA,2096.91,1,2023-05-29
+976,Startup Client 976,Startup,Developer Tools,LATAM,2284.27,1,2023-05-31
+977,Startup Client 977,Startup,Analytics Pro,EMEA,1959.35,1,2023-06-02
+978,Startup Client 978,Startup,Cloud Platform,EMEA,1754.23,1,2023-06-04
+979,Startup Client 979,Startup,Cloud Platform,APAC,1860.51,1,2023-06-06
+980,Startup Client 980,Startup,Developer Tools,North America,1584.3,1,2023-06-08
+981,Startup Client 981,Startup,Developer Tools,North America,883.72,1,2023-06-10
+982,Startup Client 982,Startup,Developer Tools,North America,1871.73,1,2023-06-12
+983,Startup Client 983,Startup,Developer Tools,EMEA,1430.48,1,2023-06-14
+984,Startup Client 984,Startup,Developer Tools,APAC,2352.43,1,2023-06-16
+985,Startup Client 985,Startup,Security Suite,LATAM,1871.52,1,2023-06-18
+986,Startup Client 986,Startup,Developer Tools,APAC,1828.11,1,2023-06-20
+987,Startup Client 987,Startup,Developer Tools,North America,902.96,1,2023-06-22
+988,Startup Client 988,Startup,Analytics Pro,LATAM,1059.75,1,2023-06-24
+989,Startup Client 989,Startup,Developer Tools,APAC,2184.38,0,2023-06-26
+990,Startup Client 990,Startup,Developer Tools,EMEA,1536.56,0,2023-06-28
+991,Startup Client 991,Startup,Cloud Platform,APAC,1137.14,0,2023-06-30
+992,Startup Client 992,Startup,Analytics Pro,North America,1915.78,0,2023-07-02
+993,Startup Client 993,Startup,Cloud Platform,APAC,2145.79,0,2023-07-04
+994,Startup Client 994,Startup,Security Suite,North America,2434.57,0,2023-07-06
+995,Startup Client 995,Startup,Developer Tools,EMEA,1850.72,0,2023-07-08
+996,Startup Client 996,Startup,Cloud Platform,EMEA,2427.48,0,2023-07-10
+997,Startup Client 997,Startup,Developer Tools,North America,1880.6,0,2023-07-12
+998,Startup Client 998,Startup,Developer Tools,EMEA,2060.01,0,2023-07-14
+999,Startup Client 999,Startup,Developer Tools,North America,589.77,0,2023-07-16
+1000,Startup Client 1000,Startup,Analytics Pro,APAC,981.53,0,2023-07-18
+1001,Startup Client 1001,Startup,Developer Tools,North America,1779.95,0,2023-07-20
+1002,Startup Client 1002,Startup,Developer Tools,APAC,1674.72,0,2023-07-22
+1003,Startup Client 1003,Startup,Cloud Platform,APAC,2293.39,0,2023-07-24
+1004,Startup Client 1004,Startup,Developer Tools,North America,414.04,0,2023-07-26
+1005,Startup Client 1005,Startup,Analytics Pro,EMEA,974.91,0,2023-07-28
+1006,Startup Client 1006,Startup,Developer Tools,EMEA,1034.91,0,2023-07-30
+1007,Startup Client 1007,Startup,Developer Tools,North America,450.38,0,2023-08-01
+1008,Startup Client 1008,Startup,Developer Tools,North America,1252.09,0,2023-08-03
+1009,Startup Client 1009,Startup,Analytics Pro,LATAM,424.49,0,2023-08-05
+1010,Startup Client 1010,Startup,Developer Tools,EMEA,1711.82,0,2023-08-07
+1011,Startup Client 1011,Startup,Security Suite,APAC,737.78,0,2023-08-09
+1012,Startup Client 1012,Startup,Analytics Pro,North America,523.02,0,2023-08-11
+1013,Startup Client 1013,Startup,Developer Tools,North America,1250.44,0,2023-08-13
+1014,Startup Client 1014,Startup,Cloud Platform,LATAM,1441.14,0,2023-08-15
+1015,Startup Client 1015,Startup,Security Suite,APAC,549.27,0,2023-08-17
+1016,Startup Client 1016,Startup,Security Suite,North America,1850.02,0,2023-08-19
+1017,Startup Client 1017,Startup,Analytics Pro,North America,1174.75,0,2023-08-21
+1018,Startup Client 1018,Startup,Analytics Pro,North America,1362.69,0,2023-08-23
+1019,Startup Client 1019,Startup,Developer Tools,EMEA,1744.86,0,2023-08-25
+1020,Startup Client 1020,Startup,Cloud Platform,LATAM,469.35,0,2023-08-27
+1021,Startup Client 1021,Startup,Cloud Platform,EMEA,954.04,0,2023-08-29
+1022,Startup Client 1022,Startup,Developer Tools,North America,1672.03,0,2023-08-31
+1023,Startup Client 1023,Startup,Developer Tools,North America,333.24,0,2023-09-02
+1024,Startup Client 1024,Startup,Developer Tools,EMEA,1787.26,0,2023-09-04
+1025,Startup Client 1025,Startup,Analytics Pro,EMEA,988.4,0,2023-09-06
+1026,Startup Client 1026,Startup,Developer Tools,North America,2205.41,0,2023-09-08
+1027,Startup Client 1027,Startup,Developer Tools,APAC,640.62,0,2023-09-10
+1028,Startup Client 1028,Startup,Analytics Pro,EMEA,2242.59,0,2023-09-12
+1029,Startup Client 1029,Startup,Developer Tools,EMEA,1842.51,0,2023-09-14
+1030,Startup Client 1030,Startup,Developer Tools,North America,333.87,0,2023-09-16
+1031,Startup Client 1031,Startup,Developer Tools,EMEA,1290.56,0,2023-09-18
+1032,Startup Client 1032,Startup,Cloud Platform,APAC,2147.56,0,2023-09-20
+1033,Startup Client 1033,Startup,Cloud Platform,North America,2449.42,0,2023-09-22
+1034,Startup Client 1034,Startup,Cloud Platform,APAC,1253.88,0,2023-09-24
+1035,Startup Client 1035,Startup,Security Suite,North America,2312.01,0,2023-09-26
+1036,Startup Client 1036,Startup,Developer Tools,North America,1255.69,0,2023-09-28
+1037,Startup Client 1037,Startup,Developer Tools,EMEA,1596.8,0,2023-09-30
+1038,Startup Client 1038,Startup,Developer Tools,North America,832.45,0,2023-10-02
+1039,Startup Client 1039,Startup,Developer Tools,APAC,738.39,0,2023-10-04
+1040,Startup Client 1040,Startup,Analytics Pro,North America,330.24,0,2023-10-06
+1041,Startup Client 1041,Startup,Analytics Pro,North America,895.77,0,2023-10-08
+1042,Startup Client 1042,Startup,Developer Tools,EMEA,1309.67,0,2023-10-10
+1043,Startup Client 1043,Startup,Cloud Platform,LATAM,1780.32,0,2023-10-12
+1044,Startup Client 1044,Startup,Developer Tools,APAC,2144.68,0,2023-10-14
+1045,Startup Client 1045,Startup,Developer Tools,North America,2351.96,0,2023-10-16
+1046,Startup Client 1046,Startup,Developer Tools,APAC,1656.92,0,2023-10-18
+1047,Startup Client 1047,Startup,Cloud Platform,EMEA,1447.19,0,2023-10-20
+1048,Startup Client 1048,Startup,Developer Tools,EMEA,2325.69,0,2023-10-22
+1049,Startup Client 1049,Startup,Analytics Pro,APAC,891.48,0,2023-10-24
+1050,Startup Client 1050,Startup,Developer Tools,EMEA,1766.22,0,2023-10-26
+1051,Startup Client 1051,Startup,Analytics Pro,APAC,1686.54,0,2023-10-28
+1052,Startup Client 1052,Startup,Security Suite,EMEA,1240.72,0,2023-10-30
+1053,Startup Client 1053,Startup,Cloud Platform,APAC,2359.82,0,2023-11-01
+1054,Startup Client 1054,Startup,Security Suite,North America,943.24,0,2023-11-03
+1055,Startup Client 1055,Startup,Developer Tools,North America,962.3,0,2023-11-05
+1056,Startup Client 1056,Startup,Developer Tools,North America,1380.41,0,2023-11-07
+1057,Startup Client 1057,Startup,Security Suite,APAC,1981.77,0,2023-11-09
+1058,Startup Client 1058,Startup,Cloud Platform,North America,872.52,0,2023-11-11
+1059,Startup Client 1059,Startup,Cloud Platform,APAC,455.08,0,2023-11-13
+1060,Startup Client 1060,Startup,Developer Tools,APAC,2239.72,0,2023-11-15
+1061,Startup Client 1061,Startup,Analytics Pro,North America,542.95,0,2023-11-17
+1062,Startup Client 1062,Startup,Developer Tools,EMEA,849.91,0,2023-11-19
+1063,Startup Client 1063,Startup,Analytics Pro,APAC,1085.15,0,2023-11-21
+1064,Startup Client 1064,Startup,Analytics Pro,LATAM,2036.44,0,2023-11-23
+1065,Startup Client 1065,Startup,Analytics Pro,EMEA,2396.19,0,2023-11-25
+1066,Startup Client 1066,Startup,Developer Tools,APAC,1412.4,0,2023-11-27
+1067,Startup Client 1067,Startup,Analytics Pro,EMEA,525.65,0,2023-11-29
+1068,Startup Client 1068,Startup,Cloud Platform,APAC,1406.89,0,2023-12-01
+1069,Startup Client 1069,Startup,Developer Tools,APAC,1789.27,0,2023-12-03
+1070,Startup Client 1070,Startup,Security Suite,EMEA,1946.38,0,2023-12-05
+1071,Startup Client 1071,Startup,Developer Tools,North America,652.8,0,2023-12-07
+1072,Startup Client 1072,Startup,Analytics Pro,North America,1826.69,0,2023-12-09
+1073,Startup Client 1073,Startup,Cloud Platform,APAC,663.63,0,2023-12-11
+1074,Startup Client 1074,Startup,Developer Tools,North America,1911.28,0,2023-12-13
+1075,Startup Client 1075,Startup,Cloud Platform,North America,483.82,0,2023-12-15
+1076,Startup Client 1076,Startup,Analytics Pro,EMEA,2259.88,0,2023-12-17
+1077,Startup Client 1077,Startup,Analytics Pro,EMEA,531.76,0,2023-12-19
+1078,Startup Client 1078,Startup,Analytics Pro,North America,1637.06,0,2023-12-21
+1079,Startup Client 1079,Startup,Analytics Pro,North America,1160.27,0,2023-12-23
+1080,Startup Client 1080,Startup,Developer Tools,EMEA,2411.7,0,2023-12-25
+1081,Startup Client 1081,Startup,Security Suite,EMEA,1214.71,0,2023-12-27
+1082,Startup Client 1082,Startup,Developer Tools,North America,1832.15,0,2023-12-29
+1083,Startup Client 1083,Startup,Security Suite,APAC,1400.25,0,2023-12-31
+1084,Startup Client 1084,Startup,Developer Tools,North America,1689.12,0,2023-01-02
+1085,Startup Client 1085,Startup,Cloud Platform,North America,1632.4,0,2023-01-04
+1086,Startup Client 1086,Startup,Developer Tools,North America,614.25,0,2023-01-06
+1087,Startup Client 1087,Startup,Developer Tools,North America,1162.09,0,2023-01-08
+1088,Startup Client 1088,Startup,Security Suite,North America,1417.17,0,2023-01-10
+1089,Startup Client 1089,Startup,Cloud Platform,EMEA,2044.07,0,2023-01-12
+1090,Startup Client 1090,Startup,Developer Tools,APAC,1533.49,0,2023-01-14
+1091,Startup Client 1091,Startup,Cloud Platform,APAC,857.2,0,2023-01-16
+1092,Startup Client 1092,Startup,Developer Tools,APAC,1478.44,0,2023-01-18
+1093,Startup Client 1093,Startup,Security Suite,North America,2155.32,0,2023-01-20
+1094,Startup Client 1094,Startup,Security Suite,North America,2041.43,0,2023-01-22
+1095,Startup Client 1095,Startup,Developer Tools,EMEA,2180.94,0,2023-01-24
+1096,Startup Client 1096,Startup,Analytics Pro,APAC,466.54,0,2023-01-26
+1097,Startup Client 1097,Startup,Analytics Pro,North America,2283.9,0,2023-01-28
+1098,Startup Client 1098,Startup,Analytics Pro,EMEA,2230.17,0,2023-01-30
+1099,Startup Client 1099,Startup,Cloud Platform,EMEA,2429.74,0,2023-02-01
+1100,Startup Client 1100,Startup,Analytics Pro,APAC,463.03,0,2023-02-03
+1101,Startup Client 1101,Startup,Developer Tools,EMEA,1253.64,0,2023-02-05
+1102,Startup Client 1102,Startup,Analytics Pro,EMEA,1006.56,0,2023-02-07
+1103,Startup Client 1103,Startup,Cloud Platform,EMEA,1119.57,0,2023-02-09
+1104,Startup Client 1104,Startup,Developer Tools,APAC,1321.32,0,2023-02-11
+1105,Startup Client 1105,Startup,Cloud Platform,North America,1859.28,0,2023-02-13
+1106,Startup Client 1106,Startup,Security Suite,North America,1755.71,0,2023-02-15
+1107,Startup Client 1107,Startup,Developer Tools,EMEA,2069.89,0,2023-02-17
+1108,Startup Client 1108,Startup,Developer Tools,EMEA,446.22,0,2023-02-19
+1109,Startup Client 1109,Startup,Developer Tools,APAC,2020.31,0,2023-02-21
+1110,Startup Client 1110,Startup,Cloud Platform,APAC,1439.62,0,2023-02-23
+1111,Startup Client 1111,Startup,Developer Tools,North America,1665.04,0,2023-02-25
+1112,Startup Client 1112,Startup,Developer Tools,APAC,728.95,0,2023-02-27
+1113,Startup Client 1113,Startup,Developer Tools,EMEA,2298.1,0,2023-03-01
+1114,Startup Client 1114,Startup,Developer Tools,EMEA,1739.09,0,2023-03-03
+1115,Startup Client 1115,Startup,Cloud Platform,EMEA,1691.26,0,2023-03-05
+1116,Startup Client 1116,Startup,Analytics Pro,North America,1876.07,0,2023-03-07
+1117,Startup Client 1117,Startup,Analytics Pro,North America,990.42,0,2023-03-09
+1118,Startup Client 1118,Startup,Developer Tools,EMEA,1234.67,0,2023-03-11
+1119,Startup Client 1119,Startup,Cloud Platform,APAC,713.42,0,2023-03-13
+1120,Startup Client 1120,Startup,Developer Tools,APAC,1142.16,0,2023-03-15
+1121,Startup Client 1121,Startup,Analytics Pro,APAC,2051.73,0,2023-03-17
+1122,Startup Client 1122,Startup,Developer Tools,EMEA,880.94,0,2023-03-19
+1123,Startup Client 1123,Startup,Analytics Pro,North America,1013.93,0,2023-03-21
+1124,Startup Client 1124,Startup,Analytics Pro,EMEA,1828.21,0,2023-03-23
+1125,Startup Client 1125,Startup,Developer Tools,APAC,882.2,0,2023-03-25
+1126,Startup Client 1126,Startup,Developer Tools,North America,2011.66,0,2023-03-27
+1127,Startup Client 1127,Startup,Developer Tools,EMEA,494.45,0,2023-03-29
+1128,Startup Client 1128,Startup,Cloud Platform,North America,1251.16,0,2023-03-31
+1129,Startup Client 1129,Startup,Developer Tools,North America,374.09,0,2023-04-02
+1130,Startup Client 1130,Startup,Cloud Platform,APAC,1526.14,0,2023-04-04
+1131,Startup Client 1131,Startup,Developer Tools,APAC,1010.66,0,2023-04-06
+1132,Startup Client 1132,Startup,Developer Tools,LATAM,1015.64,0,2023-04-08
+1133,Startup Client 1133,Startup,Developer Tools,North America,2115.91,0,2023-04-10
+1134,Startup Client 1134,Startup,Cloud Platform,North America,1568.75,0,2023-04-12
+1135,Startup Client 1135,Startup,Analytics Pro,APAC,2497.56,0,2023-04-14
+1136,Startup Client 1136,Startup,Developer Tools,LATAM,2074.66,0,2023-04-16
+1137,Startup Client 1137,Startup,Cloud Platform,EMEA,831.29,0,2023-04-18
+1138,Startup Client 1138,Startup,Cloud Platform,EMEA,586.18,0,2023-04-20
+1139,Startup Client 1139,Startup,Developer Tools,North America,2024.22,0,2023-04-22
+1140,Startup Client 1140,Startup,Analytics Pro,North America,1739.55,0,2023-04-24
+1141,Startup Client 1141,Startup,Developer Tools,APAC,1981.58,0,2023-04-26
+1142,Startup Client 1142,Startup,Developer Tools,EMEA,385.66,0,2023-04-28
+1143,Startup Client 1143,Startup,Developer Tools,APAC,1539.47,0,2023-04-30
+1144,Startup Client 1144,Startup,Developer Tools,LATAM,1591.26,0,2023-05-02
+1145,Startup Client 1145,Startup,Security Suite,APAC,1964.81,0,2023-05-04
+1146,Startup Client 1146,Startup,Analytics Pro,EMEA,1156.31,0,2023-05-06
+1147,Startup Client 1147,Startup,Developer Tools,North America,2342.0,0,2023-05-08
+1148,Startup Client 1148,Startup,Analytics Pro,LATAM,1460.89,0,2023-05-10
+1149,Startup Client 1149,Startup,Developer Tools,APAC,2458.46,0,2023-05-12
+1150,Startup Client 1150,Startup,Developer Tools,North America,1873.22,0,2023-05-14
+1151,Startup Client 1151,Startup,Developer Tools,APAC,1300.48,0,2023-05-16
+1152,Startup Client 1152,Startup,Developer Tools,North America,1120.87,0,2023-05-18
+1153,Startup Client 1153,Startup,Developer Tools,APAC,1400.79,0,2023-05-20
+1154,Startup Client 1154,Startup,Analytics Pro,North America,1727.01,0,2023-05-22
+1155,Startup Client 1155,Startup,Developer Tools,North America,1699.07,0,2023-05-24
+1156,Startup Client 1156,Startup,Security Suite,APAC,1851.31,0,2023-05-26
+1157,Startup Client 1157,Startup,Cloud Platform,North America,2142.21,0,2023-05-28
+1158,Startup Client 1158,Startup,Developer Tools,APAC,2014.03,0,2023-05-30
+1159,Startup Client 1159,Startup,Developer Tools,LATAM,2143.94,0,2023-06-01
+1160,Startup Client 1160,Startup,Security Suite,EMEA,1479.06,0,2023-06-03
+1161,Startup Client 1161,Startup,Developer Tools,North America,638.12,0,2023-06-05
+1162,Startup Client 1162,Startup,Developer Tools,EMEA,2326.88,0,2023-06-07
+1163,Startup Client 1163,Startup,Cloud Platform,North America,1080.83,0,2023-06-09
+1164,Startup Client 1164,Startup,Cloud Platform,EMEA,1231.34,0,2023-06-11
+1165,Startup Client 1165,Startup,Developer Tools,APAC,2238.14,0,2023-06-13
+1166,Startup Client 1166,Startup,Developer Tools,APAC,764.71,0,2023-06-15
+1167,Startup Client 1167,Startup,Developer Tools,North America,732.64,0,2023-06-17
+1168,Startup Client 1168,Startup,Developer Tools,North America,2065.81,0,2023-06-19
+1169,Startup Client 1169,Startup,Developer Tools,LATAM,2274.2,0,2023-06-21
+1170,Startup Client 1170,Startup,Developer Tools,North America,1323.02,0,2023-06-23
+1171,Startup Client 1171,Startup,Cloud Platform,LATAM,1037.61,0,2023-06-25
+1172,Startup Client 1172,Startup,Developer Tools,LATAM,2097.34,0,2023-06-27
+1173,Startup Client 1173,Startup,Analytics Pro,North America,487.23,0,2023-06-29
+1174,Startup Client 1174,Startup,Analytics Pro,EMEA,763.74,0,2023-07-01
+1175,Startup Client 1175,Startup,Cloud Platform,North America,890.84,0,2023-07-03
+1176,Startup Client 1176,Startup,Developer Tools,APAC,624.01,0,2023-07-05
+1177,Startup Client 1177,Startup,Security Suite,North America,2429.08,0,2023-07-07
+1178,Startup Client 1178,Startup,Analytics Pro,North America,2056.25,0,2023-07-09
+1179,Startup Client 1179,Startup,Cloud Platform,North America,811.51,0,2023-07-11
+1180,Startup Client 1180,Startup,Developer Tools,North America,1081.7,0,2023-07-13
+1181,Startup Client 1181,Startup,Developer Tools,North America,763.12,0,2023-07-15
+1182,Startup Client 1182,Startup,Developer Tools,North America,1053.82,0,2023-07-17
+1183,Startup Client 1183,Startup,Security Suite,North America,482.02,0,2023-07-19
+1184,Startup Client 1184,Startup,Developer Tools,North America,1539.5,0,2023-07-21
+1185,Startup Client 1185,Startup,Developer Tools,North America,1577.54,0,2023-07-23
+1186,Startup Client 1186,Startup,Analytics Pro,EMEA,1672.8,0,2023-07-25
+1187,Startup Client 1187,Startup,Security Suite,North America,481.0,0,2023-07-27
+1188,Startup Client 1188,Startup,Cloud Platform,EMEA,2109.24,0,2023-07-29
+1189,Startup Client 1189,Startup,Developer Tools,EMEA,1308.55,0,2023-07-31
+1190,Startup Client 1190,Startup,Developer Tools,APAC,1767.87,0,2023-08-02
+1191,Startup Client 1191,Startup,Developer Tools,APAC,990.53,0,2023-08-04
+1192,Startup Client 1192,Startup,Developer Tools,EMEA,2476.79,0,2023-08-06
+1193,Startup Client 1193,Startup,Security Suite,APAC,729.37,0,2023-08-08
+1194,Startup Client 1194,Startup,Security Suite,APAC,1383.65,0,2023-08-10
+1195,Startup Client 1195,Startup,Developer Tools,EMEA,1095.09,0,2023-08-12
+1196,Startup Client 1196,Startup,Security Suite,APAC,1022.11,0,2023-08-14
+1197,Startup Client 1197,Startup,Cloud Platform,LATAM,577.2,0,2023-08-16
+1198,Startup Client 1198,Startup,Developer Tools,EMEA,686.08,0,2023-08-18
+1199,Startup Client 1199,Startup,Developer Tools,North America,1377.17,0,2023-08-20
+1200,Startup Client 1200,Startup,Analytics Pro,APAC,1515.86,0,2023-08-22
+1201,Startup Client 1201,Startup,Developer Tools,North America,610.69,0,2023-08-24
+1202,Startup Client 1202,Startup,Analytics Pro,North America,913.01,0,2023-08-26
+1203,Startup Client 1203,Startup,Analytics Pro,LATAM,2116.56,0,2023-08-28
+1204,Startup Client 1204,Startup,Developer Tools,North America,2433.84,0,2023-08-30
+1205,Startup Client 1205,Startup,Developer Tools,EMEA,1124.01,0,2023-09-01
+1206,Startup Client 1206,Startup,Developer Tools,APAC,491.44,0,2023-09-03
+1207,Startup Client 1207,Startup,Cloud Platform,APAC,2051.04,0,2023-09-05
+1208,Startup Client 1208,Startup,Analytics Pro,APAC,785.11,0,2023-09-07
+1209,Startup Client 1209,Startup,Analytics Pro,North America,849.27,0,2023-09-09
+1210,Startup Client 1210,Startup,Developer Tools,EMEA,2215.47,0,2023-09-11
+1211,Startup Client 1211,Startup,Cloud Platform,EMEA,1950.58,0,2023-09-13
+1212,Startup Client 1212,Startup,Cloud Platform,EMEA,1072.68,0,2023-09-15
+1213,Startup Client 1213,Startup,Cloud Platform,North America,2325.63,0,2023-09-17
+1214,Startup Client 1214,Startup,Analytics Pro,LATAM,756.59,0,2023-09-19
+1215,Startup Client 1215,Startup,Security Suite,APAC,1329.75,0,2023-09-21
+1216,Startup Client 1216,Startup,Security Suite,EMEA,639.88,0,2023-09-23
+1217,Startup Client 1217,Startup,Developer Tools,APAC,1613.2,0,2023-09-25
+1218,Startup Client 1218,Startup,Developer Tools,North America,1175.3,0,2023-09-27
+1219,Startup Client 1219,Startup,Analytics Pro,North America,367.02,0,2023-09-29
+1220,Startup Client 1220,Startup,Developer Tools,LATAM,1423.28,0,2023-10-01
+1221,Startup Client 1221,Startup,Developer Tools,North America,1421.68,0,2023-10-03
+1222,Startup Client 1222,Startup,Developer Tools,EMEA,376.81,0,2023-10-05
+1223,Startup Client 1223,Startup,Cloud Platform,North America,2146.2,0,2023-10-07
+1224,Startup Client 1224,Startup,Analytics Pro,North America,1287.89,0,2023-10-09
+1225,Startup Client 1225,Startup,Cloud Platform,EMEA,1894.12,0,2023-10-11
+1226,Startup Client 1226,Startup,Cloud Platform,EMEA,918.31,0,2023-10-13
+1227,Startup Client 1227,Startup,Analytics Pro,APAC,2063.18,0,2023-10-15
+1228,Startup Client 1228,Startup,Developer Tools,North America,576.07,0,2023-10-17
+1229,Startup Client 1229,Startup,Developer Tools,LATAM,1790.26,0,2023-10-19
+1230,Startup Client 1230,Startup,Cloud Platform,North America,1152.11,0,2023-10-21
+1231,Startup Client 1231,Startup,Developer Tools,APAC,2119.09,0,2023-10-23
+1232,Startup Client 1232,Startup,Analytics Pro,North America,815.74,0,2023-10-25
+1233,Startup Client 1233,Startup,Developer Tools,LATAM,2415.28,0,2023-10-27
+1234,Startup Client 1234,Startup,Developer Tools,APAC,884.09,0,2023-10-29
+1235,Startup Client 1235,Startup,Developer Tools,LATAM,998.61,0,2023-10-31
+1236,Startup Client 1236,Startup,Developer Tools,North America,2246.68,0,2023-11-02
+1237,Startup Client 1237,Startup,Developer Tools,North America,919.56,0,2023-11-04
+1238,Startup Client 1238,Startup,Developer Tools,EMEA,1875.31,0,2023-11-06
+1239,Startup Client 1239,Startup,Analytics Pro,North America,2478.24,0,2023-11-08
+1240,Startup Client 1240,Startup,Security Suite,North America,473.67,0,2023-11-10
+1241,Startup Client 1241,Startup,Developer Tools,LATAM,1055.45,0,2023-11-12
+1242,Startup Client 1242,Startup,Analytics Pro,LATAM,708.61,0,2023-11-14
+1243,Startup Client 1243,Startup,Cloud Platform,North America,435.98,0,2023-11-16
+1244,Startup Client 1244,Startup,Cloud Platform,LATAM,1609.47,0,2023-11-18
+1245,Startup Client 1245,Startup,Developer Tools,North America,1282.77,0,2023-11-20
+1246,Startup Client 1246,Startup,Developer Tools,APAC,1336.11,0,2023-11-22
+1247,Startup Client 1247,Startup,Developer Tools,LATAM,1958.51,0,2023-11-24
+1248,Startup Client 1248,Startup,Developer Tools,North America,2098.3,0,2023-11-26
+1249,Startup Client 1249,Startup,Analytics Pro,APAC,315.13,0,2023-11-28
+1250,Startup Client 1250,Startup,Security Suite,APAC,1204.63,0,2023-11-30
+1251,Startup Client 1251,Startup,Developer Tools,North America,2270.24,0,2023-12-02
+1252,Startup Client 1252,Startup,Analytics Pro,North America,1820.32,0,2023-12-04
+1253,Startup Client 1253,Startup,Analytics Pro,EMEA,706.19,0,2023-12-06
+1254,Startup Client 1254,Startup,Cloud Platform,APAC,2128.09,0,2023-12-08
+1255,Startup Client 1255,Startup,Analytics Pro,EMEA,1469.2,0,2023-12-10
+1256,Startup Client 1256,Startup,Developer Tools,EMEA,959.87,0,2023-12-12
+1257,Startup Client 1257,Startup,Cloud Platform,EMEA,661.69,0,2023-12-14
+1258,Startup Client 1258,Startup,Analytics Pro,APAC,2285.31,0,2023-12-16
+1259,Startup Client 1259,Startup,Developer Tools,APAC,1749.05,0,2023-12-18
+1260,Startup Client 1260,Startup,Developer Tools,APAC,1546.53,0,2023-12-20
+1261,Startup Client 1261,Startup,Analytics Pro,North America,1178.94,0,2023-12-22
+1262,Startup Client 1262,Startup,Developer Tools,North America,2118.41,0,2023-12-24
+1263,Startup Client 1263,Startup,Security Suite,North America,1569.09,0,2023-12-26
+1264,Startup Client 1264,Startup,Analytics Pro,North America,2457.25,0,2023-12-28
+1265,Startup Client 1265,Startup,Developer Tools,North America,1608.66,0,2023-12-30
+1266,Startup Client 1266,Startup,Developer Tools,North America,1749.18,0,2023-01-01
+1267,Startup Client 1267,Startup,Developer Tools,North America,679.55,0,2023-01-03
+1268,Startup Client 1268,Startup,Developer Tools,LATAM,2364.29,0,2023-01-05
+1269,Startup Client 1269,Startup,Developer Tools,EMEA,871.28,0,2023-01-07
+1270,Startup Client 1270,Startup,Cloud Platform,North America,1064.54,0,2023-01-09
+1271,Startup Client 1271,Startup,Security Suite,North America,1822.42,0,2023-01-11
+1272,Startup Client 1272,Startup,Analytics Pro,EMEA,1650.73,0,2023-01-13
+1273,Startup Client 1273,Startup,Developer Tools,APAC,1090.26,0,2023-01-15
+1274,Startup Client 1274,Startup,Analytics Pro,EMEA,1350.17,0,2023-01-17
+1275,Startup Client 1275,Startup,Analytics Pro,North America,2072.57,0,2023-01-19
+1276,Startup Client 1276,Startup,Security Suite,EMEA,486.31,0,2023-01-21
+1277,Startup Client 1277,Startup,Analytics Pro,EMEA,2150.0,0,2023-01-23
+1278,Startup Client 1278,Startup,Developer Tools,EMEA,2078.49,0,2023-01-25
+1279,Startup Client 1279,Startup,Analytics Pro,LATAM,1310.07,0,2023-01-27
+1280,Startup Client 1280,Startup,Developer Tools,APAC,561.02,0,2023-01-29
+1281,Startup Client 1281,Startup,Cloud Platform,EMEA,1469.46,0,2023-01-31
+1282,Startup Client 1282,Startup,Cloud Platform,APAC,1197.05,0,2023-02-02
+1283,Startup Client 1283,Startup,Developer Tools,APAC,2436.53,0,2023-02-04
+1284,Startup Client 1284,Startup,Security Suite,North America,450.59,0,2023-02-06
+1285,Startup Client 1285,Startup,Developer Tools,APAC,1648.15,0,2023-02-08
+1286,Startup Client 1286,Startup,Analytics Pro,EMEA,468.97,0,2023-02-10
+1287,Startup Client 1287,Startup,Developer Tools,APAC,1187.06,0,2023-02-12
+1288,Startup Client 1288,Startup,Analytics Pro,North America,1646.03,0,2023-02-14
+1289,Startup Client 1289,Startup,Analytics Pro,EMEA,532.92,0,2023-02-16
+1290,Startup Client 1290,Startup,Developer Tools,North America,1786.81,0,2023-02-18
+1291,Startup Client 1291,Startup,Cloud Platform,North America,1169.57,0,2023-02-20
+1292,Startup Client 1292,Startup,Cloud Platform,EMEA,2120.06,0,2023-02-22
+1293,Startup Client 1293,Startup,Developer Tools,EMEA,670.05,0,2023-02-24
+1294,Startup Client 1294,Startup,Developer Tools,APAC,809.04,0,2023-02-26
+1295,Startup Client 1295,Startup,Analytics Pro,APAC,2407.86,0,2023-02-28
+1296,Startup Client 1296,Startup,Developer Tools,EMEA,2355.47,0,2023-03-02
+1297,Startup Client 1297,Startup,Security Suite,APAC,1685.61,0,2023-03-04
+1298,Startup Client 1298,Startup,Developer Tools,EMEA,1468.85,0,2023-03-06
+1299,Startup Client 1299,Startup,Developer Tools,North America,1909.29,0,2023-03-08
+1300,Startup Client 1300,Startup,Developer Tools,APAC,2132.45,0,2023-03-10
+1301,Startup Client 1301,Startup,Analytics Pro,LATAM,1248.86,0,2023-03-12
+1302,Startup Client 1302,Startup,Developer Tools,EMEA,852.57,0,2023-03-14
+1303,Startup Client 1303,Startup,Analytics Pro,EMEA,1431.01,0,2023-03-16
+1304,Startup Client 1304,Startup,Cloud Platform,North America,1015.46,0,2023-03-18
+1305,Startup Client 1305,Startup,Developer Tools,LATAM,314.03,0,2023-03-20
+1306,Startup Client 1306,Startup,Developer Tools,North America,1169.34,0,2023-03-22
+1307,Startup Client 1307,Startup,Developer Tools,LATAM,1776.4,0,2023-03-24
+1308,Startup Client 1308,Startup,Developer Tools,North America,1180.47,0,2023-03-26
+1309,Startup Client 1309,Startup,Cloud Platform,EMEA,2478.73,0,2023-03-28
+1310,Startup Client 1310,Startup,Developer Tools,North America,1750.91,0,2023-03-30
+1311,Startup Client 1311,Startup,Cloud Platform,EMEA,2364.77,0,2023-04-01
+1312,Startup Client 1312,Startup,Analytics Pro,EMEA,789.89,0,2023-04-03
+1313,Startup Client 1313,Startup,Cloud Platform,North America,1217.83,0,2023-04-05
+1314,Startup Client 1314,Startup,Developer Tools,APAC,1219.92,0,2023-04-07
+1315,Startup Client 1315,Startup,Analytics Pro,North America,485.08,0,2023-04-09
+1316,Startup Client 1316,Startup,Developer Tools,EMEA,336.5,0,2023-04-11
+1317,Startup Client 1317,Startup,Analytics Pro,North America,658.64,0,2023-04-13
+1318,Startup Client 1318,Startup,Developer Tools,North America,2136.88,0,2023-04-15
+1319,Startup Client 1319,Startup,Developer Tools,LATAM,809.25,0,2023-04-17
+1320,Startup Client 1320,Startup,Cloud Platform,North America,1223.18,0,2023-04-19
+1321,Startup Client 1321,Startup,Analytics Pro,North America,1562.69,0,2023-04-21
+1322,Startup Client 1322,Startup,Cloud Platform,APAC,1583.16,0,2023-04-23
+1323,Startup Client 1323,Startup,Cloud Platform,EMEA,974.15,0,2023-04-25
+1324,Startup Client 1324,Startup,Developer Tools,EMEA,1174.91,0,2023-04-27
+1325,Startup Client 1325,Startup,Developer Tools,North America,905.53,0,2023-04-29
+1326,Startup Client 1326,Startup,Analytics Pro,EMEA,2289.34,0,2023-05-01
+1327,Startup Client 1327,Startup,Security Suite,APAC,411.26,0,2023-05-03
+1328,Startup Client 1328,Startup,Analytics Pro,North America,2072.43,0,2023-05-05
+1329,Startup Client 1329,Startup,Developer Tools,North America,2098.07,0,2023-05-07
+1330,Startup Client 1330,Startup,Analytics Pro,APAC,1290.13,0,2023-05-09
+1331,Startup Client 1331,Startup,Analytics Pro,APAC,483.75,0,2023-05-11
+1332,Startup Client 1332,Startup,Security Suite,EMEA,412.85,0,2023-05-13
+1333,Startup Client 1333,Startup,Analytics Pro,EMEA,1035.68,0,2023-05-15
+1334,Startup Client 1334,Startup,Developer Tools,APAC,655.01,0,2023-05-17
+1335,Startup Client 1335,Startup,Cloud Platform,North America,1972.35,0,2023-05-19
+1336,Startup Client 1336,Startup,Analytics Pro,EMEA,889.98,0,2023-05-21
+1337,Startup Client 1337,Startup,Cloud Platform,North America,1795.33,0,2023-05-23
+1338,Startup Client 1338,Startup,Developer Tools,North America,1162.2,0,2023-05-25
+1339,Startup Client 1339,Startup,Analytics Pro,APAC,1711.31,0,2023-05-27
+1340,Startup Client 1340,Startup,Analytics Pro,North America,2270.52,0,2023-05-29
+1341,Startup Client 1341,Startup,Analytics Pro,APAC,1204.87,0,2023-05-31
+1342,Startup Client 1342,Startup,Developer Tools,APAC,2117.34,0,2023-06-02
+1343,Startup Client 1343,Startup,Cloud Platform,APAC,1173.38,0,2023-06-04
+1344,Startup Client 1344,Startup,Developer Tools,North America,1093.04,0,2023-06-06
+1345,Startup Client 1345,Startup,Developer Tools,North America,478.71,0,2023-06-08
+1346,Startup Client 1346,Startup,Developer Tools,APAC,2474.53,0,2023-06-10
+1347,Startup Client 1347,Startup,Developer Tools,APAC,1750.73,0,2023-06-12
+1348,Startup Client 1348,Startup,Security Suite,EMEA,936.77,0,2023-06-14
+1349,Startup Client 1349,Startup,Security Suite,North America,1204.62,0,2023-06-16
+1350,Startup Client 1350,Startup,Developer Tools,North America,1541.31,0,2023-06-18
+1351,Startup Client 1351,Startup,Developer Tools,APAC,2355.75,0,2023-06-20
+1352,Startup Client 1352,Startup,Developer Tools,North America,1523.62,0,2023-06-22
+1353,Startup Client 1353,Startup,Cloud Platform,APAC,2100.44,0,2023-06-24
+1354,Startup Client 1354,Startup,Analytics Pro,North America,2482.32,0,2023-06-26
+1355,Startup Client 1355,Startup,Analytics Pro,APAC,1983.8,0,2023-06-28
+1356,Startup Client 1356,Startup,Cloud Platform,LATAM,526.25,0,2023-06-30
+1357,Startup Client 1357,Startup,Developer Tools,North America,1782.45,0,2023-07-02
+1358,Startup Client 1358,Startup,Developer Tools,EMEA,1788.26,0,2023-07-04
+1359,Startup Client 1359,Startup,Developer Tools,EMEA,1801.57,0,2023-07-06
+1360,Startup Client 1360,Startup,Developer Tools,North America,907.03,0,2023-07-08
+1361,Startup Client 1361,Startup,Analytics Pro,EMEA,1823.18,0,2023-07-10
+1362,Startup Client 1362,Startup,Analytics Pro,North America,1943.57,0,2023-07-12
+1363,Startup Client 1363,Startup,Developer Tools,APAC,588.14,0,2023-07-14
+1364,Startup Client 1364,Startup,Developer Tools,North America,398.99,0,2023-07-16
+1365,Startup Client 1365,Startup,Developer Tools,North America,1352.76,0,2023-07-18
+1366,Startup Client 1366,Startup,Cloud Platform,North America,1323.74,0,2023-07-20
+1367,Startup Client 1367,Startup,Cloud Platform,EMEA,868.9,0,2023-07-22
+1368,Startup Client 1368,Startup,Developer Tools,North America,1238.08,0,2023-07-24
+1369,Startup Client 1369,Startup,Developer Tools,LATAM,951.05,0,2023-07-26
+1370,Startup Client 1370,Startup,Developer Tools,EMEA,410.92,0,2023-07-28
+1371,Startup Client 1371,Startup,Developer Tools,North America,1540.62,0,2023-07-30
+1372,Startup Client 1372,Startup,Developer Tools,North America,497.73,0,2023-08-01
+1373,Startup Client 1373,Startup,Security Suite,North America,2317.99,0,2023-08-03
+1374,Startup Client 1374,Startup,Analytics Pro,EMEA,1872.38,0,2023-08-05
+1375,Startup Client 1375,Startup,Developer Tools,APAC,1835.23,0,2023-08-07
+1376,Startup Client 1376,Startup,Developer Tools,LATAM,1787.99,0,2023-08-09
+1377,Startup Client 1377,Startup,Cloud Platform,North America,950.81,0,2023-08-11
+1378,Startup Client 1378,Startup,Developer Tools,EMEA,779.36,0,2023-08-13
+1379,Startup Client 1379,Startup,Cloud Platform,APAC,1605.62,0,2023-08-15
+1380,Startup Client 1380,Startup,Developer Tools,EMEA,1011.77,0,2023-08-17
+1381,Startup Client 1381,Startup,Cloud Platform,North America,1054.01,0,2023-08-19
+1382,Startup Client 1382,Startup,Developer Tools,EMEA,2129.34,0,2023-08-21
+1383,Startup Client 1383,Startup,Security Suite,APAC,527.56,0,2023-08-23
+1384,Startup Client 1384,Startup,Cloud Platform,North America,2015.61,0,2023-08-25
+1385,Startup Client 1385,Startup,Analytics Pro,North America,1866.7,0,2023-08-27
+1386,Startup Client 1386,Startup,Developer Tools,APAC,328.37,0,2023-08-29
+1387,Startup Client 1387,Startup,Developer Tools,EMEA,2406.79,0,2023-08-31
+1388,Startup Client 1388,Startup,Developer Tools,EMEA,487.12,0,2023-09-02
+1389,Startup Client 1389,Startup,Analytics Pro,North America,1635.7,0,2023-09-04
+1390,Startup Client 1390,Startup,Analytics Pro,North America,508.92,0,2023-09-06
+1391,Startup Client 1391,Startup,Developer Tools,EMEA,689.17,0,2023-09-08
+1392,Startup Client 1392,Startup,Developer Tools,LATAM,1470.12,0,2023-09-10
+1393,Startup Client 1393,Startup,Developer Tools,North America,1581.97,0,2023-09-12
+1394,Startup Client 1394,Startup,Security Suite,APAC,972.64,0,2023-09-14
+1395,Startup Client 1395,Startup,Analytics Pro,North America,1800.82,0,2023-09-16
+1396,Startup Client 1396,Startup,Cloud Platform,EMEA,1691.27,0,2023-09-18
+1397,Startup Client 1397,Startup,Developer Tools,APAC,1825.53,0,2023-09-20
+1398,Startup Client 1398,Startup,Security Suite,APAC,2220.29,0,2023-09-22
+1399,Startup Client 1399,Startup,Cloud Platform,North America,1662.18,0,2023-09-24
+1400,Startup Client 1400,Startup,Security Suite,EMEA,925.99,0,2023-09-26
+1401,Startup Client 1401,Startup,Cloud Platform,North America,2169.91,0,2023-09-28
+1402,Startup Client 1402,Startup,Cloud Platform,EMEA,2419.66,0,2023-09-30
+1403,Startup Client 1403,Startup,Developer Tools,North America,1588.24,0,2023-10-02
+1404,Startup Client 1404,Startup,Cloud Platform,EMEA,425.46,0,2023-10-04
+1405,Startup Client 1405,Startup,Analytics Pro,EMEA,1497.56,0,2023-10-06
+1406,Startup Client 1406,Startup,Cloud Platform,EMEA,2104.15,0,2023-10-08
+1407,Startup Client 1407,Startup,Analytics Pro,North America,1816.48,0,2023-10-10
+1408,Startup Client 1408,Startup,Developer Tools,APAC,1650.0,0,2023-10-12
+1409,Startup Client 1409,Startup,Developer Tools,EMEA,1582.89,0,2023-10-14
+1410,Startup Client 1410,Startup,Security Suite,North America,1710.12,0,2023-10-16
+1411,Startup Client 1411,Startup,Developer Tools,EMEA,1843.82,0,2023-10-18
+1412,Startup Client 1412,Startup,Cloud Platform,North America,2304.95,0,2023-10-20
+1413,Startup Client 1413,Startup,Developer Tools,APAC,425.14,0,2023-10-22
+1414,Startup Client 1414,Startup,Developer Tools,EMEA,1028.97,0,2023-10-24
+1415,Startup Client 1415,Startup,Security Suite,EMEA,1963.76,0,2023-10-26
+1416,Startup Client 1416,Startup,Analytics Pro,North America,2356.41,0,2023-10-28
+1417,Startup Client 1417,Startup,Developer Tools,EMEA,1585.99,0,2023-10-30
+1418,Startup Client 1418,Startup,Analytics Pro,EMEA,436.48,0,2023-11-01
+1419,Startup Client 1419,Startup,Developer Tools,LATAM,656.23,0,2023-11-03
+1420,Startup Client 1420,Startup,Analytics Pro,EMEA,1293.83,0,2023-11-05
+1421,Startup Client 1421,Startup,Developer Tools,EMEA,553.32,0,2023-11-07
+1422,Startup Client 1422,Startup,Developer Tools,EMEA,1152.0,0,2023-11-09
+1423,Startup Client 1423,Startup,Cloud Platform,APAC,1726.11,0,2023-11-11
+1424,Startup Client 1424,Startup,Developer Tools,LATAM,2369.11,0,2023-11-13
+1425,Startup Client 1425,Startup,Security Suite,EMEA,633.15,0,2023-11-15
+1426,Startup Client 1426,Startup,Security Suite,North America,1579.82,0,2023-11-17
+1427,Startup Client 1427,Startup,Analytics Pro,North America,579.01,0,2023-11-19
+1428,Startup Client 1428,Startup,Analytics Pro,North America,1915.6,0,2023-11-21
+1429,Startup Client 1429,Startup,Developer Tools,APAC,1515.21,0,2023-11-23
+1430,Startup Client 1430,Startup,Analytics Pro,APAC,1569.36,0,2023-11-25
+1431,Startup Client 1431,Startup,Cloud Platform,EMEA,1488.61,0,2023-11-27
+1432,Startup Client 1432,Startup,Analytics Pro,North America,2297.64,0,2023-11-29
+1433,Startup Client 1433,Startup,Cloud Platform,EMEA,615.63,0,2023-12-01
+1434,Startup Client 1434,Startup,Cloud Platform,LATAM,1610.5,0,2023-12-03
+1435,Startup Client 1435,Startup,Developer Tools,APAC,1961.29,0,2023-12-05
+1436,Startup Client 1436,Startup,Security Suite,EMEA,476.41,0,2023-12-07
+1437,Startup Client 1437,Startup,Developer Tools,North America,2123.04,0,2023-12-09
+1438,Startup Client 1438,Startup,Cloud Platform,APAC,2369.94,0,2023-12-11
+1439,Startup Client 1439,Startup,Cloud Platform,APAC,2436.07,0,2023-12-13
+1440,Startup Client 1440,Startup,Security Suite,EMEA,388.63,0,2023-12-15
+1441,Startup Client 1441,Startup,Developer Tools,APAC,1577.42,0,2023-12-17
+1442,Startup Client 1442,Startup,Developer Tools,LATAM,1358.81,0,2023-12-19
+1443,Startup Client 1443,Startup,Developer Tools,North America,348.55,0,2023-12-21
+1444,Startup Client 1444,Startup,Analytics Pro,North America,2091.65,0,2023-12-23
+1445,Startup Client 1445,Startup,Developer Tools,EMEA,1267.68,0,2023-12-25
+1446,Startup Client 1446,Startup,Developer Tools,LATAM,420.04,0,2023-12-27
+1447,Startup Client 1447,Startup,Analytics Pro,EMEA,1143.07,0,2023-12-29
+1448,Startup Client 1448,Startup,Developer Tools,APAC,406.4,0,2023-12-31
+1449,Startup Client 1449,Startup,Analytics Pro,APAC,1593.6,0,2023-01-02
+1450,Startup Client 1450,Startup,Developer Tools,EMEA,1520.31,0,2023-01-04
+1451,Startup Client 1451,Startup,Developer Tools,EMEA,2025.69,0,2023-01-06
+1452,Startup Client 1452,Startup,Developer Tools,EMEA,2407.48,0,2023-01-08
+1453,Startup Client 1453,Startup,Developer Tools,EMEA,785.07,0,2023-01-10
+1454,Startup Client 1454,Startup,Cloud Platform,EMEA,706.64,0,2023-01-12
+1455,Startup Client 1455,Startup,Developer Tools,North America,1980.12,0,2023-01-14
+1456,Startup Client 1456,Startup,Cloud Platform,EMEA,1766.35,0,2023-01-16
+1457,Startup Client 1457,Startup,Cloud Platform,North America,659.41,0,2023-01-18
+1458,Startup Client 1458,Startup,Cloud Platform,EMEA,1150.76,0,2023-01-20
+1459,Startup Client 1459,Startup,Security Suite,EMEA,1425.76,0,2023-01-22
+1460,Startup Client 1460,Startup,Cloud Platform,EMEA,2146.12,0,2023-01-24
+1461,Startup Client 1461,Startup,Cloud Platform,EMEA,436.49,0,2023-01-26
+1462,Startup Client 1462,Startup,Developer Tools,EMEA,1545.24,0,2023-01-28
+1463,Startup Client 1463,Startup,Cloud Platform,North America,2411.54,0,2023-01-30
+1464,Startup Client 1464,Startup,Cloud Platform,EMEA,396.94,0,2023-02-01
+1465,Startup Client 1465,Startup,Cloud Platform,LATAM,1720.26,0,2023-02-03
+1466,Startup Client 1466,Startup,Analytics Pro,North America,2152.76,0,2023-02-05
+1467,Startup Client 1467,Startup,Cloud Platform,North America,673.75,0,2023-02-07
+1468,Startup Client 1468,Startup,Analytics Pro,EMEA,1440.84,0,2023-02-09
+1469,Startup Client 1469,Startup,Developer Tools,LATAM,2476.91,0,2023-02-11
+1470,Startup Client 1470,Startup,Analytics Pro,EMEA,613.62,0,2023-02-13
+1471,Startup Client 1471,Startup,Cloud Platform,APAC,468.87,0,2023-02-15
+1472,Startup Client 1472,Startup,Security Suite,EMEA,1712.0,0,2023-02-17
+1473,Startup Client 1473,Startup,Cloud Platform,North America,1213.97,0,2023-02-19
+1474,Startup Client 1474,Startup,Cloud Platform,LATAM,689.58,0,2023-02-21
+1475,Startup Client 1475,Startup,Developer Tools,North America,1618.59,0,2023-02-23
+1476,Startup Client 1476,Startup,Analytics Pro,North America,1164.92,0,2023-02-25
+1477,Startup Client 1477,Startup,Developer Tools,APAC,693.87,0,2023-02-27
+1478,Startup Client 1478,Startup,Security Suite,LATAM,1503.24,0,2023-03-01
+1479,Startup Client 1479,Startup,Analytics Pro,North America,460.02,0,2023-03-03
+1480,Startup Client 1480,Startup,Developer Tools,North America,2021.34,0,2023-03-05
+1481,Startup Client 1481,Startup,Developer Tools,North America,2223.48,0,2023-03-07
+1482,Startup Client 1482,Startup,Security Suite,LATAM,1178.53,0,2023-03-09
+1483,Startup Client 1483,Startup,Developer Tools,North America,697.96,0,2023-03-11
+1484,Startup Client 1484,Startup,Security Suite,EMEA,1907.91,0,2023-03-13
+1485,Startup Client 1485,Startup,Developer Tools,APAC,2131.75,0,2023-03-15
+1486,Startup Client 1486,Startup,Developer Tools,North America,431.16,0,2023-03-17
+1487,Startup Client 1487,Startup,Developer Tools,EMEA,1214.8,0,2023-03-19
+1488,Startup Client 1488,Startup,Developer Tools,North America,1443.15,0,2023-03-21
+1489,Startup Client 1489,Startup,Analytics Pro,North America,1786.0,0,2023-03-23
+1490,Startup Client 1490,Startup,Developer Tools,APAC,649.22,0,2023-03-25
+1491,Startup Client 1491,Startup,Developer Tools,North America,2295.49,0,2023-03-27
+1492,Startup Client 1492,Startup,Developer Tools,EMEA,1081.97,0,2023-03-29
+1493,Startup Client 1493,Startup,Analytics Pro,EMEA,1220.46,0,2023-03-31
+1494,Startup Client 1494,Startup,Cloud Platform,EMEA,1566.31,0,2023-04-02
+1495,Startup Client 1495,Startup,Developer Tools,North America,1517.64,0,2023-04-04
+1496,Startup Client 1496,Startup,Cloud Platform,EMEA,1933.0,0,2023-04-06
+1497,Startup Client 1497,Startup,Developer Tools,North America,2016.47,0,2023-04-08
+1498,Startup Client 1498,Startup,Developer Tools,APAC,1828.9,0,2023-04-10
+1499,Startup Client 1499,Startup,Developer Tools,EMEA,1917.06,0,2023-04-12
+1500,Startup Client 1500,Startup,Analytics Pro,EMEA,593.0,0,2023-04-14
+1501,Startup Client 1501,Startup,Developer Tools,North America,1618.46,0,2023-04-16
+1502,Startup Client 1502,Startup,Security Suite,North America,314.22,0,2023-04-18
+1503,Startup Client 1503,Startup,Cloud Platform,EMEA,1916.14,0,2023-04-20
+1504,Startup Client 1504,Startup,Cloud Platform,EMEA,2371.24,0,2023-04-22
+1505,Startup Client 1505,Startup,Developer Tools,EMEA,501.13,0,2023-04-24
+1506,Startup Client 1506,Startup,Developer Tools,APAC,1196.2,0,2023-04-26
+1507,Startup Client 1507,Startup,Cloud Platform,APAC,731.85,0,2023-04-28
+1508,Startup Client 1508,Startup,Developer Tools,EMEA,1569.66,0,2023-04-30
+1509,Startup Client 1509,Startup,Security Suite,APAC,2082.35,0,2023-05-02
+1510,Startup Client 1510,Startup,Developer Tools,North America,2308.69,0,2023-05-04
+1511,Startup Client 1511,Startup,Cloud Platform,North America,891.35,0,2023-05-06
+1512,Startup Client 1512,Startup,Developer Tools,EMEA,974.11,0,2023-05-08
+1513,Startup Client 1513,Startup,Developer Tools,North America,1238.3,0,2023-05-10
+1514,Startup Client 1514,Startup,Cloud Platform,EMEA,493.13,0,2023-05-12
+1515,Startup Client 1515,Startup,Analytics Pro,EMEA,770.79,0,2023-05-14
+1516,Startup Client 1516,Startup,Cloud Platform,EMEA,2086.11,0,2023-05-16
+1517,Startup Client 1517,Startup,Developer Tools,LATAM,1771.53,0,2023-05-18
+1518,Startup Client 1518,Startup,Cloud Platform,APAC,344.3,0,2023-05-20
+1519,Startup Client 1519,Startup,Developer Tools,APAC,1308.74,0,2023-05-22
+1520,Startup Client 1520,Startup,Developer Tools,LATAM,1793.95,0,2023-05-24
+1521,Startup Client 1521,Startup,Analytics Pro,APAC,1884.35,0,2023-05-26
+1522,Startup Client 1522,Startup,Analytics Pro,APAC,408.29,0,2023-05-28
+1523,Startup Client 1523,Startup,Analytics Pro,North America,863.62,0,2023-05-30
+1524,Startup Client 1524,Startup,Developer Tools,APAC,2190.05,0,2023-06-01
+1525,Startup Client 1525,Startup,Developer Tools,APAC,825.95,0,2023-06-03
+1526,Startup Client 1526,Startup,Security Suite,North America,987.72,0,2023-06-05
+1527,Startup Client 1527,Startup,Developer Tools,LATAM,2448.43,0,2023-06-07
+1528,Startup Client 1528,Startup,Developer Tools,APAC,967.45,0,2023-06-09
+1529,Startup Client 1529,Startup,Developer Tools,EMEA,1821.64,0,2023-06-11
+1530,Startup Client 1530,Startup,Developer Tools,APAC,587.58,0,2023-06-13
+1531,Startup Client 1531,Startup,Analytics Pro,EMEA,1565.13,0,2023-06-15
+1532,Startup Client 1532,Startup,Security Suite,EMEA,986.82,0,2023-06-17
+1533,Startup Client 1533,Startup,Analytics Pro,EMEA,1939.47,0,2023-06-19
+1534,Startup Client 1534,Startup,Cloud Platform,APAC,892.16,0,2023-06-21
+1535,Startup Client 1535,Startup,Analytics Pro,APAC,2300.36,0,2023-06-23
+1536,Startup Client 1536,Startup,Developer Tools,North America,2273.39,0,2023-06-25
+1537,Startup Client 1537,Startup,Analytics Pro,North America,2403.84,0,2023-06-27
+1538,Startup Client 1538,Startup,Security Suite,North America,437.35,0,2023-06-29
+1539,Startup Client 1539,Startup,Analytics Pro,APAC,846.79,0,2023-07-01
+1540,Startup Client 1540,Startup,Analytics Pro,APAC,2226.08,0,2023-07-03
+1541,Startup Client 1541,Startup,Developer Tools,North America,2185.91,0,2023-07-05
+1542,Startup Client 1542,Startup,Developer Tools,APAC,1818.71,0,2023-07-07
+1543,Startup Client 1543,Startup,Developer Tools,EMEA,1029.56,0,2023-07-09
+1544,Startup Client 1544,Startup,Cloud Platform,North America,1423.25,0,2023-07-11
+1545,Startup Client 1545,Startup,Developer Tools,North America,2065.27,0,2023-07-13
+1546,Startup Client 1546,Startup,Analytics Pro,APAC,2395.25,0,2023-07-15
+1547,Startup Client 1547,Startup,Developer Tools,LATAM,1954.02,0,2023-07-17
+1548,Startup Client 1548,Startup,Developer Tools,North America,988.42,0,2023-07-19
+1549,Startup Client 1549,Startup,Developer Tools,APAC,1851.09,0,2023-07-21
+1550,Startup Client 1550,Startup,Developer Tools,North America,855.09,0,2023-07-23
+1551,Startup Client 1551,Startup,Developer Tools,EMEA,418.0,0,2023-07-25
+1552,Startup Client 1552,Startup,Analytics Pro,North America,2168.02,0,2023-07-27
+1553,Startup Client 1553,Startup,Developer Tools,North America,2140.17,0,2023-07-29
+1554,Startup Client 1554,Startup,Developer Tools,EMEA,1884.84,0,2023-07-31
+1555,Startup Client 1555,Startup,Developer Tools,APAC,1313.98,0,2023-08-02
+1556,Startup Client 1556,Startup,Cloud Platform,APAC,1860.66,0,2023-08-04
+1557,Startup Client 1557,Startup,Developer Tools,EMEA,1776.23,0,2023-08-06
+1558,Startup Client 1558,Startup,Developer Tools,North America,2234.42,0,2023-08-08
+1559,Startup Client 1559,Startup,Developer Tools,North America,1197.11,0,2023-08-10
+1560,Startup Client 1560,Startup,Developer Tools,EMEA,2415.12,0,2023-08-12
+1561,Startup Client 1561,Startup,Analytics Pro,LATAM,895.23,0,2023-08-14
+1562,Startup Client 1562,Startup,Developer Tools,EMEA,956.2,0,2023-08-16
+1563,Startup Client 1563,Startup,Cloud Platform,EMEA,606.36,0,2023-08-18
+1564,Startup Client 1564,Startup,Analytics Pro,EMEA,2446.71,0,2023-08-20
+1565,Startup Client 1565,Startup,Developer Tools,EMEA,1057.0,0,2023-08-22
+1566,Startup Client 1566,Startup,Developer Tools,EMEA,2235.81,0,2023-08-24
+1567,Startup Client 1567,Startup,Developer Tools,North America,604.42,0,2023-08-26
+1568,Startup Client 1568,Startup,Developer Tools,EMEA,461.4,0,2023-08-28
+1569,Startup Client 1569,Startup,Security Suite,APAC,1213.32,0,2023-08-30
+1570,Startup Client 1570,Startup,Developer Tools,EMEA,730.57,0,2023-09-01
+1571,Startup Client 1571,Startup,Security Suite,North America,1221.73,0,2023-09-03
+1572,Startup Client 1572,Startup,Developer Tools,North America,1954.65,0,2023-09-05
+1573,Startup Client 1573,Startup,Developer Tools,EMEA,1611.31,0,2023-09-07
+1574,Startup Client 1574,Startup,Analytics Pro,North America,2325.52,0,2023-09-09
+1575,Startup Client 1575,Startup,Security Suite,North America,749.33,0,2023-09-11
+1576,Startup Client 1576,Startup,Developer Tools,APAC,300.5,0,2023-09-13
+1577,Startup Client 1577,Startup,Cloud Platform,North America,1933.04,0,2023-09-15
+1578,Startup Client 1578,Startup,Developer Tools,LATAM,448.73,0,2023-09-17
+1579,Startup Client 1579,Startup,Cloud Platform,EMEA,1247.18,0,2023-09-19
+1580,Startup Client 1580,Startup,Analytics Pro,EMEA,1067.43,0,2023-09-21
+1581,Startup Client 1581,Startup,Cloud Platform,North America,1881.18,0,2023-09-23
+1582,Startup Client 1582,Startup,Analytics Pro,North America,2487.53,0,2023-09-25
+1583,Startup Client 1583,Startup,Cloud Platform,EMEA,717.73,0,2023-09-27
+1584,Startup Client 1584,Startup,Analytics Pro,EMEA,2065.28,0,2023-09-29
+1585,Startup Client 1585,Startup,Developer Tools,APAC,1786.29,0,2023-10-01
+1586,Startup Client 1586,Startup,Cloud Platform,APAC,2205.28,0,2023-10-03
+1587,Startup Client 1587,Startup,Developer Tools,EMEA,1313.61,0,2023-10-05
+1588,Startup Client 1588,Startup,Developer Tools,North America,2471.17,0,2023-10-07
+1589,Startup Client 1589,Startup,Developer Tools,APAC,1484.47,0,2023-10-09
+1590,Startup Client 1590,Startup,Developer Tools,North America,514.21,0,2023-10-11
+1591,Startup Client 1591,Startup,Security Suite,North America,315.36,0,2023-10-13
+1592,Startup Client 1592,Startup,Analytics Pro,APAC,2101.51,0,2023-10-15
+1593,Startup Client 1593,Startup,Analytics Pro,North America,301.32,0,2023-10-17
+1594,Startup Client 1594,Startup,Cloud Platform,North America,813.85,0,2023-10-19
+1595,Startup Client 1595,Startup,Analytics Pro,EMEA,1522.21,0,2023-10-21
+1596,Startup Client 1596,Startup,Developer Tools,LATAM,1129.11,0,2023-10-23
+1597,Startup Client 1597,Startup,Analytics Pro,North America,1384.51,0,2023-10-25
+1598,Startup Client 1598,Startup,Cloud Platform,North America,2397.49,0,2023-10-27
+1599,Startup Client 1599,Startup,Analytics Pro,North America,955.75,0,2023-10-29
+1600,Startup Client 1600,Startup,Cloud Platform,EMEA,2022.96,0,2023-10-31
+1601,Startup Client 1601,Startup,Cloud Platform,LATAM,572.46,0,2023-11-02
+1602,Startup Client 1602,Startup,Developer Tools,EMEA,718.28,0,2023-11-04
+1603,Startup Client 1603,Startup,Developer Tools,North America,471.28,0,2023-11-06
+1604,Startup Client 1604,Startup,Cloud Platform,APAC,2191.22,0,2023-11-08
+1605,Startup Client 1605,Startup,Developer Tools,APAC,329.1,0,2023-11-10
+1606,Startup Client 1606,Startup,Developer Tools,APAC,2356.55,0,2023-11-12
+1607,Startup Client 1607,Startup,Cloud Platform,North America,2254.02,0,2023-11-14
+1608,Startup Client 1608,Startup,Analytics Pro,EMEA,935.73,0,2023-11-16
+1609,Startup Client 1609,Startup,Cloud Platform,APAC,1498.02,0,2023-11-18
+1610,Startup Client 1610,Startup,Analytics Pro,EMEA,668.65,0,2023-11-20
+1611,Startup Client 1611,Startup,Developer Tools,EMEA,2052.17,0,2023-11-22
+1612,Startup Client 1612,Startup,Developer Tools,North America,642.7,0,2023-11-24
+1613,Startup Client 1613,Startup,Security Suite,North America,1130.2,0,2023-11-26
+1614,Startup Client 1614,Startup,Developer Tools,LATAM,902.77,0,2023-11-28
+1615,Startup Client 1615,Startup,Cloud Platform,North America,1075.12,0,2023-11-30
+1616,Startup Client 1616,Startup,Developer Tools,North America,1162.88,0,2023-12-02
+1617,Startup Client 1617,Startup,Cloud Platform,LATAM,1979.73,0,2023-12-04
+1618,Startup Client 1618,Startup,Developer Tools,North America,1139.56,0,2023-12-06
+1619,Startup Client 1619,Startup,Cloud Platform,North America,1680.87,0,2023-12-08
+1620,Startup Client 1620,Startup,Developer Tools,APAC,2363.74,0,2023-12-10
+1621,Startup Client 1621,Startup,Developer Tools,North America,1675.95,0,2023-12-12
+1622,Startup Client 1622,Startup,Analytics Pro,EMEA,1036.54,0,2023-12-14
+1623,Startup Client 1623,Startup,Cloud Platform,EMEA,1083.11,0,2023-12-16
+1624,Startup Client 1624,Startup,Analytics Pro,North America,2091.64,0,2023-12-18
+1625,Startup Client 1625,Startup,Analytics Pro,North America,732.71,0,2023-12-20
+1626,Startup Client 1626,Startup,Developer Tools,APAC,1714.15,0,2023-12-22
+1627,Startup Client 1627,Startup,Developer Tools,North America,1097.5,0,2023-12-24
+1628,Startup Client 1628,Startup,Developer Tools,North America,1331.89,0,2023-12-26
+1629,Startup Client 1629,Startup,Developer Tools,North America,541.7,0,2023-12-28
+1630,Startup Client 1630,Startup,Cloud Platform,APAC,1804.51,0,2023-12-30
+1631,Startup Client 1631,Startup,Cloud Platform,EMEA,995.42,0,2023-01-01
+1632,Startup Client 1632,Startup,Analytics Pro,North America,829.77,0,2023-01-03
+1633,Startup Client 1633,Startup,Analytics Pro,North America,623.76,0,2023-01-05
+1634,Startup Client 1634,Startup,Cloud Platform,EMEA,2303.82,0,2023-01-07
+1635,Startup Client 1635,Startup,Analytics Pro,LATAM,571.14,0,2023-01-09
+1636,Startup Client 1636,Startup,Developer Tools,North America,655.73,0,2023-01-11
+1637,Startup Client 1637,Startup,Developer Tools,APAC,1931.45,0,2023-01-13
+1638,Startup Client 1638,Startup,Developer Tools,North America,1518.79,0,2023-01-15
+1639,Startup Client 1639,Startup,Developer Tools,North America,665.7,0,2023-01-17
+1640,Startup Client 1640,Startup,Developer Tools,North America,1118.58,0,2023-01-19
+1641,Startup Client 1641,Startup,Developer Tools,EMEA,2394.54,0,2023-01-21
+1642,Startup Client 1642,Startup,Cloud Platform,North America,2237.97,0,2023-01-23
+1643,Startup Client 1643,Startup,Analytics Pro,APAC,1323.08,0,2023-01-25
+1644,Startup Client 1644,Startup,Security Suite,North America,2322.26,0,2023-01-27
+1645,Startup Client 1645,Startup,Security Suite,EMEA,2415.41,0,2023-01-29
+1646,Startup Client 1646,Startup,Developer Tools,EMEA,1073.63,0,2023-01-31
+1647,Startup Client 1647,Startup,Developer Tools,North America,1976.78,0,2023-02-02
+1648,Startup Client 1648,Startup,Developer Tools,EMEA,1254.13,0,2023-02-04
+1649,Startup Client 1649,Startup,Developer Tools,EMEA,2046.66,0,2023-02-06
+1650,Startup Client 1650,Startup,Developer Tools,APAC,1931.58,0,2023-02-08
+1651,Startup Client 1651,Startup,Cloud Platform,EMEA,1169.12,0,2023-02-10
+1652,Startup Client 1652,Startup,Security Suite,APAC,1782.26,0,2023-02-12
+1653,Startup Client 1653,Startup,Developer Tools,North America,1085.36,0,2023-02-14
+1654,Startup Client 1654,Startup,Developer Tools,North America,1948.61,0,2023-02-16
+1655,Startup Client 1655,Startup,Developer Tools,EMEA,942.2,0,2023-02-18
+1656,Startup Client 1656,Startup,Developer Tools,APAC,775.27,0,2023-02-20
+1657,Startup Client 1657,Startup,Security Suite,EMEA,2405.7,0,2023-02-22
+1658,Startup Client 1658,Startup,Developer Tools,APAC,2275.5,0,2023-02-24
+1659,Startup Client 1659,Startup,Security Suite,North America,854.78,0,2023-02-26
+1660,Startup Client 1660,Startup,Cloud Platform,North America,753.16,0,2023-02-28
+1661,Startup Client 1661,Startup,Analytics Pro,APAC,2450.02,0,2023-03-02
+1662,Startup Client 1662,Startup,Developer Tools,North America,2146.02,0,2023-03-04
+1663,Startup Client 1663,Startup,Developer Tools,APAC,1901.86,0,2023-03-06
+1664,Startup Client 1664,Startup,Developer Tools,EMEA,1993.44,0,2023-03-08
+1665,Startup Client 1665,Startup,Developer Tools,North America,1051.61,0,2023-03-10
+1666,Startup Client 1666,Startup,Cloud Platform,North America,2274.27,0,2023-03-12
+1667,Startup Client 1667,Startup,Developer Tools,EMEA,2094.64,0,2023-03-14
+1668,Startup Client 1668,Startup,Developer Tools,North America,1341.56,0,2023-03-16
+1669,Startup Client 1669,Startup,Cloud Platform,APAC,2213.23,0,2023-03-18
+1670,Startup Client 1670,Startup,Cloud Platform,EMEA,2164.6,0,2023-03-20
+1671,Startup Client 1671,Startup,Developer Tools,EMEA,664.1,0,2023-03-22
+1672,Startup Client 1672,Startup,Cloud Platform,North America,1697.71,0,2023-03-24
+1673,Startup Client 1673,Startup,Analytics Pro,EMEA,391.29,0,2023-03-26
+1674,Startup Client 1674,Startup,Developer Tools,EMEA,2187.46,0,2023-03-28
+1675,Startup Client 1675,Startup,Developer Tools,LATAM,2396.86,0,2023-03-30
+1676,Startup Client 1676,Startup,Analytics Pro,North America,1460.69,0,2023-04-01
+1677,Startup Client 1677,Startup,Cloud Platform,North America,1897.39,0,2023-04-03
+1678,Startup Client 1678,Startup,Developer Tools,EMEA,1471.44,0,2023-04-05
+1679,Startup Client 1679,Startup,Analytics Pro,EMEA,665.76,0,2023-04-07
+1680,Startup Client 1680,Startup,Developer Tools,LATAM,2433.6,0,2023-04-09
+1681,Startup Client 1681,Startup,Developer Tools,North America,1976.87,0,2023-04-11
+1682,Startup Client 1682,Startup,Developer Tools,EMEA,1766.71,0,2023-04-13
+1683,Startup Client 1683,Startup,Developer Tools,North America,1377.53,0,2023-04-15
+1684,Startup Client 1684,Startup,Cloud Platform,APAC,1442.49,0,2023-04-17
+1685,Startup Client 1685,Startup,Cloud Platform,EMEA,708.71,0,2023-04-19
+1686,Startup Client 1686,Startup,Security Suite,North America,1748.28,0,2023-04-21
+1687,Startup Client 1687,Startup,Analytics Pro,LATAM,1527.98,0,2023-04-23
+1688,Startup Client 1688,Startup,Developer Tools,North America,2329.82,0,2023-04-25
+1689,Startup Client 1689,Startup,Cloud Platform,EMEA,1921.69,0,2023-04-27
+1690,Startup Client 1690,Startup,Developer Tools,North America,1039.91,0,2023-04-29
+1691,Startup Client 1691,Startup,Developer Tools,EMEA,1516.19,0,2023-05-01
+1692,Startup Client 1692,Startup,Developer Tools,EMEA,487.89,0,2023-05-03
+1693,Startup Client 1693,Startup,Analytics Pro,EMEA,1651.21,0,2023-05-05
+1694,Startup Client 1694,Startup,Cloud Platform,North America,1244.13,0,2023-05-07
+1695,Startup Client 1695,Startup,Analytics Pro,North America,2142.44,0,2023-05-09
+1696,Startup Client 1696,Startup,Developer Tools,North America,1410.81,0,2023-05-11
+1697,Startup Client 1697,Startup,Cloud Platform,North America,1568.98,0,2023-05-13
+1698,Startup Client 1698,Startup,Developer Tools,North America,416.04,0,2023-05-15
+1699,Startup Client 1699,Startup,Security Suite,APAC,399.33,0,2023-05-17
+1700,Startup Client 1700,Startup,Security Suite,North America,877.3,0,2023-05-19
+1701,Startup Client 1701,Startup,Developer Tools,EMEA,1287.97,0,2023-05-21
+1702,Startup Client 1702,Startup,Analytics Pro,North America,1031.34,0,2023-05-23
+1703,Startup Client 1703,Startup,Cloud Platform,APAC,1106.96,0,2023-05-25
+1704,Startup Client 1704,Startup,Developer Tools,APAC,2425.8,0,2023-05-27
+1705,Startup Client 1705,Startup,Developer Tools,North America,1621.74,0,2023-05-29
+1706,Startup Client 1706,Startup,Security Suite,EMEA,1687.69,0,2023-05-31
+1707,Startup Client 1707,Startup,Analytics Pro,North America,1967.11,0,2023-06-02
+1708,Startup Client 1708,Startup,Cloud Platform,EMEA,2334.21,0,2023-06-04
+1709,Startup Client 1709,Startup,Developer Tools,EMEA,2308.16,0,2023-06-06
+1710,Startup Client 1710,Startup,Analytics Pro,APAC,849.44,0,2023-06-08
+1711,Startup Client 1711,Startup,Developer Tools,North America,1530.28,0,2023-06-10
+1712,Startup Client 1712,Startup,Developer Tools,EMEA,335.26,0,2023-06-12
+1713,Startup Client 1713,Startup,Cloud Platform,APAC,1627.07,0,2023-06-14
+1714,Startup Client 1714,Startup,Developer Tools,North America,2351.65,0,2023-06-16
+1715,Startup Client 1715,Startup,Developer Tools,EMEA,1579.79,0,2023-06-18
+1716,Startup Client 1716,Startup,Developer Tools,APAC,2235.64,0,2023-06-20
+1717,Startup Client 1717,Startup,Cloud Platform,North America,1671.71,0,2023-06-22
+1718,Startup Client 1718,Startup,Developer Tools,APAC,743.95,0,2023-06-24
+1719,Startup Client 1719,Startup,Analytics Pro,North America,1788.08,0,2023-06-26
+1720,Startup Client 1720,Startup,Security Suite,North America,1964.19,0,2023-06-28
+1721,Startup Client 1721,Startup,Cloud Platform,North America,1656.57,0,2023-06-30
+1722,Startup Client 1722,Startup,Cloud Platform,LATAM,1330.83,0,2023-07-02
+1723,Startup Client 1723,Startup,Cloud Platform,North America,760.01,0,2023-07-04
+1724,Startup Client 1724,Startup,Security Suite,EMEA,1991.93,0,2023-07-06
+1725,Startup Client 1725,Startup,Cloud Platform,EMEA,346.22,0,2023-07-08
+1726,Startup Client 1726,Startup,Developer Tools,North America,2096.64,0,2023-07-10
+1727,Startup Client 1727,Startup,Developer Tools,EMEA,1484.4,0,2023-07-12
+1728,Startup Client 1728,Startup,Cloud Platform,LATAM,2125.04,0,2023-07-14
+1729,Startup Client 1729,Startup,Developer Tools,APAC,1953.13,0,2023-07-16
+1730,Startup Client 1730,Startup,Developer Tools,North America,1099.49,0,2023-07-18
+1731,Startup Client 1731,Startup,Developer Tools,APAC,1030.78,0,2023-07-20
+1732,Startup Client 1732,Startup,Analytics Pro,APAC,2344.69,0,2023-07-22
+1733,Startup Client 1733,Startup,Cloud Platform,EMEA,1924.8,0,2023-07-24
+1734,Startup Client 1734,Startup,Analytics Pro,LATAM,922.08,0,2023-07-26
+1735,Startup Client 1735,Startup,Developer Tools,LATAM,1714.11,0,2023-07-28
+1736,Startup Client 1736,Startup,Developer Tools,EMEA,1129.84,0,2023-07-30
+1737,Startup Client 1737,Startup,Cloud Platform,LATAM,2212.97,0,2023-08-01
+1738,Startup Client 1738,Startup,Analytics Pro,APAC,781.3,0,2023-08-03
+1739,Startup Client 1739,Startup,Developer Tools,EMEA,1166.26,0,2023-08-05
+1740,Startup Client 1740,Startup,Analytics Pro,North America,1933.21,0,2023-08-07
+1741,Startup Client 1741,Startup,Security Suite,North America,959.84,0,2023-08-09
+1742,Startup Client 1742,Startup,Analytics Pro,North America,1080.55,0,2023-08-11
+1743,Startup Client 1743,Startup,Developer Tools,North America,1583.28,0,2023-08-13
+1744,Startup Client 1744,Startup,Developer Tools,EMEA,1615.18,0,2023-08-15
+1745,Startup Client 1745,Startup,Security Suite,EMEA,1842.41,0,2023-08-17
+1746,Startup Client 1746,Startup,Developer Tools,APAC,316.18,0,2023-08-19
+1747,Startup Client 1747,Startup,Analytics Pro,LATAM,384.48,0,2023-08-21
+1748,Startup Client 1748,Startup,Developer Tools,LATAM,1225.62,0,2023-08-23
+1749,Startup Client 1749,Startup,Developer Tools,APAC,1877.98,0,2023-08-25
+1750,Startup Client 1750,Startup,Security Suite,EMEA,2201.61,0,2023-08-27
+1751,Startup Client 1751,Startup,Developer Tools,APAC,1149.31,0,2023-08-29
+1752,Startup Client 1752,Startup,Developer Tools,EMEA,483.09,0,2023-08-31
+1753,Startup Client 1753,Startup,Developer Tools,EMEA,451.26,0,2023-09-02
+1754,Startup Client 1754,Startup,Analytics Pro,APAC,2231.05,0,2023-09-04
+1755,Startup Client 1755,Startup,Cloud Platform,LATAM,1526.92,0,2023-09-06
+1756,Startup Client 1756,Startup,Analytics Pro,EMEA,1427.75,0,2023-09-08
+1757,Startup Client 1757,Startup,Analytics Pro,North America,2187.29,0,2023-09-10
+1758,Startup Client 1758,Startup,Analytics Pro,APAC,583.96,0,2023-09-12
+1759,Startup Client 1759,Startup,Analytics Pro,North America,1337.58,0,2023-09-14
+1760,Startup Client 1760,Startup,Developer Tools,North America,1032.0,0,2023-09-16
+1761,Startup Client 1761,Startup,Security Suite,North America,2473.87,0,2023-09-18
+1762,Startup Client 1762,Startup,Security Suite,APAC,2260.51,0,2023-09-20
+1763,Startup Client 1763,Startup,Cloud Platform,North America,2464.17,0,2023-09-22
+1764,Startup Client 1764,Startup,Analytics Pro,North America,1885.0,0,2023-09-24
+1765,Startup Client 1765,Startup,Cloud Platform,APAC,386.6,0,2023-09-26
+1766,Startup Client 1766,Startup,Security Suite,EMEA,595.75,0,2023-09-28
+1767,Startup Client 1767,Startup,Cloud Platform,APAC,1242.37,0,2023-09-30
+1768,Startup Client 1768,Startup,Developer Tools,APAC,323.13,0,2023-10-02
+1769,Startup Client 1769,Startup,Developer Tools,EMEA,1252.25,0,2023-10-04
+1770,Startup Client 1770,Startup,Developer Tools,APAC,1156.26,0,2023-10-06
+1771,Startup Client 1771,Startup,Developer Tools,LATAM,1038.8,0,2023-10-08
+1772,Startup Client 1772,Startup,Developer Tools,EMEA,2416.53,0,2023-10-10
+1773,Startup Client 1773,Startup,Developer Tools,North America,913.13,0,2023-10-12
+1774,Startup Client 1774,Startup,Analytics Pro,North America,1575.63,0,2023-10-14
+1775,Startup Client 1775,Startup,Developer Tools,North America,1190.93,0,2023-10-16
+1776,Startup Client 1776,Startup,Cloud Platform,North America,1572.79,0,2023-10-18
+1777,Startup Client 1777,Startup,Developer Tools,North America,1267.04,0,2023-10-20
+1778,Startup Client 1778,Startup,Cloud Platform,North America,996.21,0,2023-10-22
+1779,Startup Client 1779,Startup,Developer Tools,North America,2426.43,0,2023-10-24
+1780,Startup Client 1780,Startup,Developer Tools,North America,1555.88,0,2023-10-26
+1781,Startup Client 1781,Startup,Developer Tools,North America,2083.5,0,2023-10-28
+1782,Startup Client 1782,Startup,Developer Tools,EMEA,655.18,0,2023-10-30
+1783,Startup Client 1783,Startup,Analytics Pro,EMEA,331.23,0,2023-11-01
+1784,Startup Client 1784,Startup,Developer Tools,LATAM,1824.4,0,2023-11-03
+1785,Startup Client 1785,Startup,Developer Tools,EMEA,932.52,0,2023-11-05
+1786,Startup Client 1786,Startup,Cloud Platform,LATAM,1192.42,0,2023-11-07
+1787,Startup Client 1787,Startup,Security Suite,EMEA,2177.3,0,2023-11-09
+1788,Startup Client 1788,Startup,Developer Tools,APAC,799.97,0,2023-11-11
+1789,Startup Client 1789,Startup,Developer Tools,EMEA,1433.37,0,2023-11-13
+1790,Startup Client 1790,Startup,Developer Tools,North America,1116.14,0,2023-11-15
+1791,Startup Client 1791,Startup,Analytics Pro,EMEA,1145.93,0,2023-11-17
+1792,Startup Client 1792,Startup,Security Suite,APAC,2019.92,0,2023-11-19
+1793,Startup Client 1793,Startup,Analytics Pro,APAC,1568.28,0,2023-11-21
+1794,Startup Client 1794,Startup,Analytics Pro,EMEA,824.24,0,2023-11-23
+1795,Startup Client 1795,Startup,Cloud Platform,EMEA,873.87,0,2023-11-25
+1796,Startup Client 1796,Startup,Security Suite,LATAM,1424.41,0,2023-11-27
+1797,Startup Client 1797,Startup,Developer Tools,North America,1556.64,0,2023-11-29
+1798,Startup Client 1798,Startup,Developer Tools,EMEA,1552.25,0,2023-12-01
+1799,Startup Client 1799,Startup,Analytics Pro,North America,1879.63,0,2023-12-03
+1800,Startup Client 1800,Startup,Analytics Pro,APAC,1307.38,0,2023-12-05
+1801,Startup Client 1801,Startup,Developer Tools,LATAM,836.79,0,2023-12-07
+1802,Startup Client 1802,Startup,Analytics Pro,APAC,844.79,0,2023-12-09
+1803,Startup Client 1803,Startup,Security Suite,North America,2426.57,0,2023-12-11
+1804,Startup Client 1804,Startup,Developer Tools,North America,1457.41,0,2023-12-13
+1805,Startup Client 1805,Startup,Cloud Platform,North America,1920.24,0,2023-12-15
+1806,Startup Client 1806,Startup,Analytics Pro,North America,1149.83,0,2023-12-17
+1807,Startup Client 1807,Startup,Analytics Pro,North America,1380.24,0,2023-12-19
+1808,Startup Client 1808,Startup,Developer Tools,EMEA,980.83,0,2023-12-21
+1809,Startup Client 1809,Startup,Developer Tools,LATAM,1278.37,0,2023-12-23
+1810,Startup Client 1810,Startup,Developer Tools,APAC,831.52,0,2023-12-25
+1811,Startup Client 1811,Startup,Cloud Platform,APAC,1636.11,0,2023-12-27
+1812,Startup Client 1812,Startup,Developer Tools,APAC,441.01,0,2023-12-29
+1813,Startup Client 1813,Startup,Developer Tools,North America,764.13,0,2023-12-31
+1814,Startup Client 1814,Startup,Security Suite,North America,2156.39,0,2023-01-02
+1815,Startup Client 1815,Startup,Developer Tools,North America,594.31,0,2023-01-04
+1816,Startup Client 1816,Startup,Analytics Pro,EMEA,738.01,0,2023-01-06
+1817,Startup Client 1817,Startup,Cloud Platform,North America,1498.56,0,2023-01-08
+1818,Startup Client 1818,Startup,Analytics Pro,EMEA,825.25,0,2023-01-10
+1819,Startup Client 1819,Startup,Analytics Pro,EMEA,1848.87,0,2023-01-12
+1820,Startup Client 1820,Startup,Developer Tools,LATAM,1160.02,0,2023-01-14
+1821,Startup Client 1821,Startup,Analytics Pro,North America,2060.3,0,2023-01-16
+1822,Startup Client 1822,Startup,Analytics Pro,EMEA,997.19,0,2023-01-18
+1823,Startup Client 1823,Startup,Developer Tools,APAC,2011.0,0,2023-01-20
+1824,Startup Client 1824,Startup,Developer Tools,North America,1091.29,0,2023-01-22
+1825,Startup Client 1825,Startup,Developer Tools,North America,433.99,0,2023-01-24
+1826,Startup Client 1826,Startup,Analytics Pro,APAC,1200.2,0,2023-01-26
+1827,Startup Client 1827,Startup,Analytics Pro,APAC,1985.74,0,2023-01-28
+1828,Startup Client 1828,Startup,Security Suite,APAC,946.62,0,2023-01-30
+1829,Startup Client 1829,Startup,Developer Tools,North America,1824.42,0,2023-02-01
+1830,Startup Client 1830,Startup,Developer Tools,LATAM,1757.1,0,2023-02-03
+1831,Startup Client 1831,Startup,Developer Tools,EMEA,644.0,0,2023-02-05
+1832,Startup Client 1832,Startup,Security Suite,North America,904.26,0,2023-02-07
+1833,Startup Client 1833,Startup,Developer Tools,EMEA,1574.49,0,2023-02-09
+1834,Startup Client 1834,Startup,Developer Tools,North America,1689.79,0,2023-02-11
+1835,Startup Client 1835,Startup,Security Suite,North America,812.29,0,2023-02-13
+1836,Startup Client 1836,Startup,Developer Tools,North America,699.88,0,2023-02-15
+1837,Startup Client 1837,Startup,Security Suite,North America,867.84,0,2023-02-17
+1838,Startup Client 1838,Startup,Developer Tools,APAC,2341.04,0,2023-02-19
+1839,Startup Client 1839,Startup,Developer Tools,APAC,533.67,0,2023-02-21
+1840,Startup Client 1840,Startup,Cloud Platform,EMEA,1989.08,0,2023-02-23
+1841,Startup Client 1841,Startup,Developer Tools,EMEA,2135.51,0,2023-02-25
+1842,Startup Client 1842,Startup,Developer Tools,North America,1308.4,0,2023-02-27
+1843,Startup Client 1843,Startup,Cloud Platform,EMEA,1705.72,0,2023-03-01
+1844,Startup Client 1844,Startup,Developer Tools,North America,943.84,0,2023-03-03
+1845,Startup Client 1845,Startup,Developer Tools,North America,1821.62,0,2023-03-05
+1846,Startup Client 1846,Startup,Cloud Platform,APAC,529.49,0,2023-03-07
+1847,Startup Client 1847,Startup,Security Suite,North America,1462.02,0,2023-03-09
+1848,Startup Client 1848,Startup,Developer Tools,APAC,1729.02,0,2023-03-11
+1849,Startup Client 1849,Startup,Cloud Platform,North America,1677.32,0,2023-03-13
+1850,Startup Client 1850,Startup,Analytics Pro,North America,408.48,0,2023-03-15
+1851,Startup Client 1851,Startup,Analytics Pro,LATAM,872.11,0,2023-03-17
+1852,Startup Client 1852,Startup,Developer Tools,APAC,1642.83,0,2023-03-19
+1853,Startup Client 1853,Startup,Developer Tools,North America,547.51,0,2023-03-21
+1854,Startup Client 1854,Startup,Analytics Pro,LATAM,1706.04,0,2023-03-23
+1855,Startup Client 1855,Startup,Analytics Pro,LATAM,879.81,0,2023-03-25
+1856,Startup Client 1856,Startup,Developer Tools,APAC,354.22,0,2023-03-27
+1857,Startup Client 1857,Startup,Developer Tools,LATAM,2140.03,0,2023-03-29
+1858,Startup Client 1858,Startup,Developer Tools,EMEA,443.61,0,2023-03-31
+1859,Startup Client 1859,Startup,Cloud Platform,APAC,1724.15,0,2023-04-02
+1860,Startup Client 1860,Startup,Developer Tools,EMEA,2461.46,0,2023-04-04
+1861,Startup Client 1861,Startup,Analytics Pro,APAC,387.89,0,2023-04-06
+1862,Startup Client 1862,Startup,Security Suite,North America,1843.3,0,2023-04-08
+1863,Startup Client 1863,Startup,Security Suite,LATAM,1239.17,0,2023-04-10
+1864,Startup Client 1864,Startup,Analytics Pro,EMEA,1710.39,0,2023-04-12
+1865,Startup Client 1865,Startup,Developer Tools,EMEA,445.32,0,2023-04-14
+1866,Startup Client 1866,Startup,Analytics Pro,APAC,1351.31,0,2023-04-16
+1867,Startup Client 1867,Startup,Developer Tools,North America,1756.91,0,2023-04-18
+1868,Startup Client 1868,Startup,Cloud Platform,APAC,994.47,0,2023-04-20
+1869,Startup Client 1869,Startup,Developer Tools,APAC,387.55,0,2023-04-22
+1870,Startup Client 1870,Startup,Security Suite,EMEA,2259.83,0,2023-04-24
+1871,Startup Client 1871,Startup,Developer Tools,APAC,469.33,0,2023-04-26
+1872,Startup Client 1872,Startup,Security Suite,APAC,838.24,0,2023-04-28
+1873,Startup Client 1873,Startup,Analytics Pro,EMEA,2229.67,0,2023-04-30
+1874,Startup Client 1874,Startup,Cloud Platform,LATAM,723.48,0,2023-05-02
+1875,Startup Client 1875,Startup,Developer Tools,North America,2105.12,0,2023-05-04
+1876,Startup Client 1876,Startup,Security Suite,North America,2156.2,0,2023-05-06
+1877,Startup Client 1877,Startup,Cloud Platform,APAC,1502.25,0,2023-05-08
+1878,Startup Client 1878,Startup,Cloud Platform,North America,1581.36,0,2023-05-10
+1879,Startup Client 1879,Startup,Cloud Platform,EMEA,705.35,0,2023-05-12
+1880,Startup Client 1880,Startup,Cloud Platform,North America,2148.77,0,2023-05-14
+1881,Startup Client 1881,Startup,Developer Tools,North America,1560.09,0,2023-05-16
+1882,Startup Client 1882,Startup,Developer Tools,North America,1069.15,0,2023-05-18
+1883,Startup Client 1883,Startup,Developer Tools,EMEA,358.54,0,2023-05-20
+1884,Startup Client 1884,Startup,Developer Tools,APAC,1577.66,0,2023-05-22
+1885,Startup Client 1885,Startup,Analytics Pro,North America,752.94,0,2023-05-24
+1886,Startup Client 1886,Startup,Developer Tools,APAC,585.69,0,2023-05-26
+1887,Startup Client 1887,Startup,Developer Tools,North America,2418.01,0,2023-05-28
+1888,Startup Client 1888,Startup,Developer Tools,EMEA,532.43,0,2023-05-30
+1889,Startup Client 1889,Startup,Developer Tools,APAC,1660.23,0,2023-06-01
+1890,Startup Client 1890,Startup,Cloud Platform,APAC,2135.81,0,2023-06-03
+1891,Startup Client 1891,Startup,Analytics Pro,EMEA,2171.88,0,2023-06-05
+1892,Startup Client 1892,Startup,Developer Tools,North America,991.16,0,2023-06-07
+1893,Startup Client 1893,Startup,Cloud Platform,APAC,1575.54,0,2023-06-09
+1894,Startup Client 1894,Startup,Analytics Pro,EMEA,686.96,0,2023-06-11
+1895,Startup Client 1895,Startup,Analytics Pro,North America,2312.64,0,2023-06-13
+1896,Startup Client 1896,Startup,Developer Tools,LATAM,1969.75,0,2023-06-15
+1897,Startup Client 1897,Startup,Developer Tools,North America,622.55,0,2023-06-17
+1898,Startup Client 1898,Startup,Developer Tools,EMEA,644.87,0,2023-06-19
+1899,Startup Client 1899,Startup,Analytics Pro,EMEA,1960.62,0,2023-06-21
+1900,Startup Client 1900,Startup,Developer Tools,North America,1192.04,0,2023-06-23
+1901,Startup Client 1901,Startup,Analytics Pro,EMEA,948.6,0,2023-06-25
+1902,Startup Client 1902,Startup,Developer Tools,North America,855.11,0,2023-06-27
+1903,Startup Client 1903,Startup,Cloud Platform,APAC,2270.79,0,2023-06-29
+1904,Startup Client 1904,Startup,Cloud Platform,LATAM,2295.37,0,2023-07-01
+1905,Startup Client 1905,Startup,Developer Tools,APAC,1296.34,0,2023-07-03
+1906,Startup Client 1906,Startup,Cloud Platform,North America,963.49,0,2023-07-05
+1907,Startup Client 1907,Startup,Cloud Platform,North America,504.64,0,2023-07-07
+1908,Startup Client 1908,Startup,Developer Tools,North America,1230.48,0,2023-07-09
+1909,Startup Client 1909,Startup,Developer Tools,North America,586.7,0,2023-07-11
+1910,Startup Client 1910,Startup,Cloud Platform,LATAM,514.74,0,2023-07-13
+1911,Startup Client 1911,Startup,Analytics Pro,APAC,2107.24,0,2023-07-15
+1912,Startup Client 1912,Startup,Developer Tools,APAC,1482.01,0,2023-07-17
+1913,Startup Client 1913,Startup,Analytics Pro,North America,1683.21,0,2023-07-19
+1914,Startup Client 1914,Startup,Developer Tools,EMEA,1302.25,0,2023-07-21
+1915,Startup Client 1915,Startup,Developer Tools,North America,2131.26,0,2023-07-23
+1916,Startup Client 1916,Startup,Developer Tools,LATAM,1821.91,0,2023-07-25
+1917,Startup Client 1917,Startup,Developer Tools,North America,2468.32,0,2023-07-27
+1918,Startup Client 1918,Startup,Cloud Platform,APAC,2056.82,0,2023-07-29
+1919,Startup Client 1919,Startup,Analytics Pro,EMEA,2302.43,0,2023-07-31
+1920,Startup Client 1920,Startup,Security Suite,North America,1246.31,0,2023-08-02
+1921,Startup Client 1921,Startup,Developer Tools,LATAM,1976.69,0,2023-08-04
+1922,Startup Client 1922,Startup,Developer Tools,APAC,684.52,0,2023-08-06
+1923,Startup Client 1923,Startup,Cloud Platform,North America,856.24,0,2023-08-08
+1924,Startup Client 1924,Startup,Developer Tools,APAC,2306.86,0,2023-08-10
+1925,Startup Client 1925,Startup,Developer Tools,North America,865.74,0,2023-08-12
+1926,Startup Client 1926,Startup,Developer Tools,North America,1125.71,0,2023-08-14
+1927,Startup Client 1927,Startup,Analytics Pro,APAC,2110.61,0,2023-08-16
+1928,Startup Client 1928,Startup,Developer Tools,North America,1191.43,0,2023-08-18
+1929,Startup Client 1929,Startup,Developer Tools,North America,337.21,0,2023-08-20
+1930,Startup Client 1930,Startup,Developer Tools,North America,2103.29,0,2023-08-22
+1931,Startup Client 1931,Startup,Developer Tools,LATAM,883.38,0,2023-08-24
+1932,Startup Client 1932,Startup,Developer Tools,APAC,2314.79,0,2023-08-26
+1933,Startup Client 1933,Startup,Developer Tools,LATAM,598.64,0,2023-08-28
+1934,Startup Client 1934,Startup,Analytics Pro,North America,660.2,0,2023-08-30
+1935,Startup Client 1935,Startup,Developer Tools,EMEA,897.78,0,2023-09-01
+1936,Startup Client 1936,Startup,Analytics Pro,LATAM,494.47,0,2023-09-03
+1937,Startup Client 1937,Startup,Security Suite,North America,1685.3,0,2023-09-05
+1938,Startup Client 1938,Startup,Developer Tools,North America,2469.59,0,2023-09-07
+1939,Startup Client 1939,Startup,Cloud Platform,North America,454.15,0,2023-09-09
+1940,Startup Client 1940,Startup,Developer Tools,EMEA,1577.69,0,2023-09-11
+1941,Startup Client 1941,Startup,Security Suite,APAC,2154.48,0,2023-09-13
+1942,Startup Client 1942,Startup,Cloud Platform,EMEA,1910.12,0,2023-09-15
+1943,Startup Client 1943,Startup,Cloud Platform,EMEA,1702.06,0,2023-09-17
+1944,Startup Client 1944,Startup,Developer Tools,EMEA,1476.56,0,2023-09-19
+1945,Startup Client 1945,Startup,Security Suite,APAC,2095.32,0,2023-09-21
+1946,Startup Client 1946,Startup,Developer Tools,EMEA,1609.91,0,2023-09-23
+1947,Startup Client 1947,Startup,Developer Tools,EMEA,1629.47,0,2023-09-25
+1948,Startup Client 1948,Startup,Cloud Platform,North America,617.49,0,2023-09-27
+1949,Startup Client 1949,Startup,Analytics Pro,North America,2221.78,0,2023-09-29
+1950,Startup Client 1950,Startup,Analytics Pro,EMEA,1919.28,0,2023-10-01
+1951,Startup Client 1951,Startup,Developer Tools,APAC,657.52,0,2023-10-03
+1952,Startup Client 1952,Startup,Security Suite,APAC,2200.34,0,2023-10-05
+1953,Startup Client 1953,Startup,Cloud Platform,North America,616.53,0,2023-10-07
+1954,Startup Client 1954,Startup,Security Suite,EMEA,1590.52,0,2023-10-09
+1955,Startup Client 1955,Startup,Security Suite,APAC,316.42,0,2023-10-11
+1956,Startup Client 1956,Startup,Developer Tools,North America,1273.93,0,2023-10-13
+1957,Startup Client 1957,Startup,Developer Tools,North America,2088.91,0,2023-10-15
+1958,Startup Client 1958,Startup,Developer Tools,APAC,820.79,0,2023-10-17
+1959,Startup Client 1959,Startup,Analytics Pro,APAC,1214.38,0,2023-10-19
+1960,Startup Client 1960,Startup,Security Suite,EMEA,1772.39,0,2023-10-21
+1961,Startup Client 1961,Startup,Developer Tools,EMEA,749.36,0,2023-10-23
+1962,Startup Client 1962,Startup,Security Suite,EMEA,2490.42,0,2023-10-25
+1963,Startup Client 1963,Startup,Developer Tools,APAC,1544.87,0,2023-10-27
+1964,Startup Client 1964,Startup,Developer Tools,EMEA,1292.49,0,2023-10-29
+1965,Startup Client 1965,Startup,Cloud Platform,EMEA,1383.21,0,2023-10-31
+1966,Startup Client 1966,Startup,Developer Tools,North America,840.8,0,2023-11-02
+1967,Startup Client 1967,Startup,Developer Tools,EMEA,2394.98,0,2023-11-04
+1968,Startup Client 1968,Startup,Cloud Platform,EMEA,1494.47,0,2023-11-06
+1969,Startup Client 1969,Startup,Developer Tools,EMEA,518.12,0,2023-11-08
+1970,Startup Client 1970,Startup,Analytics Pro,North America,2011.57,0,2023-11-10
+1971,Startup Client 1971,Startup,Developer Tools,APAC,1193.93,0,2023-11-12
+1972,Startup Client 1972,Startup,Developer Tools,North America,1221.63,0,2023-11-14
+1973,Startup Client 1973,Startup,Developer Tools,North America,2466.07,0,2023-11-16
+1974,Startup Client 1974,Startup,Cloud Platform,LATAM,1588.78,0,2023-11-18
+1975,Startup Client 1975,Startup,Developer Tools,North America,684.53,0,2023-11-20
+1976,Startup Client 1976,Startup,Developer Tools,APAC,1878.64,0,2023-11-22
+1977,Startup Client 1977,Startup,Developer Tools,North America,1651.9,0,2023-11-24
+1978,Startup Client 1978,Startup,Analytics Pro,LATAM,1028.01,0,2023-11-26
+1979,Startup Client 1979,Startup,Developer Tools,APAC,1156.66,0,2023-11-28
+1980,Startup Client 1980,Startup,Analytics Pro,North America,766.58,0,2023-11-30
+1981,Startup Client 1981,Startup,Analytics Pro,North America,1204.48,0,2023-12-02
+1982,Startup Client 1982,Startup,Developer Tools,North America,2234.66,0,2023-12-04
+1983,Startup Client 1983,Startup,Cloud Platform,APAC,1044.72,0,2023-12-06
+1984,Startup Client 1984,Startup,Cloud Platform,North America,2115.97,0,2023-12-08
+1985,Startup Client 1985,Startup,Developer Tools,North America,2038.18,0,2023-12-10
+1986,Startup Client 1986,Startup,Analytics Pro,EMEA,1669.6,0,2023-12-12
+1987,Startup Client 1987,Startup,Developer Tools,EMEA,1993.41,0,2023-12-14
+1988,Startup Client 1988,Startup,Security Suite,APAC,2383.74,0,2023-12-16
+1989,Startup Client 1989,Startup,Developer Tools,LATAM,1364.53,0,2023-12-18
+1990,Startup Client 1990,Startup,Developer Tools,APAC,492.32,0,2023-12-20
+1991,Startup Client 1991,Startup,Analytics Pro,APAC,2040.88,0,2023-12-22
+1992,Startup Client 1992,Startup,Analytics Pro,LATAM,2170.29,0,2023-12-24
+1993,Startup Client 1993,Startup,Cloud Platform,EMEA,409.69,0,2023-12-26
+1994,Startup Client 1994,Startup,Developer Tools,North America,1566.74,0,2023-12-28
+1995,Startup Client 1995,Startup,Cloud Platform,North America,2412.81,0,2023-12-30
+1996,Startup Client 1996,Startup,Developer Tools,LATAM,330.83,0,2023-01-01
+1997,Startup Client 1997,Startup,Developer Tools,North America,1765.08,0,2023-01-03
+1998,Startup Client 1998,Startup,Security Suite,EMEA,1492.43,0,2023-01-05
+1999,Startup Client 1999,Startup,Developer Tools,EMEA,458.87,0,2023-01-07
+2000,Startup Client 2000,Startup,Security Suite,North America,1983.33,0,2023-01-09

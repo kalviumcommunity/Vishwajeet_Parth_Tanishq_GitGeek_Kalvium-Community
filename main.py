@@ -5,6 +5,7 @@ from metrics_runner import run_metrics
 from run_filtering_analysis import run_all_queries
 from joins_runner import run_joins_analysis
 from distribution_runner import run_distribution_analysis
+from segment_aggregation_runner import run_segment_aggregation
 
 if __name__ == '__main__':
     print("\n=======================================================")
@@ -26,3 +27,8 @@ if __name__ == '__main__':
     print(">>> 4. RUNNING MODULE 2.28: DISTRIBUTION ANALYSIS FOR BUSINESS TRENDS <<<")
     print("=======================================================\n")
     run_distribution_analysis()
+
+    print("\n=======================================================")
+    print(">>> 5. RUNNING MODULE 2.30: GROUPBY AGGREGATION & SEGMENT INSIGHTS <<<")
+    print("=======================================================\n")
+    run_segment_aggregation()
