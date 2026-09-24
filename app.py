@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+from datetime import datetime
+from insight_delivery_runner import generate_report, send_report_email
 
 try:
     import plotly.graph_objects as go
@@ -121,7 +123,35 @@ if st.sidebar.button("🔄 Reset Workflow State"):
     st.sidebar.success("Workflow state reset successfully!")
     st.rerun()
 
-st.sidebar.info("💡 Changes in the sidebar preserve workflow state across script reruns.")
+st.sidebar.divider()
+
+# -----------------------------------------------------------------------------
+# Module 2.53: Automated Report Delivery Actions
+# -----------------------------------------------------------------------------
+st.sidebar.header("📬 Deliver Weekly Insights")
+recipient_email = st.sidebar.text_input("Stakeholder Email", placeholder="executive@company.com")
+email_subject = st.sidebar.text_input("Subject", value="Weekly Executive Analytics Report")
+
+if st.sidebar.button("🚀 Send Email Report"):
+    if not recipient_email or "@" not in recipient_email:
+        st.sidebar.error("Please enter a valid recipient email address.")
+    else:
+        df_context = load_data_explorer_sample()
+        generated_text = generate_report(df_context, datetime.now().date())
+        success, message = send_report_email(generated_text, recipient_email, subject=email_subject, simulate_if_unconfigured=True)
+        if success:
+            st.sidebar.success(f"Report delivered to {recipient_email}!")
+            st.sidebar.caption(message)
+        else:
+            st.sidebar.error(f"Dispatch failed: {message}")
+
+with st.sidebar.expander("👁️ Preview Structured Report Text"):
+    df_preview = load_data_explorer_sample()
+    sample_rep = generate_report(df_preview, datetime.now().date())
+    st.text(sample_rep)
+    st.download_button("📥 Download Report (TXT)", sample_rep, "Weekly_Analytics_Report.txt", "text/plain")
+
+st.sidebar.info("💡 Insights are delivered proactively to inboxes with credentials safely managed via environment variables.")
 
 
 

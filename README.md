@@ -104,9 +104,12 @@ contributor-retention-analytics/
 ├── data_storytelling_runner.py
 ├── streamlit_structure_runner.py
 ├── session_state_runner.py
+├── insight_delivery_runner.py
 ├── app.py
 ├── main.py
 ├── requirements.txt
+├── INSIGHT_DELIVERY_GUIDE.md
+├── VIDEO_SCRIPT_INSIGHT_DELIVERY.md
 ├── STREAMLIT_SESSION_STATE_GUIDE.md
 ├── VIDEO_SCRIPT_STREAMLIT_SESSION_STATE.md
 ├── STREAMLIT_NAVIGATION_GUIDE.md
@@ -571,6 +574,53 @@ python main.py
 ### Video Guide & Documentation
 - Comprehensive engineering guide: [`STREAMLIT_SESSION_STATE_GUIDE.md`](./STREAMLIT_SESSION_STATE_GUIDE.md)
 - Step-by-step video script: [`VIDEO_SCRIPT_STREAMLIT_SESSION_STATE.md`](./VIDEO_SCRIPT_STREAMLIT_SESSION_STATE.md)
+
+---
+
+## 2.53 Automated Insight Delivery & Email Reports
+
+Automates the last mile of analytics communication by producing structured briefings (`KPI Summary`, `Key Finding`, `Recommended Action`) and delivering them via email (`smtplib`) with secure environment credentials and non-blocking error handling.
+
+### Core Business Problem
+*"The weekly churn report is ready every Monday at 9 AM inside a Streamlit dashboard. The VP of Operations checks on Tuesdays. The CEO never opens it. By Wednesday, the analyst receives multiple Slack messages asking for numbers already computed on Monday. The analyst spends Tuesday afternoon exporting CSVs and typing summary emails instead of performing analysis."*
+
+### Key Deliverables & Architecture
+- **Structured Report Generation (`generate_report`)**:
+  - Automatically synthesizes dataframes into standardized, executive-ready plaintext briefings containing:
+    1. **KPI Summary**: Total Revenue, Active Customers, Average Order Value.
+    2. **Key Finding**: Top performing cohort and retention insights (e.g. 4x retention for <2h support response).
+    3. **Recommended Action**: Clear resource allocation guidance ($400,000 net ARR protected).
+- **Secure Email Delivery Engine (`send_report_email`)**:
+  - Connects to SMTP servers via Python's standard `smtplib` over TLS.
+  - Zero hardcoded credentials: reads `SMTP_SERVER`, `SMTP_PORT`, `SENDER_EMAIL`, and `SENDER_PASSWORD` strictly from environment variables documented in `.env.example`.
+- **Non-Blocking Error Handling**:
+  - Catches connection and authentication exceptions gracefully, returning diagnostic boolean tuples `(False, error_msg)` without crashing Streamlit or stopping pipeline runs.
+- **Interactive Streamlit Sidebar Integration**:
+  - Dedicated "Deliver Weekly Insights" drawer in `app.py`:
+    - Email recipient input with address syntax validation.
+    - Customizable email subject header.
+    - One-click "Send Email Report" action button.
+    - Progressive disclosure preview drawer displaying generated report text.
+    - Instant "Download Report (TXT)" alternative for offline distribution.
+- **Automated Validation Suite (`insight_delivery_runner.py`)**:
+  - Validates 3-part report completeness, simulated dispatch, and exception resilience against bad credentials.
+
+### Running Insight Delivery Tests & Reports
+```bash
+# Run standalone Insight Delivery validation suite
+python insight_delivery_runner.py
+
+# Launch interactive Streamlit application with email delivery
+streamlit run app.py
+
+# Run full project analytics suite (all modules)
+python main.py
+```
+
+### Video Guide & Documentation
+- Comprehensive engineering guide: [`INSIGHT_DELIVERY_GUIDE.md`](./INSIGHT_DELIVERY_GUIDE.md)
+- Step-by-step video script: [`VIDEO_SCRIPT_INSIGHT_DELIVERY.md`](./VIDEO_SCRIPT_INSIGHT_DELIVERY.md)
+
 
 
 
