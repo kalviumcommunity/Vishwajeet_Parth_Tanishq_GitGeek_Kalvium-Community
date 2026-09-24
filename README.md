@@ -69,13 +69,18 @@ contributor-retention-analytics/
 │   ├── distribution_charts.png
 │   ├── segment_insights.png
 │   ├── funnel_analysis.png
-│   └── anomaly_monitoring.png
+│   ├── anomaly_monitoring.png
+│   └── query_optimization.png
 ├── queries/
 │   ├── monthly_active_users.sql
 │   ├── revenue_by_segment.sql
 │   ├── conversion_funnel.sql
 │   ├── retention_cohort.sql
-│   └── rolling_7day_active_users.sql
+│   ├── rolling_7day_active_users.sql
+│   ├── optimization_select_star_antipattern.sql
+│   ├── optimization_early_filtering.sql
+│   ├── optimization_cte_structuring.sql
+│   └── optimization_benchmark_comparison.sql
 ├── data/
 │   ├── demo.json
 │   ├── business_metrics.duckdb
@@ -92,8 +97,11 @@ contributor-retention-analytics/
 ├── segment_aggregation_runner.py
 ├── funnel_analysis_runner.py
 ├── anomaly_runner.py
+├── query_optimization_runner.py
 ├── main.py
 ├── requirements.txt
+├── QUERY_OPTIMIZATION_GUIDE.md
+├── VIDEO_SCRIPT_OPTIMIZATION.md
 ├── ANOMALY_DETECTION_GUIDE.md
 ├── VIDEO_SCRIPT_ANOMALY.md
 ├── FUNNEL_ANALYSIS_GUIDE.md
@@ -336,6 +344,46 @@ python main.py
 ### Video Guide & Documentation
 - Comprehensive engineering guide: [`ANOMALY_DETECTION_GUIDE.md`](./ANOMALY_DETECTION_GUIDE.md)
 - Step-by-step video script: [`VIDEO_SCRIPT_ANOMALY.md`](./VIDEO_SCRIPT_ANOMALY.md)
+
+---
+
+## SQL Query Optimization & Performance Tuning
+
+Engineering patterns and performance benchmarks for scaling analytical queries: eliminating `SELECT *`, applying early filter pushdown before joins, structuring logic with Common Table Expressions (CTEs), and analyzing execution plans.
+
+### Core Business Problem
+*"An analytical dashboard query runs against a 100M-row transaction table with SELECT *, pulling 50 columns when only 5 are needed. It then joins a 10M-row customer table, creating a 500GB intermediate result in memory, before a WHERE filter discards 90% of rows. The dashboard times out, analysts wait 45+ seconds, and business decisions stall. The query—not the database—is the bottleneck."*
+
+### Key Deliverables & Capabilities
+- **Task 1: Eliminating the `SELECT *` Antipattern**:
+  - Replaces broad scans with explicit column projections.
+  - Benchmarked on 50k rows: reduces transferred columns by **85.7%** (35 cols $\rightarrow$ 5 cols) and delivers a **13.0x speedup**.
+- **Task 2: Early Filtering (WHERE Before JOIN)**:
+  - Pushes predicate filters into derived subqueries and scan steps before joining.
+  - Prunes **80.0% of warehouse rows** (50,000 $\rightarrow$ 10,000) before hash table allocation, collapsing memory buffers by **10x**.
+- **Task 3: Common Table Expressions (CTEs)**:
+  - Restructures 5-level nested subqueries into a modular 3-stage pipeline: `recent_transactions` $\rightarrow$ `customer_summary` $\rightarrow$ high-value customer join.
+  - Implements clean top-to-bottom narrative flow and isolated unit testability.
+- **Task 4: Compounding Performance Measurement**:
+  - Quantifies compounding latency reductions: **45s (Baseline) $\rightarrow$ 30s (Explicit Columns) $\rightarrow$ 8s (Early Filtering) $\rightarrow$ 2s (CTE + Pushdown)**, achieving a **22.5x total speedup**.
+- **Task 5: Multi-Panel Visual Dashboard**:
+  - High-resolution dashboard saved to [`public/query_optimization.png`](./public/query_optimization.png) showcasing the latency waterfall, memory buffer comparison, execution operator plan, and production checklist.
+- **Task 6: Automated Verification Assertions**:
+  - Automated assertions validating column counts, pruning ratios, CTE business rules, and file generation.
+
+### Running Query Optimization
+```bash
+# Run standalone query optimization benchmarks
+python query_optimization_runner.py
+
+# Run full project analytics suite (all modules)
+python main.py
+```
+
+### Video Guide & Documentation
+- Comprehensive engineering guide: [`QUERY_OPTIMIZATION_GUIDE.md`](./QUERY_OPTIMIZATION_GUIDE.md)
+- Step-by-step video script: [`VIDEO_SCRIPT_OPTIMIZATION.md`](./VIDEO_SCRIPT_OPTIMIZATION.md)
+
 
 
 

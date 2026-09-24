@@ -452,12 +452,138 @@ def init_database(db_path=DB_PATH):
     kpi_csv_path = os.path.join(os.path.dirname(__file__), 'data', 'hourly_kpi_metrics.csv')
     con.execute(f"COPY hourly_kpi_metrics TO '{kpi_csv_path}' (HEADER, DELIMITER ',')")
 
+    # 11. Seed High-Volume Warehouse Tables for Query Optimization (Module: Query Optimization)
+    con.execute("""
+    CREATE OR REPLACE TABLE customers_expanded (
+        customer_id INTEGER PRIMARY KEY,
+        customer_name VARCHAR NOT NULL,
+        country VARCHAR NOT NULL,
+        region VARCHAR NOT NULL,
+        tier VARCHAR NOT NULL,
+        signup_year INTEGER NOT NULL,
+        lifetime_value DOUBLE NOT NULL,
+        email VARCHAR NOT NULL,
+        phone VARCHAR NOT NULL,
+        address VARCHAR NOT NULL
+    );
+
+    CREATE OR REPLACE TABLE warehouse_transactions (
+        transaction_id INTEGER PRIMARY KEY,
+        customer_id INTEGER NOT NULL,
+        transaction_year INTEGER NOT NULL,
+        transaction_date DATE NOT NULL,
+        amount DOUBLE NOT NULL,
+        payment_method VARCHAR NOT NULL,
+        card_type VARCHAR NOT NULL,
+        currency VARCHAR NOT NULL,
+        status VARCHAR NOT NULL,
+        store_id INTEGER NOT NULL,
+        channel VARCHAR NOT NULL,
+        ip_address VARCHAR NOT NULL,
+        user_agent VARCHAR NOT NULL,
+        device_fingerprint VARCHAR NOT NULL,
+        session_id VARCHAR NOT NULL,
+        payload_json VARCHAR NOT NULL,
+        billing_address VARCHAR NOT NULL,
+        shipping_address VARCHAR NOT NULL,
+        tax_amount DOUBLE NOT NULL,
+        discount_amount DOUBLE NOT NULL,
+        is_fraud_flagged BOOLEAN NOT NULL,
+        risk_score DOUBLE NOT NULL,
+        processor_response_code VARCHAR NOT NULL,
+        metadata_notes VARCHAR NOT NULL,
+        created_at TIMESTAMP NOT NULL
+    );
+    """)
+
+    # Seed 2,000 customers
+    np.random.seed(2024)
+    countries = ['United States', 'Germany', 'United Kingdom', 'Canada', 'France', 'Japan', 'India', 'Australia']
+    regions = ['North America', 'EMEA', 'APAC', 'LATAM']
+    tiers = ['Standard', 'Silver', 'Gold', 'Platinum']
+    
+    cust_expanded_rows = []
+    for c_id in range(1, 2001):
+        c_name = f"Customer {c_id}"
+        cntry = countries[c_id % len(countries)]
+        reg = regions[c_id % len(regions)]
+        tier = tiers[c_id % len(tiers)]
+        s_year = 2020 + (c_id % 5)
+        ltv = round(float(np.random.uniform(500.0, 50000.0)), 2)
+        email = f"user_{c_id}@enterprise-client-{c_id % 100}.com"
+        phone = f"+1-555-{c_id:04d}"
+        addr = f"{c_id * 17} Tech Innovation Blvd, Suite {c_id % 50}, Metropolis"
+        cust_expanded_rows.append((c_id, c_name, cntry, reg, tier, s_year, ltv, email, phone, addr))
+
+    con.executemany("INSERT INTO customers_expanded VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", cust_expanded_rows)
+
+    # Seed 50,000 warehouse transactions across 2021-2024 (with ~10,000 in 2024)
+    # 25 wide columns to emulate bloated analytical warehouse schema
+    methods = ['Credit Card', 'Wire Transfer', 'ACH', 'PayPal', 'Corporate Net30']
+    cards = ['Visa Corporate', 'Mastercard World', 'Amex Platinum', 'Discover Business']
+    statuses = ['completed', 'completed', 'completed', 'refunded', 'cancelled']
+    channels = ['Web Portal', 'Mobile App', 'API Integration', 'Partner Gateway']
+
+    wh_tx_rows = []
+
+    for tx_id in range(1, 50001):
+        cust_id = (tx_id % 2000) + 1
+        year_rand = tx_id % 100
+        if year_rand < 15:
+            tx_year = 2021
+            d_offset = (tx_id % 365)
+            tx_date = date(2021, 1, 1) + timedelta(days=d_offset)
+        elif year_rand < 40:
+            tx_year = 2022
+            d_offset = (tx_id % 365)
+            tx_date = date(2022, 1, 1) + timedelta(days=d_offset)
+        elif year_rand < 80:
+            tx_year = 2023
+            d_offset = (tx_id % 365)
+            tx_date = date(2023, 1, 1) + timedelta(days=d_offset)
+        else:
+            tx_year = 2024
+            d_offset = (tx_id % 270)
+            tx_date = date(2024, 1, 1) + timedelta(days=d_offset)
+
+        amt = round(float(np.random.exponential(scale=350.0) + 25.0), 2)
+        pm = methods[tx_id % len(methods)]
+        card = cards[tx_id % len(cards)]
+        curr = 'USD'
+        st = statuses[tx_id % len(statuses)]
+        store = (tx_id % 45) + 1
+        chnl = channels[tx_id % len(channels)]
+        ip = f"192.168.{(tx_id // 256) % 255}.{tx_id % 254 + 1}"
+        u_agent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+        d_fingerprint = f"fp_hash_{tx_id:08x}_{cust_id:04x}"
+        sess_id = f"session_guid_{tx_id:08d}"
+        payload = f'{{"cart_items": {(tx_id % 8) + 1}, "checkout_latency_ms": {(tx_id % 400) + 120}, "ip_geo": "US-EAST", "promo_applied": false}}'
+        b_addr = f"{cust_id} Commerce Plaza, Floor {(cust_id % 12) + 1}, New York, NY"
+        s_addr = f"{cust_id} Enterprise Distribution Ctr, Dock {(cust_id % 8) + 1}, Chicago, IL"
+        tax = round(amt * 0.0825, 2)
+        discount = round(amt * 0.05, 2) if (tx_id % 7 == 0) else 0.0
+        fraud = True if (tx_id % 997 == 0) else False
+        risk = round(float(np.random.uniform(0.01, 0.45)), 4)
+        proc_code = "AUTH_200_SUCCESS" if st == 'completed' else "ERR_DECLINED_402"
+        notes = f"Transaction processed through standard gateway routing node-{(tx_id % 10) + 1}"
+        c_time = datetime(tx_date.year, tx_date.month, tx_date.day, (tx_id % 24), (tx_id % 60))
+
+        wh_tx_rows.append((
+            tx_id, cust_id, tx_year, tx_date, amt, pm, card, curr, st, store,
+            chnl, ip, u_agent, d_fingerprint, sess_id, payload, b_addr, s_addr,
+            tax, discount, fraud, risk, proc_code, notes, c_time
+        ))
+
+    con.executemany("INSERT INTO warehouse_transactions VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", wh_tx_rows)
+
     con.close()
     print(f"Database initialized and populated at: {db_path}")
     print(f"Customer revenue distribution data exported to: {csv_path}")
     print(f"Customer churn segments data exported to: {churn_csv_path}")
     print(f"User funnel events data exported to: {funnel_csv_path}")
     print(f"Hourly KPI metrics data exported to: {kpi_csv_path}")
+    print(f"Warehouse transactions populated: 50,000 records with 25 wide columns.")
+    print(f"Customers expanded populated: 2,000 records.")
 
 if __name__ == '__main__':
     init_database()
