@@ -1,0 +1,28 @@
+timestamp,metric,observed_value,rolling_mean,rolling_std,z_score,severity,detection_trigger,root_cause_diagnosis,financial_impact_est
+2024-01-01 12:00:00,revenue,25987.02,17503.29,3442.88,2.46,WARNING,Statistical Z-Score,Revenue Spike: High-value transaction volume,0.0
+2024-01-01 13:00:00,signup_count,35.0,22.77,5.57,2.2,WARNING,Statistical Z-Score,Unusual Signup Velocity: Marketing viral event or organic surge,0.0
+2024-01-04 00:00:00,signup_count,12.0,25.08,6.21,-2.11,WARNING,Statistical Z-Score,Unusual Signup Velocity: Marketing viral event or organic surge,0.0
+2024-01-05 12:00:00,signup_count,37.0,25.04,5.8,2.06,WARNING,Statistical Z-Score,Unusual Signup Velocity: Marketing viral event or organic surge,0.0
+2024-01-05 17:00:00,signup_count,39.0,25.75,6.59,2.01,WARNING,Statistical Z-Score,Unusual Signup Velocity: Marketing viral event or organic surge,0.0
+2024-01-07 13:00:00,signup_count,40.0,26.04,5.05,2.76,WARNING,Statistical Z-Score,Unusual Signup Velocity: Marketing viral event or organic surge,0.0
+2024-01-12 01:00:00,signup_count,15.0,26.04,5.46,-2.02,WARNING,Statistical Z-Score,Unusual Signup Velocity: Marketing viral event or organic surge,0.0
+2024-01-12 02:00:00,signup_count,13.0,26.0,5.54,-2.35,WARNING,Statistical Z-Score,Unusual Signup Velocity: Marketing viral event or organic surge,0.0
+2024-01-12 14:00:00,signup_count,38.0,25.08,5.94,2.17,WARNING,Statistical Z-Score,Unusual Signup Velocity: Marketing viral event or organic surge,0.0
+2024-01-13 01:00:00,signup_count,11.0,25.17,6.59,-2.15,WARNING,Statistical Z-Score,Unusual Signup Velocity: Marketing viral event or organic surge,0.0
+2024-01-15 00:00:00,signup_count,10.0,25.71,6.59,-2.38,WARNING,Statistical Z-Score,Unusual Signup Velocity: Marketing viral event or organic surge,0.0
+2024-01-15 03:00:00,signup_count,260.0,25.29,7.22,32.51,CRITICAL,Statistical Z-Score + Threshold,Bot Attack: 10x anomalous automated user registration burst,0.0
+2024-01-17 13:00:00,signup_count,38.0,25.46,5.79,2.16,WARNING,Statistical Z-Score,Unusual Signup Velocity: Marketing viral event or organic surge,0.0
+2024-01-19 18:00:00,signup_count,39.0,25.42,6.11,2.22,WARNING,Statistical Z-Score,Unusual Signup Velocity: Marketing viral event or organic surge,0.0
+2024-01-20 13:00:00,signup_count,41.0,25.88,7.34,2.06,WARNING,Statistical Z-Score,Unusual Signup Velocity: Marketing viral event or organic surge,0.0
+2024-01-22 18:00:00,revenue,1485.0,19735.88,4087.79,-4.46,CRITICAL,Statistical Z-Score + Threshold,Severe Revenue Drop: Potential checkout funnel disruption,18250.88
+2024-01-22 18:00:00,transaction_count,1350.0,265.62,59.38,18.26,CRITICAL,Statistical Z-Score + Threshold,Pricing Glitch Surge: 4x transaction explosion with collapsed unit price,98819.71
+2024-01-24 17:00:00,signup_count,39.0,26.25,5.85,2.18,WARNING,Statistical Z-Score,Unusual Signup Velocity: Marketing viral event or organic surge,0.0
+2024-01-25 00:00:00,signup_count,12.0,26.79,5.91,-2.5,WARNING,Statistical Z-Score,Unusual Signup Velocity: Marketing viral event or organic surge,0.0
+2024-01-25 02:00:00,signup_count,12.0,26.79,6.26,-2.36,WARNING,Statistical Z-Score,Unusual Signup Velocity: Marketing viral event or organic surge,0.0
+2024-01-26 05:00:00,signup_count,14.0,26.42,5.87,-2.11,WARNING,Statistical Z-Score,Unusual Signup Velocity: Marketing viral event or organic surge,0.0
+2024-01-26 14:00:00,signup_count,43.0,25.83,6.03,2.85,WARNING,Statistical Z-Score,Unusual Signup Velocity: Marketing viral event or organic surge,0.0
+2024-01-27 03:00:00,signup_count,10.0,25.79,7.35,-2.15,WARNING,Statistical Z-Score,Unusual Signup Velocity: Marketing viral event or organic surge,0.0
+2024-01-28 14:00:00,revenue,0.0,19161.21,4236.51,-4.52,CRITICAL,Statistical Z-Score + Threshold,Payment Gateway Outage: Silent transaction failure while users were active,19161.21
+2024-01-28 15:00:00,revenue,0.0,18146.87,5627.58,-3.22,CRITICAL,Statistical Z-Score + Threshold,Payment Gateway Outage: Silent transaction failure while users were active,18146.87
+2024-01-29 00:00:00,signup_count,13.0,26.58,6.54,-2.08,WARNING,Statistical Z-Score,Unusual Signup Velocity: Marketing viral event or organic surge,0.0
+2024-01-30 05:00:00,signup_count,12.0,24.71,6.05,-2.1,WARNING,Statistical Z-Score,Unusual Signup Velocity: Marketing viral event or organic surge,0.0

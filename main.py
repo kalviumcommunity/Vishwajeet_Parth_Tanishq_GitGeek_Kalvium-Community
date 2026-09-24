@@ -7,6 +7,7 @@ from joins_runner import run_joins_analysis
 from distribution_runner import run_distribution_analysis
 from segment_aggregation_runner import run_segment_aggregation
 from funnel_analysis_runner import run_funnel_analysis
+from anomaly_runner import run_anomaly_analysis
 
 if __name__ == '__main__':
     print("\n=======================================================")
@@ -16,7 +17,7 @@ if __name__ == '__main__':
 
     print("\n=======================================================")
     print(">>> 2. RUNNING MODULE: FILTERING & AGGREGATION (WHERE vs HAVING) <<<")
-    print("=======================================================\n")
+    print("=======================================================")
     run_all_queries()
 
     print("\n=======================================================")
@@ -38,3 +39,8 @@ if __name__ == '__main__':
     print(">>> 6. RUNNING MODULE 2.33: FUNNEL ANALYSIS & DROP-OFF DETECTION <<<")
     print("=======================================================\n")
     run_funnel_analysis()
+
+    print("\n=======================================================")
+    print(">>> 7. RUNNING MODULE 2.36: ANOMALY DETECTION & RISK IDENTIFICATION <<<")
+    print("=======================================================\n")
+    run_anomaly_analysis()

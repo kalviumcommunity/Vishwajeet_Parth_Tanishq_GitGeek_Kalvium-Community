@@ -65,7 +65,11 @@ contributor-retention-analytics/
 ├── public/
 │   ├── index.html
 │   ├── app.js
-│   └── styles.css
+│   ├── styles.css
+│   ├── distribution_charts.png
+│   ├── segment_insights.png
+│   ├── funnel_analysis.png
+│   └── anomaly_monitoring.png
 ├── queries/
 │   ├── monthly_active_users.sql
 │   ├── revenue_by_segment.sql
@@ -74,12 +78,30 @@ contributor-retention-analytics/
 │   └── rolling_7day_active_users.sql
 ├── data/
 │   ├── demo.json
-│   └── business_metrics.duckdb
+│   ├── business_metrics.duckdb
+│   ├── customer_revenue.csv
+│   ├── customer_churn_segments.csv
+│   ├── funnel_events.csv
+│   ├── hourly_kpi_metrics.csv
+│   └── anomalies.csv
 ├── init_db.py
 ├── metrics_runner.py
+├── run_filtering_analysis.py
+├── joins_runner.py
+├── distribution_runner.py
+├── segment_aggregation_runner.py
+├── funnel_analysis_runner.py
+├── anomaly_runner.py
 ├── main.py
 ├── requirements.txt
-├── VIDEO_SCRIPT.md
+├── ANOMALY_DETECTION_GUIDE.md
+├── VIDEO_SCRIPT_ANOMALY.md
+├── FUNNEL_ANALYSIS_GUIDE.md
+├── VIDEO_SCRIPT_FUNNEL.md
+├── SEGMENT_AGGREGATION_GUIDE.md
+├── VIDEO_SCRIPT_SEGMENT_INSIGHTS.md
+├── DISTRIBUTION_ANALYSIS_GUIDE.md
+├── VIDEO_SCRIPT_DISTRIBUTION.md
 ├── .env.example
 ├── .gitignore
 ├── package.json
@@ -274,5 +296,46 @@ python main.py
 ### Video Guide & Documentation
 - Comprehensive engineering guide: [`FUNNEL_ANALYSIS_GUIDE.md`](./FUNNEL_ANALYSIS_GUIDE.md)
 - Step-by-step video script: [`VIDEO_SCRIPT_FUNNEL.md`](./VIDEO_SCRIPT_FUNNEL.md)
+
+---
+
+## 2.36 Anomaly Detection & Risk Identification
+
+Dual-layer operational monitoring framework combining static threshold rules with adaptive 24-hour rolling Z-scores to flag silent outages, fraud surges, and pricing exploits.
+
+### Core Business Problem
+*"A payment processing error causes all transactions to fail silently for 2 hours. Revenue drops from ~$25k/hr to $0. Nobody notices until customer complaints arrive, causing $50k+ in unrecoverable losses. Meanwhile, a bot registration attack floods 10,000 fake accounts unnoticed, and a catalog pricing bug sells premium licenses for $1.10. Without continuous automated anomaly detection, businesses remain blind to catastrophic operational risks."*
+
+### Key Deliverables & Capabilities
+- **Task 1: Threshold-Based Alert Engine**:
+  - Configures static operational boundaries (`STATIC_THRESHOLDS`) for hourly/daily revenue, transaction volume, and signup rate.
+  - Generates immediate Warning/Critical flags on min/max boundary breaches.
+- **Task 2: Statistical Z-Score & 24-Hour Rolling Monitoring**:
+  - Implements shifted 24-hour moving baselines ($\mu_t, \sigma_t$) to prevent anomaly contamination.
+  - Classifies severity dynamically: Normal ($|Z| < 2.0$), Warning ($2.0 \le |Z| < 3.0$), and Critical ($|Z| \ge 3.0$).
+- **Task 3: Real Scenario Detection & Incident Isolation**:
+  - **Payment Processing Blackout**: Catches two-hour $0.00 revenue drop ($Z = -4.52$ and $Z = -3.22$, saving ~$37.3k - $50k+).
+  - **Bot Registration Surge**: Uncovers 3:00 AM spike to 260 signups ($Z = +32.51$, 10x normal rate).
+  - **Catalog Pricing Exploit**: Flags 4x transaction surge (1,350 tx, $Z = +18.26$) with collapsed $1.10 unit revenue ($Z = -4.46$).
+- **Task 4: Auditable Incident Log Export**:
+  - Compiles structured incident records to [`data/anomalies.csv`](./data/anomalies.csv) with timestamps, metric values, rolling statistics, Z-scores, severities, and root cause diagnoses.
+- **Task 5: Multi-Panel Visual Dashboard**:
+  - High-resolution visual dashboard saved to [`public/anomaly_monitoring.png`](./public/anomaly_monitoring.png) featuring revenue confidence corridors, velocity dual-axis time series, normal distribution bell curve overlay, and executive governance matrix.
+- **Task 6: Automated Verification Assertions**:
+  - Strict assertions validating sample lengths, threshold alerts, Z-scores, outage detections, and file generation.
+
+### Running Anomaly Detection
+```bash
+# Run standalone anomaly detection
+python anomaly_runner.py
+
+# Run full project analytics suite (all modules)
+python main.py
+```
+
+### Video Guide & Documentation
+- Comprehensive engineering guide: [`ANOMALY_DETECTION_GUIDE.md`](./ANOMALY_DETECTION_GUIDE.md)
+- Step-by-step video script: [`VIDEO_SCRIPT_ANOMALY.md`](./VIDEO_SCRIPT_ANOMALY.md)
+
 
 
