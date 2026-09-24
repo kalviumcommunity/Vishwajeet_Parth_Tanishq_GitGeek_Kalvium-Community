@@ -102,9 +102,12 @@ contributor-retention-analytics/
 ├── query_optimization_runner.py
 ├── visualisation_principles_runner.py
 ├── data_storytelling_runner.py
+├── streamlit_structure_runner.py
 ├── app.py
 ├── main.py
 ├── requirements.txt
+├── STREAMLIT_NAVIGATION_GUIDE.md
+├── VIDEO_SCRIPT_STREAMLIT_NAVIGATION.md
 ├── DATA_STORYTELLING_GUIDE.md
 ├── VIDEO_SCRIPT_DATA_STORYTELLING.md
 ├── VISUALISATION_DESIGN_GUIDE.md
@@ -480,6 +483,52 @@ python main.py
 ### Video Guide & Documentation
 - Comprehensive engineering guide: [`DATA_STORYTELLING_GUIDE.md`](./DATA_STORYTELLING_GUIDE.md)
 - Step-by-step video script: [`VIDEO_SCRIPT_DATA_STORYTELLING.md`](./VIDEO_SCRIPT_DATA_STORYTELLING.md)
+
+---
+
+## 2.51 Streamlit App Structure & Navigation
+
+Scaffolds a multi-section interactive application with sidebar navigation, layout columns, expanders for progressive disclosure, visual hierarchy, and `@st.cache_data` optimization to prevent cluttered single-page dashboards.
+
+### Core Business Problem
+*"A data team builds a Streamlit app with 15 charts, 8 filters, and 3 data tables in a single scrollable page. The operations manager opens it, scrolls for 30 seconds, cannot find the churn dashboard, gives up, and goes back to requesting reports via email. The app had every feature. It had no structure. Without navigation, every feature is invisible."*
+
+### Key Deliverables & Architecture
+- **Sidebar Navigation**:
+  - `st.sidebar.radio` providing instant one-click switching across 6 dedicated sections:
+    1. **Overview**: Executive status snapshot with top-line metrics and revenue trajectory.
+    2. **Trends**: Monthly time-series dynamics for revenue and churn.
+    3. **Segments**: Tier-by-tier contribution (Enterprise, Mid-Market, Startup) and Net Dollar Retention.
+    4. **Data Explorer**: Self-serve multidimensional query filtering and CSV dataset export.
+    5. **Executive Briefing (2.49)**: Strategic quarterly board highlights and risk register.
+    6. **Data Storytelling (2.48)**: Five-part narrative arc, interactive tabs, and jargon translator.
+- **Horizontal Scanning (`st.columns`)**:
+  - 5-column layout on the Overview page displaying executive KPI cards (Revenue, Users, AOV, Churn, NPS) above the fold.
+- **Progressive Disclosure (`st.expander`)**:
+  - Keeps primary views clean by hiding methodology notes, data schemas, and raw tables behind expandable drawers.
+- **Visual Hierarchy**:
+  - Consistent layout structure using `st.title` (page anchor), `st.header` (major section), `st.subheader` (chart title), and `st.divider` (clean section separation).
+- **Execution & Caching Model (`@st.cache_data`)**:
+  - Explains the Streamlit top-to-bottom script rerun model and utilizes `@st.cache_data` to ensure zero lag on subsequent reruns.
+- **Automated Validation Suite (`streamlit_structure_runner.py`)**:
+  - Validates Streamlit imports, sidebar navigation routes, column grids, expander hierarchy, and caching decorators.
+
+### Running Streamlit Application & Tests
+```bash
+# Run standalone Streamlit structure verification suite
+python streamlit_structure_runner.py
+
+# Launch interactive Streamlit web dashboard
+streamlit run app.py
+
+# Run full project analytics suite (all modules)
+python main.py
+```
+
+### Video Guide & Documentation
+- Comprehensive engineering guide: [`STREAMLIT_NAVIGATION_GUIDE.md`](./STREAMLIT_NAVIGATION_GUIDE.md)
+- Step-by-step video script: [`VIDEO_SCRIPT_STREAMLIT_NAVIGATION.md`](./VIDEO_SCRIPT_STREAMLIT_NAVIGATION.md)
+
 
 
 
