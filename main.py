@@ -8,6 +8,7 @@ from distribution_runner import run_distribution_analysis
 from segment_aggregation_runner import run_segment_aggregation
 from funnel_analysis_runner import run_funnel_analysis
 from anomaly_runner import run_anomaly_analysis
+from query_optimization_runner import run_query_optimization
 
 if __name__ == '__main__':
     print("\n=======================================================")
@@ -44,3 +45,8 @@ if __name__ == '__main__':
     print(">>> 7. RUNNING MODULE 2.36: ANOMALY DETECTION & RISK IDENTIFICATION <<<")
     print("=======================================================\n")
     run_anomaly_analysis()
+
+    print("\n=======================================================")
+    print(">>> 8. RUNNING MODULE: SQL QUERY OPTIMIZATION & PERFORMANCE TUNING <<<")
+    print("=======================================================\n")
+    run_query_optimization()
