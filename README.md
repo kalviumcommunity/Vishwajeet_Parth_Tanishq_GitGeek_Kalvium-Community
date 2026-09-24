@@ -70,7 +70,8 @@ contributor-retention-analytics/
 │   ├── segment_insights.png
 │   ├── funnel_analysis.png
 │   ├── anomaly_monitoring.png
-│   └── query_optimization.png
+│   ├── query_optimization.png
+│   └── business_visualisation_principles.png
 ├── queries/
 │   ├── monthly_active_users.sql
 │   ├── revenue_by_segment.sql
@@ -98,8 +99,11 @@ contributor-retention-analytics/
 ├── funnel_analysis_runner.py
 ├── anomaly_runner.py
 ├── query_optimization_runner.py
+├── visualisation_principles_runner.py
 ├── main.py
 ├── requirements.txt
+├── VISUALISATION_DESIGN_GUIDE.md
+├── VIDEO_SCRIPT_VISUALISATION.md
 ├── QUERY_OPTIMIZATION_GUIDE.md
 ├── VIDEO_SCRIPT_OPTIMIZATION.md
 ├── ANOMALY_DETECTION_GUIDE.md
@@ -383,6 +387,50 @@ python main.py
 ### Video Guide & Documentation
 - Comprehensive engineering guide: [`QUERY_OPTIMIZATION_GUIDE.md`](./QUERY_OPTIMIZATION_GUIDE.md)
 - Step-by-step video script: [`VIDEO_SCRIPT_OPTIMIZATION.md`](./VIDEO_SCRIPT_OPTIMIZATION.md)
+
+---
+
+## 2.45 Business Visualisation Principles
+
+Standards for turning complex enterprise data into self-explanatory visuals: matching chart types to data relationships, enforcing the 5 labelling elements, human-readable formatting, dual-encoding for accessibility, and contextual annotations.
+
+### Core Business Problem
+*"An analyst presents quarterly product line performance as a pie chart. The CEO asks which product grew the fastest, but the pie chart cannot communicate growth or velocity over time. Switching to an unformatted raw data table stalls the meeting as leadership scans dozens of numbers. The charts fail because they were chosen based on what looked decorative rather than what the data needed to communicate."*
+
+### Key Deliverables & Capabilities
+- **Task 1: The 5 Fundamental Chart Types**:
+  - **Horizontal Bar Chart**: Category comparison with sorted lengths and direct `$M` value labels.
+  - **Multi-Line Time Series**: Continuous temporal trends comparing customer segments, preventing discrete categorical line anti-patterns.
+  - **Distribution Histogram**: Reveals typical values, spread, outliers, and contrasts Median vs skewed Mean.
+  - **Scatter Plot with Trendline**: Explores correlations (Marketing Spend vs Revenue), adding OLS regression lines and marginal ROI metrics ($r = 0.95$).
+  - **Stacked Bar Chart**: Part-to-whole quarterly composition constrained to $\le 5$ segments with total bar height labels.
+- **Task 2: Complete Labelling & Human Readability**:
+  - Implements the 5 essential elements: Actionable Title, explicit X & Y axes with units, non-overlapping legend, and direct data labels.
+  - Enforces currency formatting (`$5.2M` instead of `5200000`) and date readability (`Jan 2024`) via `FuncFormatter`.
+- **Task 3: Unified Palette & Accessibility**:
+  - Consistent global palette (`PALETTE` & `CHART_COLORS`).
+  - Dual-encoding for color blindness (combining colors with unique marker shapes `o`, `s`, `^` and line patterns `--`, `:`).
+- **Task 4: Contextual Annotations & Reference Lines**:
+  - Highlights peaks and anomalies via `ax.annotate` with arrow pointers.
+  - Adds horizontal target benchmark lines (`axhline`) to transform displays into actionable insight delivery tools.
+- **Task 5: Multi-Panel Visual Dashboard**:
+  - Publication-ready 6-panel showcase saved to [`public/business_visualisation_principles.png`](./public/business_visualisation_principles.png).
+- **Task 6: Automated Verification Assertions**:
+  - Comprehensive assertions verifying segment limits, correlation math, skewness logic, currency formatters, and image integrity.
+
+### Running Visualisation Principles
+```bash
+# Run standalone visualisation principles suite
+python visualisation_principles_runner.py
+
+# Run full project analytics suite (all modules)
+python main.py
+```
+
+### Video Guide & Documentation
+- Comprehensive engineering guide: [`VISUALISATION_DESIGN_GUIDE.md`](./VISUALISATION_DESIGN_GUIDE.md)
+- Step-by-step video script: [`VIDEO_SCRIPT_VISUALISATION.md`](./VIDEO_SCRIPT_VISUALISATION.md)
+
 
 
 
