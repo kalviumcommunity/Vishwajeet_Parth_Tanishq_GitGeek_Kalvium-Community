@@ -198,4 +198,44 @@ python main.py
 - Comprehensive engineering guide: [`DISTRIBUTION_ANALYSIS_GUIDE.md`](./DISTRIBUTION_ANALYSIS_GUIDE.md)
 - Step-by-step video script: [`VIDEO_SCRIPT_DISTRIBUTION.md`](./VIDEO_SCRIPT_DISTRIBUTION.md)
 
+---
+
+## 2.30 GroupBy Aggregation & Segment Insights
+
+Multi-dimensional GroupBy analysis, Split-Apply-Combine patterns, pivot tables, segment ranking, and strategic business interventions to overcome the dataset-wide average fallacy.
+
+### Core Business Problem
+*"A company reports an average churn rate of 9.25%. Marketing plans a broad generic retention campaign. But when segmented by customer type, Enterprise customers (5% of customer base) have 1% churn and generate 70% of revenue, while SMB customers (40% of base) suffer from 12% churn. Reporting a single blended average hides where business levers and risks actually exist."*
+
+### Key Deliverables & Capabilities
+- **Task 1: Dataset-Wide Averages vs. Segment Realities**:
+  - Highlights the fallacy of reporting a single 9.25% blended churn rate when customer segments diverge from 1% to 12%.
+- **Task 2: Split-Apply-Combine Pattern (.agg, .transform, .apply)**:
+  - `.agg(['sum', 'count', 'mean'])` for group summary collapse.
+  - `.transform('mean')` for broadcasting group averages back to individual rows without losing dimensionality.
+  - `.apply(lambda x: x.nlargest(3).sum())` for custom group-level logic.
+- **Task 3: Multi-Dimensional GroupBy & `.unstack()`**:
+  - Multi-index grouping across `customer_type` and `product` with `.unstack()` reshaping into a 2D matrix.
+- **Task 4: Two-Dimensional Pivot Tables**:
+  - `pd.pivot_table()` for revenue totals and product vulnerability churn matrices.
+- **Task 5: Segment Ranking & Actionable Business Insights**:
+  - Ranks segments by churn risk and revenue contribution.
+  - Generates concrete, evidence-based strategic interventions for Enterprise, SMB, and Startup cohorts.
+- **Task 6: Visualizations & Automated Assertions**:
+  - 4-panel visual dashboard saved to [`public/segment_insights.png`](./public/segment_insights.png).
+  - Complete automated test suite validating metrics, shapes, and pivot equivalence.
+
+### Running Segment Aggregation Analysis
+```bash
+# Run standalone segment aggregation
+python segment_aggregation_runner.py
+
+# Run full project analytics suite (all modules)
+python main.py
+```
+
+### Video Guide & Documentation
+- Comprehensive engineering guide: [`SEGMENT_AGGREGATION_GUIDE.md`](./SEGMENT_AGGREGATION_GUIDE.md)
+- Step-by-step video script: [`VIDEO_SCRIPT_SEGMENT_INSIGHTS.md`](./VIDEO_SCRIPT_SEGMENT_INSIGHTS.md)
+
 

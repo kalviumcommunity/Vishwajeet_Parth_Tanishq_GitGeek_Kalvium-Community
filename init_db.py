@@ -237,9 +237,89 @@ def init_database(db_path=DB_PATH):
     csv_path = os.path.join(os.path.dirname(__file__), 'data', 'customer_revenue.csv')
     con.execute(f"COPY customer_revenue TO '{csv_path}' (HEADER, DELIMITER ',')")
 
+    # 8. Seed Customer Churn & Segment Analysis (Module 2.30: GroupBy Aggregation)
+    # Model:
+    # - Enterprise: 5% of base (100 customers), 1% churn, 70% of total revenue
+    # - SMB: 40% of base (800 customers), 12% churn, low revenue share
+    # - Startup: 55% of base (1100 customers), 8% churn, moderate revenue share
+    con.execute("""
+    CREATE OR REPLACE TABLE customer_churn_segments (
+        customer_id INTEGER PRIMARY KEY,
+        customer_name VARCHAR NOT NULL,
+        customer_type VARCHAR NOT NULL,
+        product VARCHAR NOT NULL,
+        region VARCHAR NOT NULL,
+        revenue DOUBLE NOT NULL,
+        churn INTEGER NOT NULL,
+        signup_date DATE NOT NULL
+    );
+    """)
+
+    np.random.seed(42)
+    n_seg_ent = 100
+    n_seg_smb = 800
+    n_seg_stu = 1100
+    products = ['Cloud Platform', 'Analytics Pro', 'Security Suite', 'Developer Tools']
+    regions = ['North America', 'EMEA', 'APAC', 'LATAM']
+
+    churn_rows = []
+    
+    # 1. Enterprise (100 customers, 1% churn -> 1 churned)
+    for i in range(n_seg_ent):
+        c_id = i + 1
+        name = f"Enterprise Client {c_id}"
+        c_type = "Enterprise"
+        churn_val = 1 if i == 0 else 0
+        raw_rev = float(np.random.uniform(40000.0, 100000.0))
+        prod = str(np.random.choice(products, p=[0.45, 0.25, 0.20, 0.10]))
+        reg = str(np.random.choice(regions, p=[0.50, 0.30, 0.15, 0.05]))
+        s_date = base_date + timedelta(days=(i * 3) % 365)
+        churn_rows.append((c_id, name, c_type, prod, reg, raw_rev, churn_val, s_date))
+
+    # 2. SMB (800 customers, 12% churn -> 96 churned)
+    for i in range(n_seg_smb):
+        c_id = n_seg_ent + i + 1
+        name = f"SMB Client {c_id}"
+        c_type = "SMB"
+        churn_val = 1 if i < 96 else 0
+        raw_rev = float(np.random.uniform(800.0, 3500.0))
+        prod = str(np.random.choice(products, p=[0.25, 0.35, 0.15, 0.25]))
+        reg = str(np.random.choice(regions, p=[0.40, 0.30, 0.20, 0.10]))
+        s_date = base_date + timedelta(days=i % 365)
+        churn_rows.append((c_id, name, c_type, prod, reg, raw_rev, churn_val, s_date))
+
+    # 3. Startup (1100 customers, 8% churn -> 88 churned)
+    for i in range(n_seg_stu):
+        c_id = n_seg_ent + n_seg_smb + i + 1
+        name = f"Startup Client {c_id}"
+        c_type = "Startup"
+        churn_val = 1 if i < 88 else 0
+        raw_rev = float(np.random.uniform(300.0, 2500.0))
+        prod = str(np.random.choice(products, p=[0.20, 0.20, 0.10, 0.50]))
+        reg = str(np.random.choice(regions, p=[0.35, 0.30, 0.25, 0.10]))
+        s_date = base_date + timedelta(days=(i * 2) % 365)
+        churn_rows.append((c_id, name, c_type, prod, reg, raw_rev, churn_val, s_date))
+
+    # Scale enterprise revenue so that enterprise represents exactly 70.0% of total revenue
+    smb_and_stu_rev = sum(r[5] for r in churn_rows if r[2] != 'Enterprise')
+    current_ent_rev = sum(r[5] for r in churn_rows if r[2] == 'Enterprise')
+    target_ent_rev = (0.70 / 0.30) * smb_and_stu_rev
+    scale_factor = target_ent_rev / current_ent_rev
+
+    final_churn_rows = []
+    for r in churn_rows:
+        rev = round(r[5] * scale_factor, 2) if r[2] == 'Enterprise' else round(r[5], 2)
+        final_churn_rows.append((r[0], r[1], r[2], r[3], r[4], rev, r[6], r[7]))
+
+    con.executemany("INSERT INTO customer_churn_segments VALUES (?, ?, ?, ?, ?, ?, ?, ?)", final_churn_rows)
+
+    churn_csv_path = os.path.join(os.path.dirname(__file__), 'data', 'customer_churn_segments.csv')
+    con.execute(f"COPY customer_churn_segments TO '{churn_csv_path}' (HEADER, DELIMITER ',')")
+
     con.close()
     print(f"Database initialized and populated at: {db_path}")
     print(f"Customer revenue distribution data exported to: {csv_path}")
+    print(f"Customer churn segments data exported to: {churn_csv_path}")
 
 if __name__ == '__main__':
     init_database()
