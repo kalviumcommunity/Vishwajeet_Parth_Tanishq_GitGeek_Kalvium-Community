@@ -316,10 +316,65 @@ def init_database(db_path=DB_PATH):
     churn_csv_path = os.path.join(os.path.dirname(__file__), 'data', 'customer_churn_segments.csv')
     con.execute(f"COPY customer_churn_segments TO '{churn_csv_path}' (HEADER, DELIMITER ',')")
 
+    # 9. Seed Funnel & Drop-Off Detection (Module 2.33: Funnel Analysis)
+    # 10,000 users initiate sign up
+    # 8,000 enter email (20% loss)
+    # 6,000 create password (25% loss)
+    # 5,000 verify email (16.7% loss)
+    # 4,000 add payment method (20% loss)
+    # 2,000 complete first purchase (50% loss -> biggest bottleneck)
+    con.execute("""
+    CREATE OR REPLACE TABLE user_funnel (
+        user_id INTEGER PRIMARY KEY,
+        session_id VARCHAR NOT NULL,
+        traffic_source VARCHAR NOT NULL,
+        device_type VARCHAR NOT NULL,
+        signup_clicked INTEGER NOT NULL,
+        email_entered INTEGER NOT NULL,
+        password_created INTEGER NOT NULL,
+        email_verified INTEGER NOT NULL,
+        payment_added INTEGER NOT NULL,
+        first_purchase INTEGER NOT NULL,
+        purchase_amount DOUBLE NOT NULL,
+        created_at TIMESTAMP NOT NULL
+    );
+    """)
+
+    traffic_sources = ['Organic Search', 'Paid Ad', 'Referral', 'Social Media']
+    devices = ['Desktop', 'Mobile', 'Tablet']
+    funnel_rows = []
+
+    for uid in range(1, 10001):
+        sess = f"sess_{uid:05d}"
+        source = traffic_sources[uid % len(traffic_sources)]
+        device = devices[uid % len(devices)]
+        
+        signup_clicked = 1
+        email_entered = 1 if uid <= 8000 else 0
+        password_created = 1 if uid <= 6000 else 0
+        email_verified = 1 if uid <= 5000 else 0
+        payment_added = 1 if uid <= 4000 else 0
+        first_purchase = 1 if uid <= 2000 else 0
+        purchase_amount = round(float(np.random.normal(150.0, 25.0)), 2) if first_purchase == 1 else 0.0
+        c_time = datetime(2024, 1, 1) + timedelta(minutes=(uid * 15))
+
+        funnel_rows.append((
+            uid, sess, source, device,
+            signup_clicked, email_entered, password_created,
+            email_verified, payment_added, first_purchase,
+            purchase_amount, c_time
+        ))
+
+    con.executemany("INSERT INTO user_funnel VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", funnel_rows)
+
+    funnel_csv_path = os.path.join(os.path.dirname(__file__), 'data', 'funnel_events.csv')
+    con.execute(f"COPY user_funnel TO '{funnel_csv_path}' (HEADER, DELIMITER ',')")
+
     con.close()
     print(f"Database initialized and populated at: {db_path}")
     print(f"Customer revenue distribution data exported to: {csv_path}")
     print(f"Customer churn segments data exported to: {churn_csv_path}")
+    print(f"User funnel events data exported to: {funnel_csv_path}")
 
 if __name__ == '__main__':
     init_database()

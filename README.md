@@ -238,4 +238,41 @@ python main.py
 - Comprehensive engineering guide: [`SEGMENT_AGGREGATION_GUIDE.md`](./SEGMENT_AGGREGATION_GUIDE.md)
 - Step-by-step video script: [`VIDEO_SCRIPT_SEGMENT_INSIGHTS.md`](./VIDEO_SCRIPT_SEGMENT_INSIGHTS.md)
 
+---
+
+## 2.33 Funnel Analysis & Drop-Off Detection
+
+Granular sequential journey mapping, step-by-step drop-off measurement, programmatic bottleneck isolation, and business revenue impact simulation.
+
+### Core Business Problem
+*"A company has 10,000 users click 'Sign Up' and 2,000 make a first purchase. Leadership knows aggregate conversion is 20%, but cannot pinpoint where the remaining 8,000 dropped off. Without granular step metrics, engineering wastes time optimizing top-of-funnel signup screens instead of fixing a massive 50% post-payment abandonment leak."*
+
+### Key Deliverables & Capabilities
+- **Task 1: Sequential Funnel Mapping**:
+  - Granular 6-stage user onboarding tracking: Sign Up Clicked (10k) $\rightarrow$ Email Entered (8k) $\rightarrow$ Password Created (6k) $\rightarrow$ Email Verified (5k) $\rightarrow$ Payment Added (4k) $\rightarrow$ First Purchase (2k).
+- **Task 2: Consecutive Drop-Off & Completion Mathematics**:
+  - Measures Absolute Drop ($N_i - N_{i+1}$), Drop-Off Rate (%), Completion Rate (%), and Cumulative Conversion (%).
+- **Task 3: Programmatic Bottleneck Detection**:
+  - Identifies **Payment Added $\rightarrow$ First Purchase** as the primary leak with a **50.0% drop rate (2,000 lost users)**.
+  - Pinpoints late-stage checkout friction (gateway timeouts, hidden fees, ambiguous confirmation CTAs).
+- **Task 4: Financial & Business Impact Modeling**:
+  - Quantifies revenue gains: reducing bottleneck drop-off to 30% yields **+$119.3k (+40% ARR)**, while full friction removal doubles first-purchase ARR to **~$596.5k (+100%)**.
+- **Task 5: Funnel Visualizations Dashboard**:
+  - 4-panel visual dashboard saved to [`public/funnel_analysis.png`](./public/funnel_analysis.png).
+- **Task 6: Automated Verification Assertions**:
+  - Automated assertions verifying sample volumes, drop rates, bottleneck detection, and chart integrity.
+
+### Running Funnel Analysis
+```bash
+# Run standalone funnel analysis
+python funnel_analysis_runner.py
+
+# Run full project analytics suite (all modules)
+python main.py
+```
+
+### Video Guide & Documentation
+- Comprehensive engineering guide: [`FUNNEL_ANALYSIS_GUIDE.md`](./FUNNEL_ANALYSIS_GUIDE.md)
+- Step-by-step video script: [`VIDEO_SCRIPT_FUNNEL.md`](./VIDEO_SCRIPT_FUNNEL.md)
+
 
