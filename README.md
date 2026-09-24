@@ -1,62 +1,180 @@
-# Contributor Retention Analytics
+# GitGeek Analytics & Contributor Retention Data Platform
 
-A Sprint 1 MVP for the problem statement:
+A production-grade data product and executive decision platform that ingests sales and open-source contributor activity, computes unified SQL metrics, isolates behavioral segments, models drop-off funnels, detects anomalies, and delivers proactive automated reports to stakeholder inboxes.
 
-> Open-source maintainers have contributor activity, PR review timelines, and issue participation records, but no workflow reveals which onboarding experiences discourage first-time contributors from returning.
+---
 
-## What this MVP does
+## 1. Project Overview
 
-- Shows first-time contributor count, return rate, average response/review/merge times.
-- Separates contributors into **Returned** and **Did not return**.
-- Calculates onboarding factors from pull-request activity.
-- Highlights possible drop-off factors.
-- Generates maintainer recommendations from the observed data.
-- Runs immediately in **Demo Mode** with sample data.
-- Can analyze a public GitHub repository through the GitHub REST API.
+### Business Problem
+Modern technical organizations and open-source foundations suffer from siloed telemetry: contributor review activity, sales transactions, churn indicators, and support responsiveness live in disjointed systems. Decision-makers lack visibility into why contributors drop off, how support SLA delays trigger account churn, and where operational bottlenecks bleed revenue.
 
-## Tech stack
+### Solution Approach
+This data platform unifies data modeling, analytical SQL queries, statistical distribution modeling, and interactive visualization into a cohesive, production-ready system:
+- **Centralized Metric Store**: Single source of truth for active users, cohort retention, and segment revenue via DuckDB and SQL views.
+- **Root Cause & Storytelling Engines**: Statistically isolates drop-offs (e.g., 4x churn escalation when support latency exceeds 24 hours).
+- **Interactive Multi-Section App**: Streamlit web application with sidebar navigation, horizontal KPI scanning, and persistent session state.
+- **Automated Last-Mile Insight Delivery**: Proactive scheduled report generation with TLS email dispatch via `smtplib`.
 
-- Node.js + Express
-- Vanilla HTML/CSS/JavaScript
-- GitHub REST API
-- Chart.js via CDN
+### Target Stakeholders
+- **Executive Leadership (CEO / Board)**: High-level strategic briefing, quarterly ARR health, and ROI waterfall bridges.
+- **Operations & Support Leaders (VP Operations)**: Support SLA latency monitoring and automated capacity planning.
+- **Maintainers & Community Managers**: Contributor onboarding funnels, PR turnaround timelines, and retention factors.
 
-## Run locally
+---
 
-1. Install Node.js 18+.
-2. Open this folder in a terminal.
-3. Run:
+## 2. Setup & Getting Started
 
+Follow these copy-paste steps to clone, configure, and launch the application locally.
+
+### Prerequisites
+- Python 3.9+ (with `venv`)
+- Node.js 18+ (for legacy web frontend, optional)
+- Git
+
+### Step-by-Step Installation
+
+#### 1. Clone Repository
 ```bash
-npm install
-npm start
+git clone https://github.com/kalviumcommunity/Vishwajeet_Parth_Tanishq_GitGeek_Kalvium-Community.git
+cd Vishwajeet_Parth_Tanishq_GitGeek_Kalvium-Community
 ```
 
-4. Open http://localhost:3000
+#### 2. Create and Activate Virtual Environment
+- **macOS / Linux:**
+  ```bash
+  python3 -m venv venv
+  source venv/bin/activate
+  ```
+- **Windows (Command Prompt / PowerShell):**
+  ```cmd
+  python -m venv venv
+  venv\Scripts\activate
+  ```
 
-## GitHub mode
+#### 3. Install Dependencies
+```bash
+pip install --upgrade pip
+pip install -r requirements.txt
+```
 
-Copy `.env.example` to `.env` and optionally add a GitHub personal access token:
-
+#### 4. Configure Environment Variables
+Copy the template configuration file:
+```bash
+cp .env.example .env
+```
+Edit `.env` to configure your optional tokens:
 ```env
-GITHUB_TOKEN=your_token_here
+GITHUB_TOKEN=your_personal_access_token_here
 PORT=3000
+SMTP_SERVER=smtp.gmail.com
+SMTP_PORT=587
+SENDER_EMAIL=your_analytics_bot@example.com
+SENDER_PASSWORD=your_app_password_here
 ```
 
-Then enter a public repository such as `facebook/react` or `nodejs/node` in the dashboard.
+#### 5. Initialize Database & Run Full Test Suite
+```bash
+# Initialize DuckDB database and seed baseline tables
+python init_db.py
 
-### Important MVP limitation
+# Execute full end-to-end analytics test suite (all 14 modules)
+python main.py
+```
 
-GitHub's public API and repository history can be large. This MVP intentionally analyzes a bounded set of recent pull requests so it is easy to run during a sprint. For a production version, add pagination, caching, background jobs, database storage, GitHub App authentication, and a more rigorous cohort definition.
+#### 6. Launch the Interactive Streamlit Web App
+```bash
+streamlit run app.py
+```
+*Access the dashboard at `http://localhost:8501` in your browser.*
 
-## Suggested Sprint 1 demo
+---
 
-1. Open the dashboard in Demo Mode.
-2. Explain the onboarding funnel.
-3. Show Returned vs Did Not Return.
-4. Explain first response time, review activity, and merge time.
-5. Show the factors panel and recommendations.
-6. Switch to a public GitHub repo to demonstrate real-data analysis.
+## 3. Pipeline Architecture & Data Flow
+
+Data moves through a four-stage verified pipeline from raw ingest to delivered insights:
+
+```mermaid
+flowchart LR
+    A["Raw Ingest<br/>(CSVs / GitHub REST API)"] --> B["Ingestion & Validation<br/>(init_db.py & DuckDB)"]
+    B --> C["Cleaning & Transformation<br/>(Type casting, filter nulls/negatives)"]
+    C --> D["Aggregation & Optimization<br/>(SQL CTEs, Window Functions, Early Filtering)"]
+    D --> E["Interactive Dashboard<br/>(Streamlit app.py)"]
+    D --> F["Automated Delivery<br/>(insight_delivery_runner.py & SMTP)"]
+```
+
+### Pipeline Architecture Flow:
+```text
+Data Flow:
+  CSV Upload / API Ingest --> Ingestion --> Cleaning --> Aggregation --> Dashboard & Email
+                                 |              |             |              |
+                              raw data    drop nulls     group by      KPIs + charts
+                              validation  type cast      segment       alerts + session
+                                          filter neg     compute       email reports
+```
+
+### Pipeline Transformation Stages:
+1. **Ingestion Layer**:
+   - Sources: Public GitHub REST API, transactional CSVs (`data/customer_revenue.csv`, `data/funnel_events.csv`, `data/hourly_kpi_metrics.csv`).
+   - Format: Raw JSON payloads, UTF-8 CSVs.
+   - Validation: Primary key uniqueness, missing column checks, schema conformity.
+2. **Cleaning & Standardization**:
+   - Handles null values, casts ISO-8601 timestamps, filters out negative revenue anomalies.
+   - Standardizes user segment classifications (`Enterprise`, `Mid-Market`, `Startup`).
+3. **Aggregation & Optimization**:
+   - DuckDB in-memory analytical query processing using CTEs, window functions, and early filtering before JOIN buffers.
+   - Statistical distribution analysis (skewness, kurtosis, IQR outlier bounds).
+4. **Presentation & Output Layer**:
+   - Rendered in interactive Streamlit web components (`st.columns`, `st.expander`, `st.session_state`).
+   - Publication-quality dashboard artifacts saved to `public/`.
+   - Formatted plain-text & multipart MIME executive briefings delivered to stakeholder inboxes via `smtplib`.
+
+---
+
+## 4. Feature & Metrics Documentation
+
+### Derived Features
+
+| Column | Type | Description | Example |
+| :--- | :--- | :--- | :--- |
+| `revenue_30d` | Float | Sum of order transaction amounts in trailing 30 days | `4523.50` |
+| `days_since_order` | Integer | Days elapsed since customer's most recent purchase | `12` |
+| `churn_risk` | String | Categorical risk grade based on support latency & activity | `"High"` |
+| `segment_rank` | Integer | Revenue rank within assigned customer segment | `3` |
+| `response_bucket` | Categorical | First support response time tier (`<2h`, `2-4h`, `4-24h`, `>24h`) | `"< 2 hours"` |
+| `is_anomaly` | Boolean | Outlier flag triggered by 3x IQR deviation or zero-throughput | `True` |
+
+### Key Performance Indicators (KPIs)
+
+| Metric | Formula / Logic | Data Source | Business Objective |
+| :--- | :--- | :--- | :--- |
+| **Annual Recurring Revenue (ARR)** | `SUM(annual_spend)` for active customer accounts | `data_explorer_sample` | Baseline organizational revenue |
+| **Net Dollar Retention (NDR)** | `(Starting ARR + Expansions - Churn) / Starting ARR` | `load_segment_breakdown_data` | Expansion health by account tier |
+| **First Response SLA** | Elapsed timestamp between ticket creation and first agent comment | Support incident logs | Operational responsiveness |
+| **Drop-Off Conversion Rate** | `(Users completing Stage N) / (Users entering Stage N-1)` | `data/funnel_events.csv` | Pipeline bottleneck identification |
+| **Net Support ROI** | `Gross Recovered ARR - Headcount Costs` ($560K - $160K = +$400K) | Support SLA model | Capital allocation justification |
+
+---
+
+## 5. Known Limitations & Assumptions
+
+Transparency is essential for engineering trust. The platform operates under the following documented constraints:
+
+1. **Data Freshness & Staleness**:
+   - Historical transactional data refreshes on a scheduled pipeline. The dashboard displays point-in-time warehouse snapshots; maximum expected data staleness is **24 hours** in local demo mode.
+2. **Refund Accounting**:
+   - Reported revenue metrics currently reflect gross recognized billing. Net revenue adjusted for partial or full merchant refunds is not factored into top-line ARR.
+3. **Segment Assignment**:
+   - Customer segment classification is assigned according to the account's latest contract tier. Customers transitioning between tiers mid-year appear under their most recently updated segment.
+4. **Static Anomaly Thresholds**:
+   - Alert criteria rely on statistical interquartile range (IQR) and fixed 2-hour latency thresholds. Dynamic machine-learning thresholds adapting to seasonal cyclicality are planned for future releases.
+5. **Email Delivery Configuration**:
+   - Proactive email delivery requires active SMTP credentials in `.env`. If credentials are not present, the delivery engine falls back gracefully to a non-blocking local simulation mode without interrupting application execution.
+
+---
+
+## Sprint 1 Contributor Retention MVP Documentation (Historical)
+
 
 ## Project structure
 
@@ -105,9 +223,12 @@ contributor-retention-analytics/
 ├── streamlit_structure_runner.py
 ├── session_state_runner.py
 ├── insight_delivery_runner.py
+├── documentation_delivery_runner.py
 ├── app.py
 ├── main.py
 ├── requirements.txt
+├── DATA_PRODUCT_DOCUMENTATION_GUIDE.md
+├── VIDEO_SCRIPT_DOCUMENTATION_DELIVERY.md
 ├── INSIGHT_DELIVERY_GUIDE.md
 ├── VIDEO_SCRIPT_INSIGHT_DELIVERY.md
 ├── STREAMLIT_SESSION_STATE_GUIDE.md
@@ -620,6 +741,42 @@ python main.py
 ### Video Guide & Documentation
 - Comprehensive engineering guide: [`INSIGHT_DELIVERY_GUIDE.md`](./INSIGHT_DELIVERY_GUIDE.md)
 - Step-by-step video script: [`VIDEO_SCRIPT_INSIGHT_DELIVERY.md`](./VIDEO_SCRIPT_INSIGHT_DELIVERY.md)
+
+---
+
+## 2.54 Data Product Documentation & Delivery
+
+Establishes production-grade, delivery-ready documentation standards covering project overview, setup instructions, pipeline architecture, feature dictionaries, and transparent operational limitations.
+
+### Core Business Problem
+*"The original developer leaves the company. A new analyst inherits the project. The README says 'Analytics Dashboard' with no setup instructions. The analyst clones the repo, runs the app, gets an import error, and spends three days reverse-engineering the environment, data sources, and feature logic. Three days of engineering velocity lost because 30 minutes of documentation was never written."*
+
+### Key Deliverables & Architecture
+- **5-Section Standard Data Product Documentation Structure**:
+  1. **Project Overview**: States the business problem, solution approach, and stakeholder audience clearly.
+  2. **Setup & Getting Started**: Copy-paste commands for macOS, Linux, and Windows (`git clone`, virtual environment, dependency installation, `.env` setup, run commands).
+  3. **Pipeline Architecture & Data Flow**: Text-based and Mermaid flowchart mapping data progression: `Raw Ingestion` $\rightarrow$ `Cleaning` $\rightarrow$ `Aggregation` $\rightarrow$ `Dashboard & Email Dispatch`.
+  4. **Feature & Metrics Documentation**:
+     - Engineered/derived features catalog (`revenue_30d`, `days_since_order`, `churn_risk`, `segment_rank`, `response_bucket`, `is_anomaly`).
+     - Core business KPIs with formulas and data sources (`ARR`, `NDR`, `First Response SLA`, `Drop-Off Rate`, `Net Support ROI`).
+  5. **Known Limitations & Assumptions**:
+     - Transparently documents operational boundaries: maximum 24h data staleness, gross vs net refund accounting, point-in-time segment assignment, static IQR anomaly thresholds, and optional SMTP credential fallback.
+- **Automated Documentation Validation Suite (`documentation_delivery_runner.py`)**:
+  - Validates README section completeness, data flow diagram presence, feature table data types, documented limitations, and cross-platform setup commands.
+
+### Running Documentation Validation Tests
+```bash
+# Run standalone documentation verification suite
+python documentation_delivery_runner.py
+
+# Run full project analytics suite (all modules)
+python main.py
+```
+
+### Video Guide & Documentation
+- Comprehensive engineering guide: [`DATA_PRODUCT_DOCUMENTATION_GUIDE.md`](./DATA_PRODUCT_DOCUMENTATION_GUIDE.md)
+- Step-by-step video script: [`VIDEO_SCRIPT_DOCUMENTATION_DELIVERY.md`](./VIDEO_SCRIPT_DOCUMENTATION_DELIVERY.md)
+
 
 
 
