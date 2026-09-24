@@ -113,9 +113,75 @@ elif page == "Executive Briefing (2.49)":
     st.download_button("Download Executive Summary (CSV)", report_df.to_csv(index=False), "Executive_Briefing_Q3.csv", "text/csv")
 
 elif page == "Data Storytelling":
-    st.title("📖 Data Storytelling & Insight Narrative")
-    st.info("💡 Contributor engagement drops 4x when initial PR response time exceeds 48 hours.")
-    st.write("Disaggregating Enterprise revenue reveals a bimodal distribution where median spend is $450 vs $5,000 mean.")
+    st.title("📖 Data Storytelling & Insight Narrative (Module 2.48)")
+    st.markdown("Transforming complex statistical analysis into board-level strategic decisions.")
+
+    st.image("public/data_storytelling_dashboard.png", caption="Executive Briefing: Support Response Time vs Churn Analysis", use_column_width=True)
+
+    st.divider()
+
+    st.subheader("🏛️ The Five-Part Narrative Arc")
+    tab1, tab2, tab3, tab4, tab5 = st.tabs([
+        "1. Context", "2. Data", "3. Finding", "4. Why", "5. Action Plan"
+    ])
+
+    with tab1:
+        st.markdown("""
+        ### 1. Context: What is at stake?
+        - **The Threat**: Customer churn drains **$2,000,000 ARR** annually.
+        - **Strategic Objective**: Sustaining net dollar retention and customer lifetime value (LTV) is critical for our next growth round.
+        - **Current Blindspot**: Support operations were viewed merely as an operational cost center rather than an ARR preservation engine.
+        """)
+
+    with tab2:
+        st.markdown("""
+        ### 2. Data: Scope & Confidence
+        - **Sample Horizon**: **50,000** enterprise & mid-market accounts tracked across **24 months**.
+        - **Metrics Tracked**: First-response support SLA latency categorized into 4 cohorts (<2h, 2-4h, 4-24h, >24h).
+        - **Explanatory Power**: Support response latency accounts for **R² = 0.40** (40% of customer churn variance).
+        """)
+
+    with tab3:
+        st.markdown("""
+        ### 3. Finding: The Core Discovery
+        - Customers waiting **>24 hours** churn at **12.0%**, compared to only **3.0%** for those answered in **<2 hours**.
+        - **The 4x Escalation Rule**: Delayed initial response multiplies churn risk by **400%**.
+        """)
+        col_f1, col_f2, col_f3 = st.columns(3)
+        col_f1.metric("Fast SLA (<2h) Churn", "3.0%", "Industry Leading")
+        col_f2.metric("Slow SLA (>24h) Churn", "12.0%", "+9.0% vs SLA", delta_color="inverse")
+        col_f3.metric("Churn Escalation Multiple", "4.0x", "High Risk", delta_color="inverse")
+
+    with tab4:
+        st.markdown("""
+        ### 4. Why: Root Cause Mechanism
+        - **Escalation Window**: Immediate response stops user frustration before issue severity compounds.
+        - **Psychological Abandonment**: When a user experiences blocking friction with zero reply for 24 hours, they mentally classify the product as unreliable and evaluate alternatives.
+        """)
+
+    with tab5:
+        st.markdown("### 5. Action: 5-Element Actionable Recommendation")
+        st.markdown("""
+| Element | Specification |
+| :--- | :--- |
+| **WHAT** | Hire 2 dedicated Tier-1 Support Engineers to guarantee <2h first-response SLA during peak hours |
+| **WHY** | Eliminates the >24h backlog cohort responsible for the 4x churn escalation |
+| **IMPACT** | **+$400,000 Net Annual Benefit** (Recovers $560K ARR at $160K hiring cost) |
+| **OWNER** | VP of Customer Operations (Hiring) & Head of Support (Implementation) |
+| **TIMELINE** | Post roles by Dec 1; Onboard by Jan 31; <2h SLA live by Jan 1 |
+        """)
+
+    st.divider()
+
+    st.subheader("🔄 Technical Jargon to Executive Translation Matrix")
+    st.markdown("Bridge statistical terminology into plain business impact:")
+    translations = [
+        {"Statistical Term (Data Team)": "Statistically significant correlation (r = 0.63, p < 0.001)", "Executive Translation (Leadership)": "Strong, reliable relationship that is not due to chance"},
+        {"Statistical Term (Data Team)": "R-squared of 0.40 with support latency", "Executive Translation (Leadership)": "Support speed directly explains 40% of differences in retention"},
+        {"Statistical Term (Data Team)": "Negatively skewed distribution of response latency", "Executive Translation (Leadership)": "Most tickets are resolved quickly, but a tail of customers waits unacceptably long"},
+        {"Statistical Term (Data Team)": "Multivariate regression model with L2 regularization", "Executive Translation (Leadership)": "Validated model isolating support speed from product usage and pricing factors"}
+    ]
+    st.dataframe(pd.DataFrame(translations), use_container_width=True)
 
 elif page == "Data Explorer":
     st.title("Data Explorer")

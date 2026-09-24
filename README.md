@@ -71,7 +71,8 @@ contributor-retention-analytics/
 │   ├── funnel_analysis.png
 │   ├── anomaly_monitoring.png
 │   ├── query_optimization.png
-│   └── business_visualisation_principles.png
+│   ├── business_visualisation_principles.png
+│   └── data_storytelling_dashboard.png
 ├── queries/
 │   ├── monthly_active_users.sql
 │   ├── revenue_by_segment.sql
@@ -100,8 +101,12 @@ contributor-retention-analytics/
 ├── anomaly_runner.py
 ├── query_optimization_runner.py
 ├── visualisation_principles_runner.py
+├── data_storytelling_runner.py
+├── app.py
 ├── main.py
 ├── requirements.txt
+├── DATA_STORYTELLING_GUIDE.md
+├── VIDEO_SCRIPT_DATA_STORYTELLING.md
 ├── VISUALISATION_DESIGN_GUIDE.md
 ├── VIDEO_SCRIPT_VISUALISATION.md
 ├── QUERY_OPTIMIZATION_GUIDE.md
@@ -430,6 +435,52 @@ python main.py
 ### Video Guide & Documentation
 - Comprehensive engineering guide: [`VISUALISATION_DESIGN_GUIDE.md`](./VISUALISATION_DESIGN_GUIDE.md)
 - Step-by-step video script: [`VIDEO_SCRIPT_VISUALISATION.md`](./VIDEO_SCRIPT_VISUALISATION.md)
+
+---
+
+## 2.48 Data Storytelling & Insight Narrative
+
+Transforms quantitative analysis into executive decisions using the **Five-Part Narrative Arc**, concrete evidence frameworks, technical jargon translation, and 5-element actionable recommendations.
+
+### Core Business Problem
+*"An analyst discovers that customer churn correlates strongly with support response time. They present 15 slides filled with scatter plots, regression equations, and p-values. The executive team nods politely, takes no action, and moves to the next agenda item. Three months later, churn has increased, and leadership asks why nobody warned them. The failure wasn't the analysis — it was the narrative."*
+
+### Key Deliverables & Capabilities
+- **The Five-Part Narrative Arc**:
+  1. **Context (The Stakes)**: Customer churn drains **$2.0M ARR** annually.
+  2. **Data (Scope & Methodology)**: **50,000 customers** across **24 months**; support latency explains **40% of churn variance ($R^2 = 0.40$)**.
+  3. **Finding (The Core Discovery)**: >24h response churns at **12.0%** vs **3.0%** for <2h (**4.0x escalation multiple**).
+  4. **Why (Root Cause Mechanism)**: Resolution speed halts problem escalation; delayed tickets lead to psychological abandonment before answers arrive.
+  5. **Action (5-Element Recommendation)**:
+     - **WHAT**: Hire 2 dedicated Tier-1 Support Engineers to guarantee <2h first-response SLA.
+     - **WHY**: Eliminates the critical >24h queue backlog driving 4x churn.
+     - **IMPACT**: **+$400,000 Net Annual Benefit** (Recovers $560K ARR at $160K cost, 250% ROI).
+     - **OWNER**: VP of Customer Operations & Head of Support.
+     - **TIMELINE**: Post roles by Dec 1; Hire by Jan 31; <2h SLA live by Jan 1.
+- **Jargon Translation Matrix**:
+  - Translates abstract statistical formulas ($r=0.63, p<0.001$, $R^2=0.40$, skewed distributions) into clear executive decision criteria.
+- **Visual Narrative Dashboard**:
+  - Boardroom-ready 4-panel visual artifact saved to [`public/data_storytelling_dashboard.png`](./public/data_storytelling_dashboard.png) featuring:
+    1. Churn Rate Escalation Bar Chart.
+    2. ROI Waterfall & Financial Value Bridge.
+    3. The 5-Part Narrative Arc Flowchart.
+    4. The 5-Element Executive Proposal Scorecard.
+- **Interactive Streamlit Dashboard View**:
+  - Dedicated "Data Storytelling" page in `app.py` with tabbed narrative exploration and jargon dictionary.
+
+### Running Data Storytelling
+```bash
+# Run standalone data storytelling runner & validation suite
+python data_storytelling_runner.py
+
+# Run full project analytics suite (all modules)
+python main.py
+```
+
+### Video Guide & Documentation
+- Comprehensive engineering guide: [`DATA_STORYTELLING_GUIDE.md`](./DATA_STORYTELLING_GUIDE.md)
+- Step-by-step video script: [`VIDEO_SCRIPT_DATA_STORYTELLING.md`](./VIDEO_SCRIPT_DATA_STORYTELLING.md)
+
 
 
 

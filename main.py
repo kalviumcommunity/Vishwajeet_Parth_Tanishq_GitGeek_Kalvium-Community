@@ -10,6 +10,7 @@ from funnel_analysis_runner import run_funnel_analysis
 from anomaly_runner import run_anomaly_analysis
 from query_optimization_runner import run_query_optimization
 from visualisation_principles_runner import run_visualisation_principles
+from data_storytelling_runner import run_data_storytelling
 
 if __name__ == '__main__':
     print("\n=======================================================")
@@ -56,3 +57,9 @@ if __name__ == '__main__':
     print(">>> 9. RUNNING MODULE 2.45: BUSINESS VISUALISATION PRINCIPLES <<<")
     print("=======================================================\n")
     run_visualisation_principles()
+
+    print("\n=======================================================")
+    print(">>> 10. RUNNING MODULE 2.48: DATA STORYTELLING & INSIGHT NARRATIVE <<<")
+    print("=======================================================\n")
+    run_data_storytelling()
+
